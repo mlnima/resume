@@ -1,0 +1,24 @@
+/* src/print.css */
+@media print {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+
+    #root {
+        max-width: 210mm;
+        max-height: 297mm;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .app-container {
+        padding: 1cm;
+    }
+
+    .page-break {
+        break-after: page;
+    }
+}
