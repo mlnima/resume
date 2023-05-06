@@ -1,46 +1,87 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Resume Builder
 
-## Available Scripts
+A simple, mobile-friendly resume builder application built with React, TypeScript, and Styled-components. The app displays a resume based on the provided JSON file and allows the user to print it on a single A4 page.
 
-In the project directory, you can run:
+## Live Demo
 
-### `npm start`
+[https://mlnima.github.io/resume](https://mlnima.github.io/resume)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Mobile-friendly layout
+- A4 print-ready layout
+- Easily customizable JSON data
+- Deployed on GitHub Pages
 
-### `npm test`
+## Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- TypeScript
+- Styled-components
+- GitHub Pages for deployment
 
-### `npm run build`
+## Local Development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+git clone https://github.com/mlnima/resume.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Go to the project directory:
 
-### `npm run eject`
+```sh
+cd resume
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Install dependencies:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. Start the development server:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```sh
+npm start
+```
 
-## Learn More
+The app will open in your default web browser at [http://localhost:3000](http://localhost:3000).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To deploy the app to GitHub Pages, follow these steps:
+
+1. Install the `gh-pages` package:
+
+```sh
+npm install gh-pages --save-dev
+```
+
+2. Add the following properties to your `package.json` file:
+
+```json
+{
+  ...
+  "homepage": "https://mlnima.github.io/resume",
+  "scripts": {
+    ...
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  ...
+}
+```
+
+3. Deploy the app:
+
+```sh
+npm run deploy
+```
+
+The app will be available at [https://mlnima.github.io/resume](https://mlnima.github.io/resume).
+
+## License
+
+MIT License
