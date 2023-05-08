@@ -1,27 +1,28 @@
 {
+
   "name": "Nima Malayeri",
-  "jobTitle": "Full Stack Web Developer",
+  "jobTitle": "Full Stack Webentwickler",
   "languages": [
     {
-      "languageName": "Persian",
-      "level": "Native"
+      "languageName": "Persisch",
+      "level": "Muttersprache"
     },
     {
-      "languageName": "English",
+      "languageName": "Englisch",
       "level": "C1"
     },
     {
-      "languageName": "German",
+      "languageName": "Deutsch",
       "level": "B1"
     },
     {
-      "languageName": "Bulgarian",
+      "languageName": "Bulgarisch",
       "level": "B1"
     }
   ],
   "technologies": [
     {
-      "technologyName": "Modern JavaScript (ECMAScript 2022)",
+      "technologyName": "Modernes JS (ES 2022)",
       "value": 9
     },
     {
@@ -42,7 +43,7 @@
     },
     {
       "technologyName": "NodeJS/ExpressJS",
-      "value": 9
+      "value": 8
     },
     {
       "technologyName": "NextJS",
@@ -93,13 +94,21 @@
       "value": 8
     }
   ],
+
   "experiences": [
+    {
+      "title": "Content Moderator",
+      "companyName": "Majorel",
+      "location": "Berlin - Germany",
+      "duration": "Des 2022 - April 2023",
+      "description": "Moderating Content on Meta's Social Media Platforms."
+    },
     {
       "title": "Full Stack Web Developer",
       "companyName": "ReactShell",
       "location": "Berlin - Germany",
       "duration": "Nov 2019 - Feb 2022",
-      "description": "Building Content Management System for multiple purpose websites using Typescript, ReactJs, NextJs, Express, MongoDB, Redux."
+      "description": "Building CMS using Typescript, ReactJs, NextJs, Express, MongoDB, Redux."
     },
     {
       "title": "Technical Support for Mobile Device Games",
@@ -110,42 +119,42 @@
     },
     {
       "title": "Moderator And Marketing",
-      "companyName": "Progroup (Erotic TV)",
+      "companyName": "Pro Group (ETV)",
       "location": "Sofia - Bulgaria",
       "duration": "Oct 2014 - Oct 2016",
-      "description": "advertising and Marketing for a TV channel for VOIP services and online streaming platform."
+      "description": "Advertising and Marketing VOIP services and online streaming platform of a TV channel."
     }
   ],
   "educations": [
     {
-      "title": "data analytics",
-      "location": "ironHack",
+      "title": "Data Analytics",
+      "location": "IronHack",
       "duration": "May 2022 - Aug 2022",
-      "fields": [
-        "python",
-        "SQL",
-        "machine learning",
-        "natural language processing (NLP)",
-        "Machine Learning",
-        "scikit learn",
-        "Business Intelligence",
-        "Tableau",
-        "web scrapping"
-      ]
-    },
-    {
-      "title": "web development",
-      "location": "Digital Career Institute",
-      "duration": "May 2018 - May 2019",
       "fields": [
         "Python",
         "SQL",
         "Machine Learning",
         "Natural Language Processing (NLP)",
+        "Machine Learning",
         "Scikit Learn",
         "Business Intelligence",
         "Tableau",
         "Web Scrapping"
+      ]
+    },
+    {
+      "title": "Web Development",
+      "location": "Digital Career Institute",
+      "duration": "May 2018 - May 2019",
+      "fields": [
+        "Java Script",
+        "ReactJS",
+        "NodeJS",
+        "ExpressJS",
+        "MongoDB",
+        "Git",
+        "Sass",
+        "Bash Script"
       ]
     },
     {
@@ -163,7 +172,7 @@
   ],
   "info": {
     "email": "mmlnima@gmail.com",
-    "mobile": "0176638888953",
+    "mobile": "017 663888953",
     "location": "Prenzlauer Berg, 10405, Berlin"
   }
 }

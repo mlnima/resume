@@ -47,7 +47,7 @@ const ExperienceLocation = styled.div`
 `;
 
 const ExperienceDescription = styled.div`
-  margin-top: 0.5rem;
+  margin-top: 0.1rem;
 `;
 
 const Experiences: React.FC<ExperiencesProps> = ({ experiences }) => {
@@ -57,7 +57,7 @@ const Experiences: React.FC<ExperiencesProps> = ({ experiences }) => {
             {experiences.map((experience, index) => (
                 <ExperienceItem key={index}>
                     <ExperienceHeader>
-                        <ExperienceTitle>{experience.title}</ExperienceTitle>
+                        <ExperienceTitle>{experience.companyName} - {experience.title}</ExperienceTitle>
                         <ExperienceDuration>{experience.duration}</ExperienceDuration>
                     </ExperienceHeader>
                     <ExperienceLocation>{experience.location}</ExperienceLocation>

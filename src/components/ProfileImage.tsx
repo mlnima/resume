@@ -1,6 +1,7 @@
 // src/components/ProfileImage.tsx
 import React from 'react';
 import styled from 'styled-components';
+import ProfileImageFile from '../asset/profile.jpg'
 
 const ProfileImageContainer = styled.div`
   width: 150px;
@@ -12,13 +13,14 @@ const ProfileImageContainer = styled.div`
 
 const ProfileImg = styled.img`
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 `;
 
 const ProfileImage: React.FC= () => {
     return (
         <ProfileImageContainer>
-            <ProfileImg src={'/profile.jpg'} alt="Profile" />
+            <ProfileImg src={ProfileImageFile} alt="Profile" />
         </ProfileImageContainer>
     );
 };

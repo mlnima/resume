@@ -1,0 +1,175 @@
+{
+  "name": "Nima Malayeri",
+  "jobTitle": "Full Stack Web Developer",
+  "languages": [
+    {
+      "languageName": "Persian",
+      "level": "Native"
+    },
+    {
+      "languageName": "English",
+      "level": "C1"
+    },
+    {
+      "languageName": "German",
+      "level": "B1"
+    },
+    {
+      "languageName": "Bulgarian",
+      "level": "B1"
+    }
+  ],
+  "technologies": [
+    {
+      "technologyName": "Modern JS (ES 2022)",
+      "value": 9
+    },
+    {
+      "technologyName": "Typescript",
+      "value": 7
+    },
+    {
+      "technologyName": "ReactJS",
+      "value": 9
+    },
+    {
+      "technologyName": "HTML5",
+      "value": 9
+    },
+    {
+      "technologyName": "CSS/ SCSS",
+      "value": 9
+    },
+    {
+      "technologyName": "NodeJS/ExpressJS",
+      "value": 8
+    },
+    {
+      "technologyName": "NextJS",
+      "value": 9
+    },
+    {
+      "technologyName": "Redux/ Redux Toolkit",
+      "value": 9
+    },
+    {
+      "technologyName": "Nginx",
+      "value": 5
+    },
+    {
+      "technologyName": "MonoRepo",
+      "value": 7
+    },
+    {
+      "technologyName": "TurboRepo",
+      "value": 7
+    },
+    {
+      "technologyName": "Git",
+      "value": 8
+    },
+    {
+      "technologyName": "Unit Testing",
+      "value": 7
+    },
+    {
+      "technologyName": "Python",
+      "value": 5
+    },
+    {
+      "technologyName": "SQL",
+      "value": 5
+    },
+    {
+      "technologyName": "MongoDB",
+      "value": 8
+    },
+    {
+      "technologyName": "WordPress",
+      "value": 4
+    },
+    {
+      "technologyName": "RestAPI",
+      "value": 8
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Content Moderator",
+      "companyName": "Majorel",
+      "location": "Berlin - Deutschland",
+      "duration": "Dez. 2022 - Apr. 2023",
+      "description": "Moderieren von Inhalten auf den Social-Media-Plattformen von Meta."
+    },
+    {
+      "title": "Full Stack Webentwickler",
+      "companyName": "ReactShell",
+      "location": "Berlin - Deutschland",
+      "duration": "Nov. 2019 - Feb. 2022",
+      "description": "Entwicklung von CMS mit Typescript, ReactJs, NextJs, Express, MongoDB und Redux."
+    },
+    {
+      "title": "Technischer Support für Mobile Device Games",
+      "companyName": "Telus International",
+      "location": "Sofia - Bulgarien",
+      "duration": "Juli 2016 - Okt. 2017",
+      "description": "Lösung von Tickets und Moderation von Inhalten auf mehreren Spielen wie Clash of Clans und Clash Royale."
+    },
+    {
+      "title": "Moderator und Marketing",
+      "companyName": "Pro Group (ETV)",
+      "location": "Sofia - Bulgarien",
+      "duration": "Okt. 2014 - Okt. 2016",
+      "description": "Werbung und Marketing für VOIP-Dienste und die Online-Streaming-Plattform eines TV-Senders."
+    }
+  ],
+  "educations": [
+    {
+      "title": "Data Analytics",
+      "location": "IronHack",
+      "duration": "Mai 2022 - Aug. 2022",
+      "fields": [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "Natural Language Processing (NLP)",
+        "Scikit Learn",
+        "Business Intelligence",
+        "Tableau",
+        "Web Scraping"
+      ]
+    },
+    {
+      "title": "Web-Entwicklung",
+      "location": "Digital Career Institute",
+      "duration": "Mai 2018 - Mai 2019",
+      "fields": [
+        "JavaScript",
+        "ReactJS",
+        "NodeJS",
+        "ExpressJS",
+        "MongoDB",
+        "Git",
+        "Sass",
+        "Bash Script"
+      ]
+    },
+    {
+      "title": "Programmierung",
+      "location": "College of Technology Avini",
+      "duration": "Jun. 2006 - Jun. 2008",
+      "fields": [
+        "Visual Basic",
+        "HTML",
+        "MS Office",
+        "AutoCAD",
+        "MS DOS"
+      ]
+    }
+  ],
+  "info": {
+    "email": "mmlnima@gmail.com",
+    "mobile": "+49 176 63888953",
+    "location": "Prenzlauer Berg, 10405, Berlin"
+  }
+}
