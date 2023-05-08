@@ -9,6 +9,7 @@ interface InfoProps {
 }
 
 const InfoContainer = styled.div`
+  width: 100%;
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -22,6 +23,7 @@ const InfoTitle = styled.h3`
 const InfoItem = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 0.5rem;
 `;
 

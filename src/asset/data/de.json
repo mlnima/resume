@@ -22,6 +22,10 @@
   ],
   "technologies": [
     {
+      "technologyName": "JavaScript",
+      "value": 9
+    },
+    {
       "technologyName": "Modernes JS (ES 2022)",
       "value": 9
     },
@@ -94,60 +98,58 @@
       "value": 8
     }
   ],
-
   "experiences": [
     {
       "title": "Content Moderator",
       "companyName": "Majorel",
-      "location": "Berlin - Germany",
-      "duration": "Des 2022 - April 2023",
-      "description": "Moderating Content on Meta's Social Media Platforms."
+      "location": "Berlin - Deutschland",
+      "duration": "Dez. 2022 - Apr. 2023",
+      "description": "Moderieren von Inhalten auf den Social-Media-Plattformen von Meta."
     },
     {
-      "title": "Full Stack Web Developer",
+      "title": "Full Stack Webentwickler",
       "companyName": "ReactShell",
-      "location": "Berlin - Germany",
-      "duration": "Nov 2019 - Feb 2022",
-      "description": "Building CMS using Typescript, ReactJs, NextJs, Express, MongoDB, Redux."
+      "location": "Berlin - Deutschland",
+      "duration": "Nov. 2019 - Feb. 2022",
+      "description": "Entwicklung von CMS mit Typescript, ReactJs, NextJs, Express, MongoDB und Redux."
     },
     {
-      "title": "Technical Support for Mobile Device Games",
-      "companyName": "Telus International ",
-      "location": "Sofia - Bulgaria",
-      "duration": "July 2016 - Oct 2017",
-      "description": "Solving tickets and moderating the content on multiple games Clash of Clans and Clash Royale."
+      "title": "Technischer Support für Mobile Device Games",
+      "companyName": "Telus International",
+      "location": "Sofia - Bulgarien",
+      "duration": "Juli 2016 - Okt. 2017",
+      "description": "Lösung von Tickets und Moderation von Inhalten auf mehreren Spielen wie Clash of Clans und Clash Royale."
     },
     {
-      "title": "Moderator And Marketing",
+      "title": "Moderator und Marketing",
       "companyName": "Pro Group (ETV)",
-      "location": "Sofia - Bulgaria",
-      "duration": "Oct 2014 - Oct 2016",
-      "description": "Advertising and Marketing VOIP services and online streaming platform of a TV channel."
+      "location": "Sofia - Bulgarien",
+      "duration": "Okt. 2014 - Okt. 2016",
+      "description": "Werbung und Marketing für VOIP-Dienste und die Online-Streaming-Plattform eines TV-Senders."
     }
   ],
   "educations": [
     {
       "title": "Data Analytics",
       "location": "IronHack",
-      "duration": "May 2022 - Aug 2022",
+      "duration": "Mai 2022 - Aug. 2022",
       "fields": [
         "Python",
         "SQL",
         "Machine Learning",
         "Natural Language Processing (NLP)",
-        "Machine Learning",
         "Scikit Learn",
         "Business Intelligence",
         "Tableau",
-        "Web Scrapping"
+        "Web Scraping"
       ]
     },
     {
-      "title": "Web Development",
+      "title": "Web-Entwicklung",
       "location": "Digital Career Institute",
-      "duration": "May 2018 - May 2019",
+      "duration": "Mai 2018 - Mai 2019",
       "fields": [
-        "Java Script",
+        "JavaScript",
         "ReactJS",
         "NodeJS",
         "ExpressJS",
@@ -158,21 +160,21 @@
       ]
     },
     {
-      "title": "Programing",
+      "title": "Programmierung",
       "location": "College of Technology Avini",
-      "duration": "Jun 2006 - Jun 2008",
+      "duration": "Jun. 2006 - Jun. 2008",
       "fields": [
         "Visual Basic",
         "HTML",
         "MS Office",
-        "Autocad",
-        "MS Dos"
+        "AutoCAD",
+        "MS DOS"
       ]
     }
   ],
   "info": {
     "email": "mmlnima@gmail.com",
-    "mobile": "017 663888953",
+    "mobile": "+49 176 63888953",
     "location": "Prenzlauer Berg, 10405, Berlin"
   }
 }

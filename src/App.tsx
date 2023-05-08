@@ -44,13 +44,13 @@ const MainContent = styled.main`
   padding: 1rem;
   order: 1;
 
-  @media (min-width: 768px) {
-    order: 0;
-  }
-
-  @media print {
-    order: 0;
-  }
+  //@media (min-width: 768px) {
+  //  order: 0;
+  //}
+  //
+  //@media print {
+  //  order: 0;
+  //}
 `;
 
 const PageBreak = styled.div`

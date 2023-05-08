@@ -12,6 +12,7 @@ interface LanguagesProps {
 }
 
 const LanguagesContainer = styled.div`
+  width: 100%;
   margin: 1rem;
 `;
 
@@ -24,6 +25,7 @@ const LanguageItem = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.25rem;
+  width: 100%;
 `;
 
 const LanguageName = styled.span``;
