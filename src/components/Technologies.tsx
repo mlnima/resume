@@ -13,7 +13,7 @@ interface TechnologiesProps {
 
 const TechnologiesContainer = styled.div`
   width: 100%;
-  margin: 1rem;
+  margin: .5rem;
 `;
 
 const TechnologiesTitle = styled.h3`

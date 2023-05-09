@@ -34,19 +34,21 @@ const EducationHeader = styled.div`
 
 const EducationTitle = styled.span``;
 
-const EducationDuration = styled.span``;
+const EducationDuration = styled.span`
+  font-size: .9rem;
+`;
 
 const EducationLocation = styled.div`
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #555;
 `;
 
 const EducationFields = styled.ul`
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
 `;
 
 const EducationField = styled.li`
-  font-size: 0.9rem;
+  font-size: 1rem;
 `;
 
 const Educations: React.FC<EducationsProps> = ({ educations }) => {

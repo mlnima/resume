@@ -13,7 +13,7 @@ interface LanguagesProps {
 
 const LanguagesContainer = styled.div`
   width: 100%;
-  margin: 1rem;
+  margin: .5rem;
 `;
 
 const LanguagesTitle = styled.h3`

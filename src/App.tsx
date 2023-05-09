@@ -3,11 +3,9 @@ import React, {useMemo, useState} from 'react';
 import styled from 'styled-components';
 import enData from './asset/data/en.json';
 import deData from './asset/data/de.json';
-import Header from './components/Header';
 import Experiences from './components/Experiences';
 import Educations from './components/Educations';
 import Sidebar from './components/Sidebar';
-import { useSearchParams } from "react-router-dom";
 import LanguageSelector from "./components/LanguageSelector";
 
 const AppContainer = styled.div`
@@ -41,16 +39,8 @@ const AppContainer = styled.div`
 
 const MainContent = styled.main`
   flex: 2;
-  padding: 1rem;
+  padding: .5rem;
   order: 1;
-
-  //@media (min-width: 768px) {
-  //  order: 0;
-  //}
-  //
-  //@media print {
-  //  order: 0;
-  //}
 `;
 
 const PageBreak = styled.div`
@@ -59,9 +49,7 @@ const PageBreak = styled.div`
 
 const App: React.FC = () => {
     const [activeLang,setActiveLang] = useState('en')
-    // const [searchParams] = useSearchParams();
-    // const lang = searchParams.get("lang");
-    //
+
     const activeData = useMemo(()=>{
         return activeLang === 'de' ? deData : enData
     },[activeLang])
@@ -73,9 +61,9 @@ const App: React.FC = () => {
                 languages={activeData.languages}
                 technologies={activeData.technologies}
                 info={activeData.info}
+                name={activeData.name} jobTitle={activeData.jobTitle}
             />
             <MainContent>
-                <Header name={activeData.name} jobTitle={activeData.jobTitle} />
                 <Experiences experiences={activeData.experiences} />
                 <PageBreak className="page-break" />
                 <Educations educations={activeData.educations} />

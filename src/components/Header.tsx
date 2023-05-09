@@ -12,16 +12,18 @@ const HeaderContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: .5rem;
+  box-sizing: border-box;
+  text-align: center;
 `;
 
 const Name = styled.h1`
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin: 0;
 `;
 
 const JobTitle = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0;
   color: #555;
 `;

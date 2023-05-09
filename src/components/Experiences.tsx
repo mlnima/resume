@@ -15,12 +15,13 @@ interface ExperiencesProps {
 }
 
 const ExperiencesContainer = styled.div`
-  margin: 1rem;
+  margin: .5rem 1rem;
 `;
 
 const ExperiencesTitle = styled.h3`
   font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.5rem 0;
+  padding: 0;
 `;
 
 const ExperienceItem = styled.div`
@@ -28,26 +29,34 @@ const ExperienceItem = styled.div`
 `;
 
 const ExperienceHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 `;
 
-const ExperienceTitle = styled.span`
+const CompanyName = styled.span`
  font-size: .9rem;
+  font-weight: bold;
+`;
+const ExperienceTitle = styled.span`
+ font-size: 1rem;
 `;
 
 const ExperienceDuration = styled.span`
-
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: .9rem;
+  font-weight: bold;
 `;
 
 const ExperienceLocation = styled.div`
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #555;
 `;
 
 const ExperienceDescription = styled.div`
   margin-top: 0.1rem;
+  font-size: 1rem;
 `;
 
 const Experiences: React.FC<ExperiencesProps> = ({ experiences }) => {
@@ -57,8 +66,10 @@ const Experiences: React.FC<ExperiencesProps> = ({ experiences }) => {
             {experiences.map((experience, index) => (
                 <ExperienceItem key={index}>
                     <ExperienceHeader>
-                        <ExperienceTitle>{experience.companyName} - {experience.title}</ExperienceTitle>
+                        <CompanyName>{experience.companyName}</CompanyName>
                         <ExperienceDuration>{experience.duration}</ExperienceDuration>
+                        <ExperienceTitle>{experience.title}</ExperienceTitle>
+
                     </ExperienceHeader>
                     <ExperienceLocation>{experience.location}</ExperienceLocation>
                     <ExperienceDescription>{experience.description}</ExperienceDescription>
