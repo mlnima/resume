@@ -14,6 +14,7 @@ interface EducationsProps {
 }
 
 const EducationsContainer = styled.div`
+
   margin: 1rem;
 `;
 
@@ -40,15 +41,23 @@ const EducationDuration = styled.span`
 
 const EducationLocation = styled.div`
   font-size: 1rem;
-  color: #555;
+  
 `;
 
-const EducationFields = styled.ul`
-  margin-top: 0.2rem;
+const EducationFields = styled.div`
+  margin-top: .2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .1rem .5rem ;
 `;
 
-const EducationField = styled.li`
+const EducationField = styled.div`
   font-size: 1rem;
+  &:not(:last-child)::after {
+    content: ",";
+  }
 `;
 
 const Educations: React.FC<EducationsProps> = ({ educations }) => {

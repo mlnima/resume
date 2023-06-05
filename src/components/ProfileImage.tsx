@@ -2,25 +2,38 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProfileImageFile from '../asset/profile.jpg'
+import Header from "./Header";
 
 const ProfileImageContainer = styled.div`
-  width: 150px;
-  height: 150px;
+  grid-area: profileImage;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  border-radius: 50%;
-  margin: 1rem;
+
+
 `;
 
 const ProfileImg = styled.img`
-  width: 100%;
-  height: 100%;
+  border-radius: 50%;
+  margin: .5rem;
+  width: 130px;
+  height: 130px;
   object-fit: cover;
+ 
 `;
 
-const ProfileImage: React.FC= () => {
+interface IProps{
+    name:string;
+    jobTitle:string;
+}
+const ProfileImage: React.FC<IProps>= ({name,jobTitle}) => {
     return (
         <ProfileImageContainer>
             <ProfileImg src={ProfileImageFile} alt="Profile" />
+            <Header name={name} jobTitle={jobTitle} />
         </ProfileImageContainer>
     );
 };

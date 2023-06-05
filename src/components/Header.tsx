@@ -12,7 +12,7 @@ const HeaderContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: .5rem;
+  padding: 0;
   box-sizing: border-box;
   text-align: center;
 `;
@@ -25,7 +25,7 @@ const Name = styled.h1`
 const JobTitle = styled.h2`
   font-size: 1rem;
   margin: 0;
-  color: #555;
+ 
 `;
 
 const Header: React.FC<HeaderProps> = ({ name, jobTitle }) => {

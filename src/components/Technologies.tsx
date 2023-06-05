@@ -38,7 +38,7 @@ const Technologies: React.FC<TechnologiesProps> = ({ technologies }) => {
             {technologies.map((technology, index) => (
                 <TechnologyItem key={index}>
                     <TechnologyName>{technology.technologyName}</TechnologyName>
-                    <TechnologyValue>{technology.value}/10</TechnologyValue>
+                    {/*<TechnologyValue>{technology.value}/10</TechnologyValue>*/}
                 </TechnologyItem>
             ))}
         </TechnologiesContainer>

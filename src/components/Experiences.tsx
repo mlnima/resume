@@ -51,7 +51,7 @@ const ExperienceDuration = styled.span`
 
 const ExperienceLocation = styled.div`
   font-size: 1rem;
-  color: #555;
+
 `;
 
 const ExperienceDescription = styled.div`
