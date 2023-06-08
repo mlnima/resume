@@ -1,6 +1,9 @@
 // src/components/Info.tsx
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import {faAddressCard, faAt, faGlobe, faLocationDot, faMobileScreenButton} from "@fortawesome/free-solid-svg-icons";
 
 interface InfoProps {
     email: string;
@@ -16,7 +19,7 @@ const InfoContainer = styled.div`
 `;
 
 const InfoTitle = styled.h3`
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 `;
 
@@ -32,22 +35,33 @@ const InfoIcon = styled.span`
 
 const InfoText = styled.span``;
 
+const InfoLink = styled.a`
+    
+`;
+
 const Info: React.FC<InfoProps> = ({ email, mobile, location }) => {
     return (
         <InfoContainer>
-            <InfoTitle>Contact Information</InfoTitle>
+            <InfoTitle>Contact Information <FontAwesomeIcon icon={faAddressCard} /></InfoTitle>
             <InfoItem>
-                <InfoIcon>✉️</InfoIcon>
+                <InfoIcon>
+                    <FontAwesomeIcon icon={faAt} />
+                </InfoIcon>
                 <InfoText>{email}</InfoText>
             </InfoItem>
             <InfoItem>
-                <InfoIcon>📱</InfoIcon>
+                <FontAwesomeIcon icon={faMobileScreenButton} />
                 <InfoText>{mobile}</InfoText>
             </InfoItem>
             <InfoItem>
-                <InfoIcon>📍</InfoIcon>
+                <FontAwesomeIcon icon={faGlobe} />
+                <InfoLink href={'https://www.02dev.com/'}>www.02dev.com</InfoLink>
+            </InfoItem>
+            <InfoItem>
+                <FontAwesomeIcon icon={faLocationDot} />
                 <InfoText>{location}</InfoText>
             </InfoItem>
+
         </InfoContainer>
     );
 };

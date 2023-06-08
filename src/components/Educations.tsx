@@ -1,6 +1,8 @@
 // src/components/Educations.tsx
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faUserGraduate} from "@fortawesome/free-solid-svg-icons";
 
 interface Education {
     title: string;
@@ -19,8 +21,9 @@ const EducationsContainer = styled.div`
 `;
 
 const EducationsTitle = styled.h3`
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
+
 `;
 
 const EducationItem = styled.div`
@@ -33,14 +36,16 @@ const EducationHeader = styled.div`
   font-weight: bold;
 `;
 
-const EducationTitle = styled.span``;
+const EducationTitle = styled.span`
+  color: var(--web-mode-tertiary-text-color);
+`;
 
 const EducationDuration = styled.span`
   font-size: .9rem;
 `;
 
 const EducationLocation = styled.div`
-  font-size: 1rem;
+  font-size: .9rem;
   
 `;
 
@@ -54,7 +59,7 @@ const EducationFields = styled.div`
 `;
 
 const EducationField = styled.div`
-  font-size: 1rem;
+  font-size: .8rem;
   &:not(:last-child)::after {
     content: ",";
   }
@@ -63,7 +68,7 @@ const EducationField = styled.div`
 const Educations: React.FC<EducationsProps> = ({ educations }) => {
     return (
         <EducationsContainer>
-            <EducationsTitle>Educations</EducationsTitle>
+            <EducationsTitle>Educations <FontAwesomeIcon icon={faUserGraduate} /></EducationsTitle>
             {educations.map((education, index) => (
                 <EducationItem key={index}>
                     <EducationHeader>

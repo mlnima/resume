@@ -1,6 +1,8 @@
 // src/components/Languages.tsx
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faEarthEurope} from "@fortawesome/free-solid-svg-icons";
 
 interface Language {
     languageName: string;
@@ -17,7 +19,7 @@ const LanguagesContainer = styled.div`
 `;
 
 const LanguagesTitle = styled.h3`
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 `;
 
@@ -35,7 +37,7 @@ const LanguageLevel = styled.span``;
 const Languages: React.FC<LanguagesProps> = ({ languages }) => {
     return (
         <LanguagesContainer>
-            <LanguagesTitle>Languages</LanguagesTitle>
+            <LanguagesTitle>Languages <FontAwesomeIcon icon={faEarthEurope} /></LanguagesTitle>
             {languages.map((language, index) => (
                 <LanguageItem key={index}>
                     <LanguageName>{language.languageName}</LanguageName>

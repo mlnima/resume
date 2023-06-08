@@ -1,6 +1,8 @@
 // src/components/Technologies.tsx
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faHammer} from "@fortawesome/free-solid-svg-icons";
 
 interface Technology {
     technologyName: string;
@@ -17,7 +19,7 @@ const TechnologiesContainer = styled.div`
 `;
 
 const TechnologiesTitle = styled.h3`
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 `;
 
@@ -29,12 +31,12 @@ const TechnologyItem = styled.div`
 
 const TechnologyName = styled.span``;
 
-const TechnologyValue = styled.span``;
+
 
 const Technologies: React.FC<TechnologiesProps> = ({ technologies }) => {
     return (
         <TechnologiesContainer>
-            <TechnologiesTitle>Technologies</TechnologiesTitle>
+            <TechnologiesTitle>Technical Skills <FontAwesomeIcon icon={faHammer} /></TechnologiesTitle>
             {technologies.map((technology, index) => (
                 <TechnologyItem key={index}>
                     <TechnologyName>{technology.technologyName}</TechnologyName>

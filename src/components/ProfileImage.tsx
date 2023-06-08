@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProfileImageFile from '../asset/profile.jpg'
-import Header from "./Header";
+
 
 const ProfileImageContainer = styled.div`
   grid-area: profileImage;
@@ -10,10 +10,8 @@ const ProfileImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 130px;
   overflow: hidden;
-
-
 `;
 
 const ProfileImg = styled.img`
@@ -25,15 +23,11 @@ const ProfileImg = styled.img`
  
 `;
 
-interface IProps{
-    name:string;
-    jobTitle:string;
-}
-const ProfileImage: React.FC<IProps>= ({name,jobTitle}) => {
+
+const ProfileImage: React.FC= () => {
     return (
         <ProfileImageContainer>
             <ProfileImg src={ProfileImageFile} alt="Profile" />
-            <Header name={name} jobTitle={jobTitle} />
         </ProfileImageContainer>
     );
 };

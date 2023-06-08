@@ -8,6 +8,7 @@ import Educations from './components/Educations';
 import Sidebar from './components/Sidebar';
 import LanguageSelector from "./components/LanguageSelector";
 import ProfileImage from "./components/ProfileImage";
+import Activities from "./components/Activities";
 
 
 const AppContainer = styled.div`
@@ -17,11 +18,11 @@ const AppContainer = styled.div`
   padding: 0;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
-
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  
+  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.15);
   display: grid;
   grid-template-columns: 250px 1fr;
-  grid-template-areas: 'profileImage profileImage' 'sidebar mainContent';
+  grid-template-areas: 'sidebar mainContent' 'sidebar mainContent';
   color: var(--web-mode-primary-text-color);
   background-color: var(--web-mode-primary-background-color);
   @media (min-width: 768px) {
@@ -29,14 +30,22 @@ const AppContainer = styled.div`
     width: 210mm !important;
     height: 297mm !important;
   }
+  
+  h1,h2,h3,h4,h5,h6{
+    color: var(--web-mode-secondary-text-color);
+  }
+  
+  a{
+    text-decoration: none;
+  }
 
   @media print {
     max-width: 210mm;
     height: 297mm;
     box-shadow: none;
     flex-direction: row;
-    color: var(--print-mode-primary-text-color);
-    background-color: var(--print-mode-primary-background-color);
+    //color: var(--web-mode-primary-text-color);
+    //background-color: var(--web-mode-primary-background-color);
     #language-selector {
       display: none;
     }
@@ -60,16 +69,18 @@ const App: React.FC = () => {
     return (
         <AppContainer className="app-container">
             <LanguageSelector setActiveLang={setActiveLang} activeLang={activeLang}/>
-            <ProfileImage     name={activeData.name} jobTitle={activeData.jobTitle} />
+
             <Sidebar
                 languages={activeData.languages}
                 technologies={activeData.technologies}
                 info={activeData.info}
-
+                name={activeData.name}
+                jobTitle={activeData.jobTitle}
             />
             <MainContent>
-                <Educations educations={activeData.educations} />
                 <Experiences experiences={activeData.experiences} />
+                <Educations educations={activeData.educations} />
+                <Activities activities={activeData.activities}/>
             </MainContent>
 
         </AppContainer>

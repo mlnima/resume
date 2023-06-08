@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const LangDropdown = styled.select`
-  font-size: 1rem;
+  font-size: .9rem;
   border-radius: 8px;
   padding: 0.5rem;
   position: fixed;
@@ -11,7 +11,7 @@ const LangDropdown = styled.select`
 `;
 
 const LangOption = styled.option`
-  font-size: 1rem;
+  font-size: .9rem;
 `;
 interface IProps{
     setActiveLang:(value:string)=>void

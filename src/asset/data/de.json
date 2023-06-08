@@ -3,10 +3,7 @@
   "name": "Nima Malayeri",
   "jobTitle": "Full Stack Webentwickler",
   "languages": [
-    {
-      "languageName": "Persisch",
-      "level": "Muttersprache"
-    },
+
     {
       "languageName": "Englisch",
       "level": "C1"
@@ -18,6 +15,10 @@
     {
       "languageName": "Bulgarisch",
       "level": "B1"
+    },
+    {
+      "languageName": "Persisch",
+      "level": "Muttersprache"
     }
   ],
   "technologies": [
@@ -111,7 +112,7 @@
       "companyName": "ReactShell",
       "location": "Berlin - Deutschland",
       "duration": "Nov. 2019 - Feb. 2022",
-      "description": "Spielte eine führende Rolle bei der Entwicklung eines dynamischen CMS unter Verwendung von Technologien wie Typescript, ReactJS, NextJS, Express, MongoDB und Redux."
+      "description": "Erfahrener Full Stack Web Entwickler mit umfangreicher Erfahrung in einem B2B-Unternehmen, spezialisiert auf die Entwicklung von CMS-Plattformen. Nutzung modernster Technologien wie TypeScript, ReactJS, NextJS, Express, MongoDB und Redux für den Aufbau skalierbarer, kundenorientierter Lösungen."
     },
     {
       "title": "Technischer Support für Mobile Device Games",
@@ -124,7 +125,7 @@
       "title": "Moderator und Marketing",
       "companyName": "Pro Group (ETV)",
       "location": "Sofia - Bulgarien",
-      "duration": "Okt. 2014 - Okt. 2016",
+      "duration": "Okt. 2014 - Juli. 2016",
       "description": "Orchestrierte Werbe- und Marketingkampagnen für VOIP-Dienste und eine Online-Streaming-Plattform für TV-Kanäle, um die Markensichtbarkeit zu erhöhen."
     }
   ],
@@ -166,8 +167,9 @@
       "fields": [
         "Visual Basic",
         "HTML",
-        "MS Office",
-        "MS DOS"
+        "MS DOS",
+        "Bash",
+        "Computernetzwerke"
       ]
     }
   ],
@@ -175,5 +177,19 @@
     "email": "mmlnima@gmail.com",
     "mobile": "+49 176 63888953",
     "location": "Prenzlauer Berg, 10405, Berlin"
-  }
+  },
+  "activities": [
+    {
+      "title": "Die Leitung einer großen Facebook-Gruppe von Entwicklern konzentriert sich auf ReactJs",
+      "url": "https://www.facebook.com/groups/2759767320785519"
+    },
+    {
+      "title": "Programmier-Tutorial auf Youtube erstellen",
+      "url": "https://www.youtube.com/@02dev"
+    },
+    {
+      "title": "Generierung von Inhalten mithilfe von Open-Source-Modellen",
+      "url": "https://www.youtube.com/@TheIntelligentEra"
+    }
+  ]
 }

@@ -2,10 +2,7 @@
   "name": "Nima Malayeri",
   "jobTitle": "Full Stack Web Developer",
   "languages": [
-    {
-      "languageName": "Persian",
-      "level": "Native"
-    },
+
     {
       "languageName": "English",
       "level": "C1"
@@ -17,15 +14,15 @@
     {
       "languageName": "Bulgarian",
       "level": "B1"
+    },
+    {
+      "languageName": "Persian",
+      "level": "Native"
     }
   ],
   "technologies": [
     {
-      "technologyName": "JavaScript",
-      "value": 9
-    },
-    {
-      "technologyName": "Modern JS (ES 2022)",
+      "technologyName": "Modern JavaScript",
       "value": 9
     },
     {
@@ -37,23 +34,39 @@
       "value": 9
     },
     {
-      "technologyName": "HTML5",
+      "technologyName": "Redux/Redux Toolkit",
       "value": 9
-    },
-    {
-      "technologyName": "CSS/SCSS",
-      "value": 9
-    },
-    {
-      "technologyName": "NodeJS/ExpressJS",
-      "value": 8
     },
     {
       "technologyName": "NextJS",
       "value": 9
     },
     {
-      "technologyName": "Redux/Redux Toolkit",
+      "technologyName": "Unit Testing",
+      "value": 7
+    },
+    {
+      "technologyName": "Git",
+      "value": 8
+    },
+    {
+      "technologyName": "NodeJS",
+      "value": 8
+    },
+    {
+      "technologyName": "SQL",
+      "value": 5
+    },
+    {
+      "technologyName": "MongoDB",
+      "value": 8
+    },
+    {
+      "technologyName": "HTML5",
+      "value": 9
+    },
+    {
+      "technologyName": "CSS",
       "value": 9
     },
     {
@@ -67,34 +80,29 @@
     {
       "technologyName": "TurboRepo",
       "value": 7
-    },
-    {
-      "technologyName": "Git",
-      "value": 8
-    },
-    {
-      "technologyName": "Unit Testing",
-      "value": 7
+    }, {
+      "technologyName": "WordPress",
+      "value": 4
     },
     {
       "technologyName": "Python",
       "value": 5
     },
     {
-      "technologyName": "SQL",
+      "technologyName": "Statistic",
       "value": 5
     },
     {
-      "technologyName": "MongoDB",
-      "value": 8
+      "technologyName": "ETL",
+      "value": 5
     },
     {
-      "technologyName": "WordPress",
-      "value": 4
+      "technologyName": "Modeling",
+      "value": 5
     },
     {
-      "technologyName": "RestAPI",
-      "value": 8
+      "technologyName": "Data Visualization",
+      "value": 5
     }
   ],
   "experiences": [
@@ -110,7 +118,7 @@
       "companyName": "ReactShell",
       "location": "Berlin - Germany",
       "duration": "Nov. 2019 - Feb. 2022",
-      "description": "Spearheaded the development of a dynamic CMS leveraging technologies such as Typescript, ReactJS, NextJS, Express, MongoDB, and Redux."
+      "description": "Proficient Full Stack Web Developer with robust experience working at a business-to-business company, specializing in developing CMS platforms. Leveraged cutting-edge technologies such as TypeScript, ReactJS, NextJS, Express, MongoDB, and Redux to build scalable, client-centered solutions."
     },
     {
       "title": "Technical Support for Mobile Device Games",
@@ -123,7 +131,7 @@
       "title": "Moderator and Marketing",
       "companyName": "Pro Group (ETV)",
       "location": "Sofia - Bulgaria",
-      "duration": "Oct. 2014 - Oct. 2016",
+      "duration": "Oct. 2014 - Jul. 2016",
       "description": "Orchestrated advertising and marketing campaigns for VOIP services and an online TV channel streaming platform, boosting brand visibility."
     }
   ],
@@ -165,8 +173,9 @@
       "fields": [
         "Visual Basic",
         "HTML",
-        "MS Office",
-        "MS DOS"
+        "MS DOS",
+        "Bash",
+        "Computer Networking"
       ]
     }
   ],
@@ -174,5 +183,19 @@
     "email": "mmlnima@gmail.com",
     "mobile": "+49 176 63888953",
     "location": "Prenzlauer Berg, 10405, Berlin"
-  }
+  },
+  "activities": [
+    {
+      "title": "Managing a large facebook group of developers focus on ReactJs",
+      "url": "https://www.facebook.com/groups/2759767320785519"
+    },
+    {
+      "title": "Creating programming tutorial on Youtube",
+      "url": "https://www.youtube.com/@02dev"
+    },
+    {
+      "title": "Generating content using open-source models",
+      "url": "https://www.youtube.com/@TheIntelligentEra"
+    }
+  ]
 }

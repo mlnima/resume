@@ -8,6 +8,7 @@ interface HeaderProps {
 }
 
 const HeaderContainer = styled.div`
+  grid-area: header;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +24,7 @@ const Name = styled.h1`
 `;
 
 const JobTitle = styled.h2`
-  font-size: 1rem;
+  font-size: .9rem;
   margin: 0;
  
 `;
