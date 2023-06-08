@@ -42,6 +42,7 @@ const EducationTitle = styled.span`
 
 const EducationDuration = styled.span`
   font-size: .9rem;
+  color: var(--web-mode-tertiary-text-color);
 `;
 
 const EducationLocation = styled.div`

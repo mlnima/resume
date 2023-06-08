@@ -23,11 +23,7 @@
   ],
   "technologies": [
     {
-      "technologyName": "JavaScript",
-      "value": 9
-    },
-    {
-      "technologyName": "Modernes JS (ES 2022)",
+      "technologyName": "Modernes JavaScript",
       "value": 9
     },
     {
@@ -39,23 +35,39 @@
       "value": 9
     },
     {
-      "technologyName": "HTML5",
+      "technologyName": "Redux/Redux Toolkit",
       "value": 9
-    },
-    {
-      "technologyName": "CSS/SCSS",
-      "value": 9
-    },
-    {
-      "technologyName": "NodeJS/ExpressJS",
-      "value": 8
     },
     {
       "technologyName": "NextJS",
       "value": 9
     },
     {
-      "technologyName": "Redux/Redux Toolkit",
+      "technologyName": "Unit Testing",
+      "value": 7
+    },
+    {
+      "technologyName": "Git",
+      "value": 8
+    },
+    {
+      "technologyName": "NodeJS",
+      "value": 8
+    },
+    {
+      "technologyName": "SQL",
+      "value": 5
+    },
+    {
+      "technologyName": "MongoDB",
+      "value": 8
+    },
+    {
+      "technologyName": "HTML5",
+      "value": 9
+    },
+    {
+      "technologyName": "CSS",
       "value": 9
     },
     {
@@ -69,34 +81,29 @@
     {
       "technologyName": "TurboRepo",
       "value": 7
-    },
-    {
-      "technologyName": "Git",
-      "value": 8
-    },
-    {
-      "technologyName": "Unit Testing",
-      "value": 7
+    }, {
+      "technologyName": "WordPress",
+      "value": 4
     },
     {
       "technologyName": "Python",
       "value": 5
     },
     {
-      "technologyName": "SQL",
+      "technologyName": "Statistic",
       "value": 5
     },
     {
-      "technologyName": "MongoDB",
-      "value": 8
+      "technologyName": "ETL",
+      "value": 5
     },
     {
-      "technologyName": "WordPress",
-      "value": 4
+      "technologyName": "Modeling",
+      "value": 5
     },
     {
-      "technologyName": "RestAPI",
-      "value": 8
+      "technologyName": "Data Visualization",
+      "value": 5
     }
   ],
   "experiences": [
