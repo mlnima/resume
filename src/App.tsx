@@ -42,12 +42,11 @@ const AppContainer = styled.div`
   }
 
   @media print {
-    max-width: 210mm;
-    height: 297mm;
-    box-shadow: none;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: 'sidebar mainContent' 'sidebar mainContent';
     flex-direction: row;
-    //color: var(--web-mode-primary-text-color);
-    //background-color: var(--web-mode-primary-background-color);
+    width: 210mm !important;
+    height: 297mm !important;
     #language-selector {
       display: none;
     }
@@ -65,7 +64,20 @@ const MainContent = styled.main`
   .filler{
     display: none;
   }
+  
   @media only screen and (min-width: 768px){
+    .filler{
+      display: block;
+      height: 174px;
+      padding: 10px;
+    }
+  }
+  
+  @media print {
+    display: block;  // Change the layout to block for printing
+    width: 100%;
+    box-sizing: border-box;
+    overflow: initial;
     .filler{
       display: block;
       height: 174px;
