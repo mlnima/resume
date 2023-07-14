@@ -16,8 +16,7 @@ interface EducationsProps {
 }
 
 const EducationsContainer = styled.div`
-
-  margin: 1rem;
+  margin: .5rem 0;
 `;
 
 const EducationsTitle = styled.h3`

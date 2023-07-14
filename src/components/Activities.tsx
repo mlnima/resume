@@ -15,7 +15,7 @@ interface InfoProps {
 }
 
 const ActivitiesContainer = styled.div`
-  margin: .5rem 1rem;
+  margin: .5rem 0;
   display: flex;
   flex-direction: column;
 `;
@@ -41,6 +41,10 @@ const ActivitiesName = styled.p`
 `;
 const ActivitiesUrl = styled.a`
   width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 

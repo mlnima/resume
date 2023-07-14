@@ -7,7 +7,7 @@ import Experiences from './components/Experiences';
 import Educations from './components/Educations';
 import Sidebar from './components/Sidebar';
 import LanguageSelector from "./components/LanguageSelector";
-import ProfileImage from "./components/ProfileImage";
+// import ProfileImage from "./components/ProfileImage";
 import Activities from "./components/Activities";
 
 
@@ -18,18 +18,12 @@ const AppContainer = styled.div`
   padding: 0;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
-  
   box-shadow: 0 1px 4px rgba(255, 255, 255, 0.15);
   display: grid;
-  grid-template-columns: 250px 1fr;
-  grid-template-areas: 'sidebar mainContent' 'sidebar mainContent';
+  grid-template-columns: 1fr;
+  grid-template-areas: 'sidebar ' 'mainContent';
   color: var(--web-mode-primary-text-color);
   background-color: var(--web-mode-primary-background-color);
-  @media (min-width: 768px) {
-    flex-direction: row;
-    width: 210mm !important;
-    height: 297mm !important;
-  }
   
   h1,h2,h3,h4,h5,h6{
     color: var(--web-mode-secondary-text-color);
@@ -37,6 +31,14 @@ const AppContainer = styled.div`
   
   a{
     text-decoration: none;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: 'sidebar mainContent' 'sidebar mainContent';
+    flex-direction: row;
+    width: 210mm !important;
+    height: 297mm !important;
   }
 
   @media print {
@@ -57,6 +59,18 @@ const MainContent = styled.main`
   flex: 2;
   padding: .5rem;
   order: 1;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  .filler{
+    display: none;
+  }
+  @media only screen and (min-width: 768px){
+    .filler{
+      height: 174px;
+      padding: 10px;
+    }
+  }
 `;
 
 const App: React.FC = () => {
@@ -78,6 +92,7 @@ const App: React.FC = () => {
                 jobTitle={activeData.jobTitle}
             />
             <MainContent>
+                <div className={'filler'}/>
                 <Experiences experiences={activeData.experiences} />
                 <Educations educations={activeData.educations} />
                 <Activities activities={activeData.activities}/>

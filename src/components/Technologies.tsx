@@ -4,13 +4,8 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHammer} from "@fortawesome/free-solid-svg-icons";
 
-interface Technology {
-    technologyName: string;
-    value: number;
-}
-
 interface TechnologiesProps {
-    technologies: Technology[];
+    technologies: string[];
 }
 
 const TechnologiesContainer = styled.div`
@@ -31,16 +26,13 @@ const TechnologyItem = styled.div`
 
 const TechnologyName = styled.span``;
 
-
-
 const Technologies: React.FC<TechnologiesProps> = ({ technologies }) => {
     return (
         <TechnologiesContainer>
             <TechnologiesTitle>Technical Skills <FontAwesomeIcon icon={faHammer} /></TechnologiesTitle>
             {technologies.map((technology, index) => (
                 <TechnologyItem key={index}>
-                    <TechnologyName>{technology.technologyName}</TechnologyName>
-                    {/*<TechnologyValue>{technology.value}/10</TechnologyValue>*/}
+                    <TechnologyName>{technology}</TechnologyName>
                 </TechnologyItem>
             ))}
         </TechnologiesContainer>

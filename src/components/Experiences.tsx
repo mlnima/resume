@@ -17,7 +17,7 @@ interface ExperiencesProps {
 }
 
 const ExperiencesContainer = styled.div`
-  margin: .5rem 1rem;
+  margin: .5rem 0;
 `;
 
 const ExperiencesTitle = styled.h3`
@@ -37,7 +37,7 @@ const ExperienceHeader = styled.div`
 `;
 
 const CompanyName = styled.span`
- font-size: .9rem;
+  font-size: .9rem;
   font-weight: bold;
 `;
 const ExperienceTitle = styled.span`

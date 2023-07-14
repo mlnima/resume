@@ -3,12 +3,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import {faAddressCard, faAt, faGlobe, faLocationDot, faMobileScreenButton} from "@fortawesome/free-solid-svg-icons";
+import {faAddressCard, faAt, faGlobe, faMobileScreenButton} from "@fortawesome/free-solid-svg-icons";
+import {faGithubAlt} from "@fortawesome/free-brands-svg-icons"
 
 interface InfoProps {
     email: string;
     mobile: string;
-    location: string;
 }
 
 const InfoContainer = styled.div`
@@ -39,7 +39,7 @@ const InfoLink = styled.a`
     
 `;
 
-const Info: React.FC<InfoProps> = ({ email, mobile, location }) => {
+const Info: React.FC<InfoProps> = ({ email, mobile }) => {
     return (
         <InfoContainer>
             <InfoTitle>Contact Information <FontAwesomeIcon icon={faAddressCard} /></InfoTitle>
@@ -58,10 +58,13 @@ const Info: React.FC<InfoProps> = ({ email, mobile, location }) => {
                 <InfoLink href={'https://www.02dev.com/'}>www.02dev.com</InfoLink>
             </InfoItem>
             <InfoItem>
-                <FontAwesomeIcon icon={faLocationDot} />
-                <InfoText>{location}</InfoText>
+                <FontAwesomeIcon icon={faGithubAlt} />
+                <InfoLink href={'https://github.com/mlnima'}>github.com/mlnima</InfoLink>
             </InfoItem>
-
+            {/*<InfoItem>*/}
+            {/*    <FontAwesomeIcon icon={faLocationDot} />*/}
+            {/*    <InfoText>{location}</InfoText>*/}
+            {/*</InfoItem>*/}
         </InfoContainer>
     );
 };

@@ -27,7 +27,7 @@ const ProfileImg = styled.img`
 const ProfileImage: React.FC= () => {
     return (
         <ProfileImageContainer>
-            <ProfileImg src={ProfileImageFile} alt="Profile" />
+            <ProfileImg  src={process.env.PUBLIC_URL + "/profile.jpg"} alt="Profile" />
         </ProfileImageContainer>
     );
 };

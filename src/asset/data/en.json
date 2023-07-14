@@ -21,98 +21,28 @@
     }
   ],
   "technologies": [
-    {
-      "technologyName": "Modern JavaScript",
-      "value": 9
-    },
-    {
-      "technologyName": "Typescript",
-      "value": 7
-    },
-    {
-      "technologyName": "ReactJS",
-      "value": 9
-    },
-    {
-      "technologyName": "Redux/Redux Toolkit",
-      "value": 9
-    },
-    {
-      "technologyName": "NextJS",
-      "value": 9
-    },
-    {
-      "technologyName": "Unit Testing",
-      "value": 7
-    },
-    {
-      "technologyName": "Git",
-      "value": 8
-    },
-    {
-      "technologyName": "NodeJS",
-      "value": 8
-    },
-    {
-      "technologyName": "SQL",
-      "value": 5
-    },
-    {
-      "technologyName": "MongoDB",
-      "value": 8
-    },
-    {
-      "technologyName": "HTML5",
-      "value": 9
-    },
-    {
-      "technologyName": "CSS",
-      "value": 9
-    },
-    {
-      "technologyName": "Nginx",
-      "value": 5
-    },
-    {
-      "technologyName": "MonoRepo",
-      "value": 7
-    },
-    {
-      "technologyName": "TurboRepo",
-      "value": 7
-    }, {
-      "technologyName": "WordPress",
-      "value": 4
-    },
-    {
-      "technologyName": "Python",
-      "value": 5
-    },
-    {
-      "technologyName": "Statistic",
-      "value": 5
-    },
-    {
-      "technologyName": "ETL",
-      "value": 5
-    },
-    {
-      "technologyName": "Modeling",
-      "value": 5
-    },
-    {
-      "technologyName": "Data Visualization",
-      "value": 5
-    }
+    "JavaScript",
+    "Typescript",
+    "ReactJS",
+    "Redux",
+    "NextJS",
+    "Git",
+    "NodeJS",
+    "SQL",
+    "MongoDB",
+    "HTML5",
+    "CSS",
+    "Sass",
+    "Nginx",
+    "MonoRepo",
+    "TurboRepo",
+    "WordPress",
+    "Python",
+    "Statistic",
+    "Machine Learning",
+    "NLP"
   ],
   "experiences": [
-    {
-      "title": "Content Moderator",
-      "companyName": "Majorel",
-      "location": "Berlin - Germany",
-      "duration": "Dec. 2022 - Apr. 2023",
-      "description": "Managed and streamlined social media content for platforms such as Facebook and Instagram, ensuring adherence to community guidelines."
-    },
     {
       "title": "Full Stack Web Developer",
       "companyName": "ReactShell",
@@ -182,7 +112,7 @@
   "info": {
     "email": "mmlnima@gmail.com",
     "mobile": "+49 176 63888953",
-    "location": "Prenzlauer Berg, 10405, Berlin"
+    "website": "https://www.02dev.com/"
   },
   "activities": [
     {
