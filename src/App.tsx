@@ -67,6 +67,7 @@ const MainContent = styled.main`
   }
   @media only screen and (min-width: 768px){
     .filler{
+      display: block;
       height: 174px;
       padding: 10px;
     }
