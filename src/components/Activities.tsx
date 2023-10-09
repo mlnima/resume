@@ -45,6 +45,7 @@ const ActivitiesUrl = styled.a`
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: black;
 `;
 
 

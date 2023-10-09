@@ -33,10 +33,10 @@ const InfoIcon = styled.span`
   margin-right: 0.5rem;
 `;
 
-const InfoText = styled.span``;
+// const InfoText = styled.span``;
 
 const InfoLink = styled.a`
-    
+    color: black;
 `;
 
 const Info: React.FC<InfoProps> = ({ email, mobile }) => {
@@ -47,11 +47,13 @@ const Info: React.FC<InfoProps> = ({ email, mobile }) => {
                 <InfoIcon>
                     <FontAwesomeIcon icon={faAt} />
                 </InfoIcon>
-                <InfoText>{email}</InfoText>
+                {/*<InfoText>{email}</InfoText>*/}
+                <InfoLink href={`mailto:${email}`}>{email}</InfoLink>
             </InfoItem>
             <InfoItem>
                 <FontAwesomeIcon icon={faMobileScreenButton} />
-                <InfoText>{mobile}</InfoText>
+                {/*<InfoText>{mobile}</InfoText>*/}
+                <InfoLink href={`tel:${mobile}`}>{mobile}</InfoLink>
             </InfoItem>
             <InfoItem>
                 <FontAwesomeIcon icon={faGlobe} />
@@ -60,6 +62,10 @@ const Info: React.FC<InfoProps> = ({ email, mobile }) => {
             <InfoItem>
                 <FontAwesomeIcon icon={faGithubAlt} />
                 <InfoLink href={'https://github.com/mlnima'}>github.com/mlnima</InfoLink>
+            </InfoItem>
+            <InfoItem>
+                <span>🤗</span>
+                <InfoLink href={'https://huggingface.co/mlnima'}>huggingface.co/mlnima</InfoLink>
             </InfoItem>
             {/*<InfoItem>*/}
             {/*    <FontAwesomeIcon icon={faLocationDot} />*/}
