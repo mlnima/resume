@@ -1,4 +1,3 @@
-// src/App.tsx
 import React, {useMemo, useState} from 'react';
 import styled from 'styled-components';
 import enData from './asset/data/en.json';
@@ -7,8 +6,8 @@ import Experiences from './components/Experiences';
 import Educations from './components/Educations';
 import Sidebar from './components/Sidebar';
 import LanguageSelector from "./components/LanguageSelector";
-// import ProfileImage from "./components/ProfileImage";
 import Activities from "./components/Activities";
+import Summary from "./components/Summary";
 
 
 const AppContainer = styled.div`
@@ -37,6 +36,7 @@ const AppContainer = styled.div`
     grid-template-columns: 250px 1fr;
     grid-template-areas: 'sidebar mainContent' 'sidebar mainContent';
     flex-direction: row;
+    align-items: flex-start;
     width: 210mm !important;
     height: 297mm !important;
   }
@@ -65,13 +65,13 @@ const MainContent = styled.main`
     display: none;
   }
   
-  @media only screen and (min-width: 768px){
-    .filler{
-      display: block;
-      height: 174px;
-      padding: 10px;
-    }
-  }
+  //@media only screen and (min-width: 768px){
+  //  .filler{
+  //    display: block;
+  //    height: 174px;
+  //    padding: 10px;
+  //  }
+  //}
   
   @media print {
     display: block;  // Change the layout to block for printing
@@ -105,7 +105,8 @@ const App: React.FC = () => {
                 jobTitle={activeData.jobTitle}
             />
             <MainContent>
-                <div className={'filler'}/>
+                {/*<div className={'filler'}/>*/}
+                <Summary/>
                 <Experiences experiences={activeData.experiences} />
                 <Educations educations={activeData.educations} />
                 <Activities activities={activeData.activities}/>

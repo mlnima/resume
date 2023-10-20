@@ -24,10 +24,12 @@ const SidebarContainer = styled.aside`
   grid-area: sidebar;
   flex: 1;
   background-color: var(--web-mode-tertiary-background-color);
-  padding: .5rem ;
+  padding:  .5rem ;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 `;
 
 
