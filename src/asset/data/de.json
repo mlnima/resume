@@ -2,6 +2,7 @@
 
   "name": "Nima Malayeri",
   "jobTitle": "Full Stack Webentwickler",
+  "summary": "Ich bin ein Full-Stack-Webentwickler mit Erfahrung in einer Reihe von Technologien, einschließlich JavaScript, TypeScript, ReactJS und NextJS. Durch meine Arbeit in sowohl technischen als auch kundenorientierten Rollen habe ich meine Fähigkeit verfeinert, kundenorientierte Lösungen zu liefern, insbesondere bei der Entwicklung von CMS-Plattformen. Meine jüngste Ausbildung in Datenanalyse hat mein Fähigkeiten-Portfolio erweitert und umfasst nun auch Machine Learning, SQL und Python. Ich bin auch aktiv in der Entwicklergemeinschaft engagiert, manage eine ReactJS-fokussierte Facebook-Gruppe und erstelle lehrreiche Programmierinhalte auf YouTube.",
   "languages": [
 
     {
@@ -132,5 +133,12 @@
       "title": "Erstellen von Videospielinhalten",
       "url": "https://www.youtube.com/@02game"
     }
-  ]
+  ],
+  "technicalSkillsTitle": "Technische Fähigkeiten",
+  "languagesTitle": "Sprachen",
+  "contactInformationTitle": "Kontaktinformationen",
+  "activitiesTitle": "Aktivitäten",
+  "educationsTitle": "Ausbildungen",
+  "experiencesTitle": "Erfahrungen",
+  "summaryTitle": "Zusammenfassung"
 }

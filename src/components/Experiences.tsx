@@ -10,10 +10,12 @@ interface Experience {
     location: string;
     duration: string;
     description: string;
+
 }
 
 interface ExperiencesProps {
     experiences: Experience[];
+    experiencesTitle:string
 }
 
 const ExperiencesContainer = styled.div`
@@ -62,10 +64,10 @@ const ExperienceDescription = styled.div`
   font-size: .8rem;
 `;
 
-const Experiences: React.FC<ExperiencesProps> = ({ experiences }) => {
+const Experiences: React.FC<ExperiencesProps> = ({ experiences,experiencesTitle }) => {
     return (
         <ExperiencesContainer>
-            <ExperiencesTitle>Experiences <FontAwesomeIcon icon={faBriefcase} /></ExperiencesTitle>
+            <ExperiencesTitle>{experiencesTitle} <FontAwesomeIcon icon={faBriefcase} /></ExperiencesTitle>
             {experiences.map((experience, index) => (
                 <ExperienceItem key={index}>
                     <ExperienceHeader>

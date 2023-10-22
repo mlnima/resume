@@ -11,7 +11,7 @@ interface InfoProps {
         url: string,
 
     }[];
-
+    activitiesTitle :string
 }
 
 const ActivitiesContainer = styled.div`
@@ -49,10 +49,10 @@ const ActivitiesUrl = styled.a`
 `;
 
 
-const Activities: React.FC<InfoProps> = ({activities}) => {
+const Activities: React.FC<InfoProps> = ({activities,activitiesTitle}) => {
     return (
         <ActivitiesContainer>
-            <InfoTitle>Activities <FontAwesomeIcon icon={faChartLine}/></InfoTitle>
+            <InfoTitle>{activitiesTitle} <FontAwesomeIcon icon={faChartLine}/></InfoTitle>
             {activities.map((activity) => {
                 return (
                     <ActivitiesItem>

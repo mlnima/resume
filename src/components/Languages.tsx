@@ -7,10 +7,12 @@ import {faEarthEurope} from "@fortawesome/free-solid-svg-icons";
 interface Language {
     languageName: string;
     level: string;
+
 }
 
 interface LanguagesProps {
     languages: Language[];
+    languagesTitle: string;
 }
 
 const LanguagesContainer = styled.div`
@@ -34,10 +36,10 @@ const LanguageName = styled.span``;
 
 const LanguageLevel = styled.span``;
 
-const Languages: React.FC<LanguagesProps> = ({ languages }) => {
+const Languages: React.FC<LanguagesProps> = ({ languages,languagesTitle }) => {
     return (
         <LanguagesContainer>
-            <LanguagesTitle>Languages <FontAwesomeIcon icon={faEarthEurope} /></LanguagesTitle>
+            <LanguagesTitle>{languagesTitle} <FontAwesomeIcon icon={faEarthEurope} /></LanguagesTitle>
             {languages.map((language, index) => (
                 <LanguageItem key={index}>
                     <LanguageName>{language.languageName}</LanguageName>

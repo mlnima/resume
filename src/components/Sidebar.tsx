@@ -17,6 +17,9 @@ interface SidebarProps {
         email: string;
         mobile: string;
     };
+    contactInformationTitle:string,
+    languagesTitle:string,
+    technicalSkillsTitle:string
 }
 
 const SidebarContainer = styled.aside`
@@ -33,14 +36,24 @@ const SidebarContainer = styled.aside`
 `;
 
 
-const Sidebar: React.FC<SidebarProps> = ({ languages, technologies, info,name,jobTitle }) => {
+const Sidebar: React.FC<SidebarProps> =
+    ({
+         languages,
+         technologies,
+         info,
+         name,
+         jobTitle,
+         contactInformationTitle,
+         languagesTitle,
+         technicalSkillsTitle
+    }) => {
     return (
         <SidebarContainer>
             <ProfileImage />
             <Header name={name} jobTitle={jobTitle} />
-            <Technologies technologies={technologies} />
-            <Languages languages={languages} />
-            <Info email={info.email} mobile={info.mobile}  />
+            <Technologies technologies={technologies} technicalSkillsTitle={technicalSkillsTitle}/>
+            <Languages languages={languages} languagesTitle={languagesTitle} />
+            <Info email={info.email} mobile={info.mobile} contactInformationTitle={contactInformationTitle}  />
         </SidebarContainer>
     );
 };

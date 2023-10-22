@@ -103,13 +103,16 @@ const App: React.FC = () => {
                 info={activeData.info}
                 name={activeData.name}
                 jobTitle={activeData.jobTitle}
+                contactInformationTitle={activeData.contactInformationTitle}
+                languagesTitle={activeData.languagesTitle}
+                technicalSkillsTitle={activeData.technicalSkillsTitle}
             />
             <MainContent>
                 {/*<div className={'filler'}/>*/}
-                <Summary/>
-                <Experiences experiences={activeData.experiences} />
-                <Educations educations={activeData.educations} />
-                <Activities activities={activeData.activities}/>
+                <Summary summaryData={activeData.summary} summaryTitle={activeData.summaryTitle}/>
+                <Experiences experiences={activeData.experiences} experiencesTitle={activeData.experiencesTitle} />
+                <Educations educations={activeData.educations} educationsTitle={activeData.educationsTitle} />
+                <Activities activities={activeData.activities} activitiesTitle={activeData.activitiesTitle}/>
             </MainContent>
 
         </AppContainer>

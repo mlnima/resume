@@ -13,6 +13,7 @@ interface Education {
 
 interface EducationsProps {
     educations: Education[];
+    educationsTitle: string;
 }
 
 const EducationsContainer = styled.div`
@@ -65,10 +66,10 @@ const EducationField = styled.div`
   }
 `;
 
-const Educations: React.FC<EducationsProps> = ({ educations }) => {
+const Educations: React.FC<EducationsProps> = ({ educations,educationsTitle }) => {
     return (
         <EducationsContainer>
-            <EducationsTitle>Educations <FontAwesomeIcon icon={faUserGraduate} /></EducationsTitle>
+            <EducationsTitle>{educationsTitle} <FontAwesomeIcon icon={faUserGraduate} /></EducationsTitle>
             {educations.map((education, index) => (
                 <EducationItem key={index}>
                     <EducationHeader>

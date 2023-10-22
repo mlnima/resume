@@ -9,6 +9,7 @@ import {faGithubAlt} from "@fortawesome/free-brands-svg-icons"
 interface InfoProps {
     email: string;
     mobile: string;
+    contactInformationTitle:string
 }
 
 const InfoContainer = styled.div`
@@ -39,10 +40,10 @@ const InfoLink = styled.a`
     color: black;
 `;
 
-const Info: React.FC<InfoProps> = ({ email, mobile }) => {
+const Info: React.FC<InfoProps> = ({ email, mobile,contactInformationTitle }) => {
     return (
         <InfoContainer>
-            <InfoTitle>Contact Information <FontAwesomeIcon icon={faAddressCard} /></InfoTitle>
+            <InfoTitle>{contactInformationTitle}<FontAwesomeIcon icon={faAddressCard} /></InfoTitle>
             <InfoItem>
                 <InfoIcon>
                     <FontAwesomeIcon icon={faAt} />

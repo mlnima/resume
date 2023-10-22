@@ -6,6 +6,7 @@ import {faHammer} from "@fortawesome/free-solid-svg-icons";
 
 interface TechnologiesProps {
     technologies: string[];
+    technicalSkillsTitle:string
 }
 
 const TechnologiesContainer = styled.div`
@@ -26,10 +27,10 @@ const TechnologyItem = styled.div`
 
 const TechnologyName = styled.span``;
 
-const Technologies: React.FC<TechnologiesProps> = ({ technologies }) => {
+const Technologies: React.FC<TechnologiesProps> = ({ technologies,technicalSkillsTitle }) => {
     return (
         <TechnologiesContainer>
-            <TechnologiesTitle>Technical Skills <FontAwesomeIcon icon={faHammer} /></TechnologiesTitle>
+            <TechnologiesTitle>{technicalSkillsTitle}<FontAwesomeIcon icon={faHammer} /></TechnologiesTitle>
             {technologies.map((technology, index) => (
                 <TechnologyItem key={index}>
                     <TechnologyName>{technology}</TechnologyName>
