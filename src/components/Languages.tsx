@@ -18,11 +18,13 @@ interface LanguagesProps {
 const LanguagesContainer = styled.div`
   width: 100%;
   margin: 0;
+
 `;
 
 const LanguagesTitle = styled.h3`
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+
 `;
 
 const LanguageItem = styled.div`
@@ -30,6 +32,7 @@ const LanguageItem = styled.div`
   justify-content: space-between;
   margin-bottom: 0.25rem;
   width: 100%;
+
 `;
 
 const LanguageName = styled.span``;

@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar';
 import LanguageSelector from "./components/LanguageSelector";
 import Activities from "./components/Activities";
 import Summary from "./components/Summary";
+import PrintButton from "./components/PrintButton";
 
 
 const AppContainer = styled.div`
@@ -23,12 +24,12 @@ const AppContainer = styled.div`
   grid-template-areas: 'sidebar ' 'mainContent';
   color: var(--web-mode-primary-text-color);
   background-color: var(--web-mode-primary-background-color);
-  
-  h1,h2,h3,h4,h5,h6{
+
+  h1, h2, h3, h4, h5, h6 {
     color: var(--web-mode-secondary-text-color);
   }
-  
-  a{
+
+  a {
     text-decoration: none;
   }
 
@@ -61,10 +62,11 @@ const MainContent = styled.main`
   overflow: hidden;
   width: 100%;
   box-sizing: border-box;
-  .filler{
+
+  .filler {
     display: none;
   }
-  
+
   //@media only screen and (min-width: 768px){
   //  .filler{
   //    display: block;
@@ -72,13 +74,13 @@ const MainContent = styled.main`
   //    padding: 10px;
   //  }
   //}
-  
+
   @media print {
     display: block;  // Change the layout to block for printing
     width: 100%;
     box-sizing: border-box;
     overflow: initial;
-    .filler{
+    .filler {
       display: block;
       height: 174px;
       padding: 10px;
@@ -87,16 +89,16 @@ const MainContent = styled.main`
 `;
 
 const App: React.FC = () => {
-    const [activeLang,setActiveLang] = useState('en')
+    const [activeLang, setActiveLang] = useState('en')
 
-    const activeData = useMemo(()=>{
+    const activeData = useMemo(() => {
         return activeLang === 'de' ? deData : enData
-    },[activeLang])
+    }, [activeLang])
 
     return (
         <AppContainer className="app-container">
             <LanguageSelector setActiveLang={setActiveLang} activeLang={activeLang}/>
-
+            <PrintButton/>
             <Sidebar
                 languages={activeData.languages}
                 technologies={activeData.technologies}
@@ -110,8 +112,8 @@ const App: React.FC = () => {
             <MainContent>
                 {/*<div className={'filler'}/>*/}
                 <Summary summaryData={activeData.summary} summaryTitle={activeData.summaryTitle}/>
-                <Experiences experiences={activeData.experiences} experiencesTitle={activeData.experiencesTitle} />
-                <Educations educations={activeData.educations} educationsTitle={activeData.educationsTitle} />
+                <Experiences experiences={activeData.experiences} experiencesTitle={activeData.experiencesTitle}/>
+                <Educations educations={activeData.educations} educationsTitle={activeData.educationsTitle}/>
                 <Activities activities={activeData.activities} activitiesTitle={activeData.activitiesTitle}/>
             </MainContent>
 

@@ -8,6 +8,8 @@ const LangDropdown = styled.select`
   position: fixed;
   top: 8px;
   right: 8px;
+  height: 48px;
+  border: .2px solid black ;
 `;
 
 const LangOption = styled.option`
