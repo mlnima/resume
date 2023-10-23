@@ -19,17 +19,17 @@ interface ExperiencesProps {
 }
 
 const ExperiencesContainer = styled.div`
-  margin: .5rem 0;
+  margin: .25rem 0;
 `;
 
 const ExperiencesTitle = styled.h3`
   font-size: 1.2rem;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.25rem 0;
   padding: 0;
 `;
 
 const ExperienceItem = styled.div`
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 `;
 
 const ExperienceHeader = styled.div`

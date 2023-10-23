@@ -15,14 +15,14 @@ interface InfoProps {
 }
 
 const ActivitiesContainer = styled.div`
-  margin: .5rem 0;
+  margin: .25rem 0;
   display: flex;
   flex-direction: column;
 `;
 
 const InfoTitle = styled.h3`
   font-size: 1.2rem;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.25rem 0;
   padding: 0;
 `;
 

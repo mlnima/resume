@@ -1,7 +1,7 @@
 // src/components/ProfileImage.tsx
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
-import ProfileImageFile from '../asset/profile.jpg'
+
 
 
 const ProfileImageContainer = styled.div`
@@ -20,16 +20,47 @@ const ProfileImg = styled.img`
   width: 130px;
   height: 130px;
   object-fit: cover;
- 
+
+`;
+
+const MaximizedProfileImageContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+`;
+
+const MaximizedImg = styled.img`
+  border-radius: 50%;
+  margin: .5rem;
+  max-width: 768px;
+  object-fit: cover;
 `;
 
 
-const ProfileImage: React.FC= () => {
-    return (
-        <ProfileImageContainer>
-            <ProfileImg  src={process.env.PUBLIC_URL + "/profile.jpg"} alt="Profile" />
-        </ProfileImageContainer>
-    );
+const ProfileImage: React.FC = () => {
+    const [isMaximized, setIsMaximized] = useState(false)
+
+
+    if (isMaximized) {
+        return (
+            <MaximizedProfileImageContainer onClick={()=>setIsMaximized(false)}>
+                <MaximizedImg src={process.env.PUBLIC_URL + "/profile.jpg"} alt="Profile" onClick={()=>setIsMaximized(false)}/>
+            </MaximizedProfileImageContainer>
+        )
+    } else {
+        return (
+            <ProfileImageContainer>
+                <ProfileImg src={process.env.PUBLIC_URL + "/profile.jpg"} alt="Profile" onClick={()=>setIsMaximized(true)}/>
+            </ProfileImageContainer>
+        );
+    }
+
 };
 
 export default ProfileImage;

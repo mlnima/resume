@@ -57,7 +57,7 @@ const AppContainer = styled.div`
 const MainContent = styled.main`
   grid-area: mainContent;
   flex: 2;
-  padding: .5rem;
+  padding: .25rem .5rem;
   order: 1;
   overflow: hidden;
   width: 100%;
@@ -80,6 +80,8 @@ const MainContent = styled.main`
     width: 100%;
     box-sizing: border-box;
     overflow: initial;
+    padding-top: 0;
+    margin-top: 0;
     .filler {
       display: block;
       height: 174px;

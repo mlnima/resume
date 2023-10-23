@@ -17,17 +17,17 @@ interface EducationsProps {
 }
 
 const EducationsContainer = styled.div`
-  margin: .5rem 0;
+  margin: .25rem 0;
 `;
 
 const EducationsTitle = styled.h3`
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  margin: 0.25rem 0;
 
 `;
 
 const EducationItem = styled.div`
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 `;
 
 const EducationHeader = styled.div`
