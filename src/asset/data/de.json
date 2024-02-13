@@ -50,7 +50,7 @@
       "companyName": "ReactShell",
       "location": "Berlin - Deutschland",
       "duration": "Nov. 2019 - Feb. 2022",
-      "description": "Erfahrener Full Stack Web Entwickler mit umfangreicher Erfahrung in einem B2B-Unternehmen, spezialisiert auf die Entwicklung von CMS-Plattformen. Nutzung modernster Technologien wie TypeScript, ReactJS, NextJS, Express, MongoDB und Redux für den Aufbau skalierbarer, kundenorientierter Lösungen."
+      "description": "Spezialisiert auf die Entwicklung von CMS-Plattformen. Verwendung von Technologien wie TypeScript, ReactJS, NextJS, Express, MongoDB und Redux zum Erstellen skalierbarer, kundenzentrierter Lösungen"
     },
     {
       "title": "Technischer Support für Mobile Device Games",
@@ -61,17 +61,17 @@
     },
     {
       "title": "Moderator und Marketing",
-      "companyName": "Pro Group (ETV)",
+      "companyName": "Pro Group",
       "location": "Sofia - Bulgarien",
       "duration": "Okt. 2014 - Juli. 2016",
-      "description": "Orchestrierte Werbe- und Marketingkampagnen für VOIP-Dienste und eine Online-Streaming-Plattform für TV-Kanäle, um die Markensichtbarkeit zu erhöhen."
+      "description": "Werbung und Marketing für VOIP-Dienste und eine Online-TV-Kanal-Streaming-Plattform zur Steigerung der Markensichtbarkeit."
     }
   ],
   "educations": [
     {
       "title": "Data Analytics",
       "location": "IronHack",
-      "duration": "Mai 2022 - Aug. 2022",
+      "duration": "2022",
       "fields": [
         "Python",
         "SQL",
@@ -84,9 +84,9 @@
       ]
     },
     {
-      "title": "Web-Entwicklung",
+      "title": "Full Stack Web-Entwicklung",
       "location": "Digital Career Institute",
-      "duration": "Mai 2018 - Mai 2019",
+      "duration": "2019",
       "fields": [
         "JavaScript",
         "ReactJS",
@@ -99,15 +99,12 @@
       ]
     },
     {
-      "title": "Programmierung",
-      "location": "College of Technology Avini",
-      "duration": "Jun. 2006 - Jun. 2008",
+      "title": "Technisches/Berufsdiplom",
+      "location": "Avini",
+      "duration": "2008",
       "fields": [
         "Visual Basic",
-        "HTML",
-        "MS DOS",
-        "Bash",
-        "Computernetzwerke"
+        "HTML"
       ]
     }
   ],

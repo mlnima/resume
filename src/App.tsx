@@ -62,18 +62,22 @@ const MainContent = styled.main`
   overflow: hidden;
   width: 100%;
   box-sizing: border-box;
+  
+  .gap{
+    display: none;
+  }
 
   .filler {
     display: none;
   }
 
-  //@media only screen and (min-width: 768px){
-  //  .filler{
-  //    display: block;
-  //    height: 174px;
-  //    padding: 10px;
-  //  }
-  //}
+  @media only screen and (min-width: 768px){
+    .gap{
+      display: flex;
+      min-height: 174px !important;
+      padding: 8px;
+    }
+  }
 
   @media print {
     display: block;  // Change the layout to block for printing
@@ -100,6 +104,7 @@ const App: React.FC = () => {
     return (
         <AppContainer className="app-container">
             <LanguageSelector setActiveLang={setActiveLang} activeLang={activeLang}/>
+
             <PrintButton/>
             <Sidebar
                 languages={activeData.languages}
@@ -112,11 +117,12 @@ const App: React.FC = () => {
                 technicalSkillsTitle={activeData.technicalSkillsTitle}
             />
             <MainContent>
+                <div className="gap"/>
                 {/*<div className={'filler'}/>*/}
-                <Summary summaryData={activeData.summary} summaryTitle={activeData.summaryTitle}/>
+                {/*<Summary summaryData={activeData.summary} summaryTitle={activeData.summaryTitle}/>*/}
                 <Experiences experiences={activeData.experiences} experiencesTitle={activeData.experiencesTitle}/>
                 <Educations educations={activeData.educations} educationsTitle={activeData.educationsTitle}/>
-                <Activities activities={activeData.activities} activitiesTitle={activeData.activitiesTitle}/>
+                {/*<Activities activities={activeData.activities} activitiesTitle={activeData.activitiesTitle}/>*/}
             </MainContent>
 
         </AppContainer>
