@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUserGraduate} from "@fortawesome/free-solid-svg-icons";
+import {SectionSubTitle, SectionTitle} from "./general/CommonStyledComponents";
 
 interface Education {
     title: string;
@@ -16,18 +17,11 @@ interface EducationsProps {
     educationsTitle: string;
 }
 
-const EducationsContainer = styled.div`
-  margin: 1rem 0;
+const Style = styled.div`
+ 
 `;
 
-const EducationsTitle = styled.h3`
-  margin: 0.25rem 0;
 
-`;
-
-const EducationItem = styled.div`
-  margin-bottom: .5rem;
-`;
 
 const EducationHeader = styled.div`
   display: flex;
@@ -35,9 +29,7 @@ const EducationHeader = styled.div`
   font-weight: bold;
 `;
 
-const EducationTitle = styled.span`
-  color: var(--web-mode-tertiary-text-color);
-`;
+
 
 const EducationDuration = styled.span`
   color: var(--web-mode-tertiary-text-color);
@@ -54,7 +46,7 @@ const EducationFields = styled.div`
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  gap: .1rem .5rem ;
+  gap: .1rem .25rem ;
 `;
 
 const EducationField = styled.div`
@@ -66,23 +58,23 @@ const EducationField = styled.div`
 
 const Educations: React.FC<EducationsProps> = ({ educations,educationsTitle }) => {
     return (
-        <EducationsContainer>
-            <EducationsTitle>{educationsTitle} </EducationsTitle>
+        <Style>
+            <SectionTitle>{educationsTitle} </SectionTitle>
             {educations.map((education, index) => (
-                <EducationItem key={index}>
+                <div key={education.title}>
                     <EducationHeader>
-                        <EducationTitle>{education.title}</EducationTitle>
+                        <SectionSubTitle>{education.title}</SectionSubTitle>
                         <EducationDuration>{education.duration}</EducationDuration>
                     </EducationHeader>
                     <EducationLocation>{education.location}</EducationLocation>
                     <EducationFields>
                         {education.fields.map((field, fieldIndex) => (
-                            <EducationField key={fieldIndex}>{field}</EducationField>
+                            <EducationField key={fieldIndex}> {field}</EducationField>
                         ))}
                     </EducationFields>
-                </EducationItem>
+                </div>
             ))}
-        </EducationsContainer>
+        </Style>
     );
 };
 

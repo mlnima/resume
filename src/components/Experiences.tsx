@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBriefcase} from "@fortawesome/free-solid-svg-icons";
+import {SectionSubTitle, SectionText, SectionTitle} from "./general/CommonStyledComponents";
 
 interface Experience {
     title: string;
@@ -22,10 +23,7 @@ const ExperiencesContainer = styled.div`
   margin: 1rem 0;
 `;
 
-const ExperiencesTitle = styled.h3`
-  margin: 0 0 0.25rem 0;
-  padding: 0;
-`;
+
 
 const ExperienceItem = styled.div`
   margin-bottom: .5rem;
@@ -63,17 +61,17 @@ const ExperienceDescription = styled.div`
 const Experiences: React.FC<ExperiencesProps> = ({ experiences,experiencesTitle }) => {
     return (
         <ExperiencesContainer>
-            <ExperiencesTitle>{experiencesTitle}</ExperiencesTitle>
+            <SectionTitle>{experiencesTitle}</SectionTitle>
             {experiences.map((experience, index) => (
                 <ExperienceItem key={index}>
                     <ExperienceHeader>
-                        <CompanyName>{experience.companyName}</CompanyName>
+                        <SectionSubTitle>{experience.companyName}</SectionSubTitle>
                         <ExperienceDuration>{experience.duration}</ExperienceDuration>
                         <ExperienceTitle>{experience.title}</ExperienceTitle>
 
                     </ExperienceHeader>
                     <ExperienceLocation>{experience.location}</ExperienceLocation>
-                    <ExperienceDescription>{experience.description}</ExperienceDescription>
+                    <SectionText>{experience.description}</SectionText>
                 </ExperienceItem>
             ))}
         </ExperiencesContainer>

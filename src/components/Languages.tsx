@@ -6,10 +6,10 @@ import {faEarthEurope} from "@fortawesome/free-solid-svg-icons";
 import languages from '../asset/data/languages.json'
 import {activeLangTypes} from "../tsTypes";
 import dictionary from '../asset/data/dictionary.json'
+import {SectionTitle} from "./general/CommonStyledComponents";
 interface Language {
     languageName: string;
     level: string;
-
 }
 
 interface LanguagesProps {
@@ -23,10 +23,7 @@ const LanguagesContainer = styled.div`
 
 `;
 
-const LanguagesTitle = styled.h3`
-  margin-bottom: 0.5rem;
 
-`;
 
 const LanguageItem = styled.div`
   display: flex;
@@ -43,7 +40,7 @@ const LanguageLevel = styled.span``;
 const Languages: React.FC<LanguagesProps> = ({ languagesTitle }) => {
     return (
         <LanguagesContainer>
-            <LanguagesTitle>{languagesTitle}</LanguagesTitle>
+            <SectionTitle>{languagesTitle}</SectionTitle>
             {languages.map((language, index) => (
                 <LanguageItem key={index}>
                     <LanguageName>{language.languageName}</LanguageName>

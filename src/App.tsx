@@ -47,8 +47,10 @@ const AppContainer = styled.div`
     grid-template-columns: 250px 1fr;
     grid-template-areas: 'sidebar mainContent' 'sidebar mainContent';
     flex-direction: row;
-    width: 210mm !important;
-    height: 297mm !important;
+    //width: 210mm !important;
+    //height: 297mm !important;
+    width: 215.9mm !important;
+    height: 279.4mm !important;
     .gap{
       display: flex;
       min-height: 174px !important;

@@ -40,6 +40,7 @@ const MaximizedImg = styled.img`
   margin: .5rem;
   max-width: 768px;
   object-fit: cover;
+  
 `;
 
 

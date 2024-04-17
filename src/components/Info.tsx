@@ -6,6 +6,7 @@ import {activeLangTypes} from "../tsTypes";
 import dictionary from '../asset/data/dictionary.json'
 import {faAddressCard, faAt, faGlobe, faMobileScreenButton} from "@fortawesome/free-solid-svg-icons";
 import {faGithubAlt} from "@fortawesome/free-brands-svg-icons"
+import {SectionTitle} from "./general/CommonStyledComponents";
 
 interface InfoProps {
     email: string;
@@ -17,19 +18,15 @@ interface InfoProps {
 
 const InfoContainer = styled.div`
   width: 100%;
-  margin: .5rem;
+  margin: .2rem;
   display: flex;
   flex-direction: column;
-`;
-
-const InfoTitle = styled.h3`
-  margin-bottom: 0.5rem;
 `;
 
 const InfoItem = styled.div`
   display: grid;
   grid-template-columns: 50px 1fr;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 `;
 
 const InfoIcon = styled.span`
@@ -45,7 +42,7 @@ const InfoLink = styled.a`
 const Info: React.FC<InfoProps> = ({ email, mobile,contactInformationTitle,activeLang }) => {
     return (
         <InfoContainer>
-            <InfoTitle>{contactInformationTitle}</InfoTitle>
+            <SectionTitle>{contactInformationTitle}</SectionTitle>
             <InfoItem>
                 <InfoIcon>
                     <FontAwesomeIcon icon={faAt} />
