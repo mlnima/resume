@@ -21,7 +21,6 @@ const ActivitiesContainer = styled.div`
 `;
 
 const InfoTitle = styled.h3`
-  font-size: 1.2rem;
   margin: 0 0 0.25rem 0;
   padding: 0;
 `;
@@ -52,7 +51,7 @@ const ActivitiesUrl = styled.a`
 const Activities: React.FC<InfoProps> = ({activities,activitiesTitle}) => {
     return (
         <ActivitiesContainer>
-            <InfoTitle>{activitiesTitle} <FontAwesomeIcon icon={faChartLine}/></InfoTitle>
+            <InfoTitle>{activitiesTitle}</InfoTitle>
             {activities.map((activity) => {
                 return (
                     <ActivitiesItem>

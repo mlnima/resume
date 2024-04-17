@@ -17,11 +17,10 @@ interface EducationsProps {
 }
 
 const EducationsContainer = styled.div`
-  margin: .25rem 0;
+  margin: 1rem 0;
 `;
 
 const EducationsTitle = styled.h3`
-  font-size: 1.2rem;
   margin: 0.25rem 0;
 
 `;
@@ -41,12 +40,11 @@ const EducationTitle = styled.span`
 `;
 
 const EducationDuration = styled.span`
-  font-size: .9rem;
   color: var(--web-mode-tertiary-text-color);
 `;
 
 const EducationLocation = styled.div`
-  font-size: .9rem;
+
   
 `;
 
@@ -60,7 +58,7 @@ const EducationFields = styled.div`
 `;
 
 const EducationField = styled.div`
-  font-size: .8rem;
+
   &:not(:last-child)::after {
     content: ",";
   }
@@ -69,7 +67,7 @@ const EducationField = styled.div`
 const Educations: React.FC<EducationsProps> = ({ educations,educationsTitle }) => {
     return (
         <EducationsContainer>
-            <EducationsTitle>{educationsTitle} <FontAwesomeIcon icon={faUserGraduate} /></EducationsTitle>
+            <EducationsTitle>{educationsTitle} </EducationsTitle>
             {educations.map((education, index) => (
                 <EducationItem key={index}>
                     <EducationHeader>

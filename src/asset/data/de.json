@@ -1,49 +1,5 @@
 {
-
-  "name": "Nima Malayeri",
-  "jobTitle": "Full Stack Webentwickler",
-  "summary": "Ich bin ein Full-Stack-Webentwickler mit Erfahrung in einer Reihe von Technologien, einschließlich JavaScript, TypeScript, ReactJS und NextJS. Durch meine Arbeit in sowohl technischen als auch kundenorientierten Rollen habe ich meine Fähigkeit verfeinert, kundenorientierte Lösungen zu liefern, insbesondere bei der Entwicklung von CMS-Plattformen. Meine jüngste Ausbildung in Datenanalyse hat mein Fähigkeiten-Portfolio erweitert und umfasst nun auch Machine Learning, SQL und Python. Ich bin auch aktiv in der Entwicklergemeinschaft engagiert, manage eine ReactJS-fokussierte Facebook-Gruppe und erstelle lehrreiche Programmierinhalte auf YouTube.",
-  "languages": [
-
-    {
-      "languageName": "Englisch",
-      "level": "C1"
-    },
-    {
-      "languageName": "Deutsch",
-      "level": "B1"
-    },
-    {
-      "languageName": "Bulgarisch",
-      "level": "B1"
-    },
-    {
-      "languageName": "Persisch",
-      "level": "Muttersprache"
-    }
-  ],
-  "technologies": [
-    "JavaScript",
-    "Typescript",
-    "ReactJS",
-    "Redux",
-    "NextJS",
-    "Git",
-    "NodeJS",
-    "SQL",
-    "MongoDB",
-    "HTML5",
-    "CSS",
-    "Sass",
-    "Nginx",
-    "MonoRepo",
-    "TurboRepo",
-    "WordPress",
-    "Python",
-    "Statistic",
-    "Machine Learning",
-    "NLP"
-  ],
+  "summary":"Hochmotivierter und ergebnisorientierter Webentwickler mit einem breiten Spektrum an Fähigkeiten in Frontend- und Backend-Technologien. Kenntnisse in JavaScript, TypeScript und beliebten Bibliotheken wie React.js zum Erstellen interaktiver und dynamischer Benutzeroberflächen. Verfügt über fundierte Kenntnisse im Datenbankmanagement mit Erfahrung in SQL- und NoSQL-Datenbanken (MongoDB). Gut vertraut mit Versionskontrolle mithilfe von Git und vertraut mit modernen DevOps-Praktiken wie MonoRepo und TurboRepo. Darüber hinaus verfügt er über Erfahrung mit der WordPress-Entwicklung und besitzt ein starkes Fundament in Datenanalyse, Statistik, maschinellem Lernen und natürlicher Sprachverarbeitung (NLP). Bestrebt, dieses umfassende Skillset einzubringen, um zu einem schnelllebigen und innovativen Entwicklungsteam beizutragen.",
   "experiences": [
     {
       "title": "Full Stack Webentwickler",
@@ -51,20 +7,6 @@
       "location": "Berlin - Deutschland",
       "duration": "Nov. 2019 - Feb. 2022",
       "description": "Spezialisiert auf die Entwicklung von CMS-Plattformen. Verwendung von Technologien wie TypeScript, ReactJS, NextJS, Express, MongoDB und Redux zum Erstellen skalierbarer, kundenzentrierter Lösungen"
-    },
-    {
-      "title": "Technischer Support für Mobile Device Games",
-      "companyName": "Telus International",
-      "location": "Sofia - Bulgarien",
-      "duration": "Juli 2016 - Okt. 2017",
-      "description": "Effiziente Problembehandlung und Moderationsservices für renommierte mobile Spiele, darunter Clash of Clans und Clash Royale."
-    },
-    {
-      "title": "Moderator und Marketing",
-      "companyName": "Pro Group",
-      "location": "Sofia - Bulgarien",
-      "duration": "Okt. 2014 - Juli. 2016",
-      "description": "Werbung und Marketing für VOIP-Dienste und eine Online-TV-Kanal-Streaming-Plattform zur Steigerung der Markensichtbarkeit."
     }
   ],
   "educations": [
@@ -99,12 +41,11 @@
       ]
     },
     {
-      "title": "Technisches/Berufsdiplom",
+      "title": "Computertechnisches/Berufsdiplom",
       "location": "Avini",
       "duration": "2008",
       "fields": [
-        "Visual Basic",
-        "HTML"
+
       ]
     }
   ],

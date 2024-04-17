@@ -6,20 +6,19 @@ import Technologies from './Technologies';
 import Info from './Info';
 import ProfileImage from "./ProfileImage";
 import Header from "./Header";
+import {activeLangTypes} from "../tsTypes";
 
 
 interface SidebarProps {
-    name:string;
-    jobTitle:string;
-    languages: any[];
-    technologies: any[];
+
     info: {
         email: string;
         mobile: string;
     };
     contactInformationTitle:string,
     languagesTitle:string,
-    technicalSkillsTitle:string
+    technicalSkillsTitle:string,
+    activeLang: activeLangTypes
 }
 
 const SidebarContainer = styled.aside`
@@ -33,27 +32,26 @@ const SidebarContainer = styled.aside`
   flex-direction: column;
   align-items: center;
   height: 100%;
+  gap: 0;
 `;
 
 
 const Sidebar: React.FC<SidebarProps> =
     ({
-         languages,
-         technologies,
          info,
-         name,
-         jobTitle,
          contactInformationTitle,
          languagesTitle,
-         technicalSkillsTitle
+         technicalSkillsTitle,
+         activeLang
     }) => {
     return (
         <SidebarContainer>
             <ProfileImage />
-            <Header name={name} jobTitle={jobTitle} />
-            <Technologies technologies={technologies} technicalSkillsTitle={technicalSkillsTitle}/>
-            <Languages languages={languages} languagesTitle={languagesTitle} />
-            <Info email={info.email} mobile={info.mobile} contactInformationTitle={contactInformationTitle}  />
+            <Header activeLang={activeLang}/>
+            <Info  activeLang={activeLang} email={info.email} mobile={info.mobile} contactInformationTitle={contactInformationTitle}  />
+            <Technologies  activeLang={activeLang} technicalSkillsTitle={technicalSkillsTitle}/>
+            <Languages  activeLang={activeLang} languagesTitle={languagesTitle} />
+
         </SidebarContainer>
     );
 };

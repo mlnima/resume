@@ -56,7 +56,7 @@ const ProfileImage: React.FC = () => {
     } else {
         return (
             <ProfileImageContainer>
-                <ProfileImg src={process.env.PUBLIC_URL + "/profile.jpg"} alt="Profile" onClick={()=>setIsMaximized(true)}/>
+                <ProfileImg src={process.env.PUBLIC_URL + "/profile.jpg"} alt="Profile" onClick={()=>null}/>
             </ProfileImageContainer>
         );
     }

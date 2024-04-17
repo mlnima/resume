@@ -1,48 +1,6 @@
 {
-  "name": "Nima Malayeri",
-  "jobTitle": "Full Stack Web Developer",
-  "summary": "I am a Full Stack Web Developer with experience in a range of technologies including JavaScript, TypeScript, ReactJS, and NextJS. Having worked in both technical and customer-facing roles, I have honed my ability to deliver client-centered solutions, particularly in the development of CMS platforms. My recent education in Data Analytics has further broadened my skill set, embracing Machine Learning, SQL, and Python. I am also actively engaged in the developer community, managing a ReactJS-focused Facebook group, and creating educational programming content on YouTube.\n",
-  "languages": [
 
-    {
-      "languageName": "English",
-      "level": "C1"
-    },
-    {
-      "languageName": "German",
-      "level": "B1"
-    },
-    {
-      "languageName": "Bulgarian",
-      "level": "B1"
-    },
-    {
-      "languageName": "Persian",
-      "level": "Native"
-    }
-  ],
-  "technologies": [
-    "JavaScript",
-    "Typescript",
-    "ReactJS",
-    "Redux",
-    "NextJS",
-    "Git",
-    "NodeJS",
-    "SQL",
-    "MongoDB",
-    "HTML5",
-    "CSS",
-    "Sass",
-    "Nginx",
-    "MonoRepo",
-    "TurboRepo",
-    "WordPress",
-    "Python",
-    "Statistic",
-    "Machine Learning",
-    "NLP"
-  ],
+  "summary": "Highly motivated and results-oriented web developer with a diverse skillset encompassing both front-end and back-end technologies. Proficient in JavaScript, TypeScript, and popular libraries like React.js for building interactive and dynamic user interfaces. Possesses strong database management skills with experience in SQL and NoSQL databases (MongoDB). Well-versed in version control using Git and familiar with modern DevOps practices like MonoRepo and TurboRepo. Additionally, holds experience with WordPress development and possesses a strong foundation in data analysis, statistics, machine learning, and natural language processing (NLP). Eager to leverage this comprehensive skillset to contribute to a fast-paced and innovative development team.",
   "experiences": [
     {
       "title": "Full Stack Web Developer",
@@ -50,20 +8,6 @@
       "location": "Berlin - Germany",
       "duration": "Nov. 2019 - Feb. 2022",
       "description": "Specializing in developing CMS platforms. Using technologies such as TypeScript, ReactJS, NextJS, Express, MongoDB, and Redux to build scalable, client-centered solutions"
-    },
-    {
-      "title": "Technical Support for Mobile Device Games",
-      "companyName": "Telus International",
-      "location": "Sofia - Bulgaria",
-      "duration": "Jul. 2016 - Oct. 2017",
-      "description": "Provided efficient troubleshooting and moderation services for high-profile mobile games, including Clash of Clans and Clash Royale."
-    },
-    {
-      "title": "Moderator and Marketing",
-      "companyName": "Pro Group",
-      "location": "Sofia - Bulgaria",
-      "duration": "Oct. 2014 - Jul. 2016",
-      "description": "Advertising and marketing for VOIP services and an online TV channel streaming platform, boosting brand visibility."
     }
   ],
   "educations": [
@@ -98,7 +42,7 @@
       ]
     },
     {
-      "title": "Technical/Vocational diploma",
+      "title": "Computer Technical/Professional Diploma",
       "location": "Avini",
       "duration": "2008",
       "fields": [

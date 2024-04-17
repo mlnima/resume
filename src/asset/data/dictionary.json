@@ -1,0 +1,23 @@
+{
+  "Name": "Nima Malayeri",
+  "Summary": {
+    "en": "Summary",
+    "de": "Zusammenfassung"
+  },
+  "SummaryData": {
+    "en": "Motivated web developer skilled in front-end and back-end technologies. Knows JavaScript, TypeScript, React.js for interactive interfaces. Good with SQL, NoSQL (MongoDB) databases, and Git for version control. Also familiar with DevOps practices like MonoRepo and TurboRepo. Has worked on WordPress and understands data analysis, statistics, machine learning, and NLP. Ready to join a dynamic development team.",
+    "de": "Motivierter Webentwickler mit Fähigkeiten in Frontend- und Backend-Technologien. Kennt sich aus mit JavaScript, TypeScript und React.js für interaktive Oberflächen. Gute Kenntnisse in SQL, NoSQL-Datenbanken (MongoDB) und Git für Versionskontrolle. Ebenso vertraut mit DevOps-Praktiken wie MonoRepo und TurboRepo. Hat Erfahrung mit WordPress und versteht Datenanalyse, Statistik, maschinelles Lernen und NLP. Bereit, einem dynamischen Entwicklungsteam beizutreten."
+  },
+  "Languages": {
+    "en": "Languages",
+    "de": "Sprachen"
+  },
+  "Technologies": {
+    "en": "Technologies",
+    "de": "Technologien"
+  },
+  "JobTitle": {
+    "en": "Full Stack Web Developer",
+    "de": "Full Stack Webentwickler"
+  }
+}

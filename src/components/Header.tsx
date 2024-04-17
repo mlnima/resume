@@ -1,10 +1,10 @@
-// src/components/Header.tsx
 import React from 'react';
 import styled from 'styled-components';
+import dictionary from '../asset/data/dictionary.json'
+import {activeLangTypes} from "../tsTypes";
 
 interface HeaderProps {
-    name: string;
-    jobTitle: string;
+    activeLang: activeLangTypes
 }
 
 const HeaderContainer = styled.div`
@@ -24,16 +24,15 @@ const Name = styled.h1`
 `;
 
 const JobTitle = styled.h2`
-  font-size: .9rem;
   margin: 0;
  
 `;
 
-const Header: React.FC<HeaderProps> = ({ name, jobTitle }) => {
+const Header: React.FC<HeaderProps> = ({  activeLang }) => {
     return (
         <HeaderContainer>
-            <Name>{name}</Name>
-            <JobTitle>{jobTitle}</JobTitle>
+            <Name>{dictionary.Name}</Name>
+            <JobTitle>{dictionary.JobTitle[activeLang]}</JobTitle>
         </HeaderContainer>
     );
 };

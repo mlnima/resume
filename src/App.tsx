@@ -9,7 +9,8 @@ import LanguageSelector from "./components/LanguageSelector";
 import Activities from "./components/Activities";
 import Summary from "./components/Summary";
 import PrintButton from "./components/PrintButton";
-
+import Technologies from "./components/Technologies";
+import {activeLangTypes} from "./tsTypes";
 
 const AppContainer = styled.div`
   max-width: 100%;
@@ -48,6 +49,11 @@ const AppContainer = styled.div`
     flex-direction: row;
     width: 210mm !important;
     height: 297mm !important;
+    .gap{
+      display: flex;
+      min-height: 174px !important;
+      padding: 14px;
+    }
     #language-selector {
       display: none;
     }
@@ -57,11 +63,12 @@ const AppContainer = styled.div`
 const MainContent = styled.main`
   grid-area: mainContent;
   flex: 2;
-  padding: .25rem .5rem;
+  padding: .5rem .5rem;
   order: 1;
   overflow: hidden;
   width: 100%;
   box-sizing: border-box;
+  
   
   .gap{
     display: none;
@@ -75,7 +82,7 @@ const MainContent = styled.main`
     .gap{
       display: flex;
       min-height: 174px !important;
-      padding: 8px;
+      padding: 14px;
     }
   }
 
@@ -95,7 +102,7 @@ const MainContent = styled.main`
 `;
 
 const App: React.FC = () => {
-    const [activeLang, setActiveLang] = useState('en')
+    const [activeLang, setActiveLang] = useState<activeLangTypes>('en')
 
     const activeData = useMemo(() => {
         return activeLang === 'de' ? deData : enData
@@ -103,23 +110,22 @@ const App: React.FC = () => {
 
     return (
         <AppContainer className="app-container">
+
             <LanguageSelector setActiveLang={setActiveLang} activeLang={activeLang}/>
 
             <PrintButton/>
             <Sidebar
-                languages={activeData.languages}
-                technologies={activeData.technologies}
+                activeLang={activeLang}
                 info={activeData.info}
-                name={activeData.name}
-                jobTitle={activeData.jobTitle}
                 contactInformationTitle={activeData.contactInformationTitle}
                 languagesTitle={activeData.languagesTitle}
                 technicalSkillsTitle={activeData.technicalSkillsTitle}
             />
             <MainContent>
                 <div className="gap"/>
-                {/*<div className={'filler'}/>*/}
-                {/*<Summary summaryData={activeData.summary} summaryTitle={activeData.summaryTitle}/>*/}
+                <div className={'filler'}/>
+                <Summary activeLang={activeLang}/>
+                {/*<Technologies technologies={activeData.technologies} technicalSkillsTitle={activeData.technicalSkillsTitle}/>*/}
                 <Experiences experiences={activeData.experiences} experiencesTitle={activeData.experiencesTitle}/>
                 <Educations educations={activeData.educations} educationsTitle={activeData.educationsTitle}/>
                 {/*<Activities activities={activeData.activities} activitiesTitle={activeData.activitiesTitle}/>*/}

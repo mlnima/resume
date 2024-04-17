@@ -19,11 +19,10 @@ interface ExperiencesProps {
 }
 
 const ExperiencesContainer = styled.div`
-  margin: .25rem 0;
+  margin: 1rem 0;
 `;
 
 const ExperiencesTitle = styled.h3`
-  font-size: 1.2rem;
   margin: 0 0 0.25rem 0;
   padding: 0;
 `;
@@ -39,35 +38,32 @@ const ExperienceHeader = styled.div`
 `;
 
 const CompanyName = styled.span`
-  font-size: .9rem;
+
   font-weight: bold;
 `;
 const ExperienceTitle = styled.span`
- font-size:.9rem;
+
 `;
 
 const ExperienceDuration = styled.span`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: .9rem;
   font-weight: bold;
 `;
 
 const ExperienceLocation = styled.div`
-  font-size: .9rem;
-
+    
 `;
 
 const ExperienceDescription = styled.div`
   margin-top: 0.1rem;
-  font-size: .8rem;
 `;
 
 const Experiences: React.FC<ExperiencesProps> = ({ experiences,experiencesTitle }) => {
     return (
         <ExperiencesContainer>
-            <ExperiencesTitle>{experiencesTitle} <FontAwesomeIcon icon={faBriefcase} /></ExperiencesTitle>
+            <ExperiencesTitle>{experiencesTitle}</ExperiencesTitle>
             {experiences.map((experience, index) => (
                 <ExperienceItem key={index}>
                     <ExperienceHeader>

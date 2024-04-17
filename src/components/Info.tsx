@@ -2,7 +2,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import {activeLangTypes} from "../tsTypes";
+import dictionary from '../asset/data/dictionary.json'
 import {faAddressCard, faAt, faGlobe, faMobileScreenButton} from "@fortawesome/free-solid-svg-icons";
 import {faGithubAlt} from "@fortawesome/free-brands-svg-icons"
 
@@ -10,6 +11,8 @@ interface InfoProps {
     email: string;
     mobile: string;
     contactInformationTitle:string
+    activeLang: activeLangTypes
+
 }
 
 const InfoContainer = styled.div`
@@ -20,7 +23,6 @@ const InfoContainer = styled.div`
 `;
 
 const InfoTitle = styled.h3`
-  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 `;
 
@@ -40,10 +42,10 @@ const InfoLink = styled.a`
     color: black;
 `;
 
-const Info: React.FC<InfoProps> = ({ email, mobile,contactInformationTitle }) => {
+const Info: React.FC<InfoProps> = ({ email, mobile,contactInformationTitle,activeLang }) => {
     return (
         <InfoContainer>
-            <InfoTitle>{contactInformationTitle}<FontAwesomeIcon icon={faAddressCard} /></InfoTitle>
+            <InfoTitle>{contactInformationTitle}</InfoTitle>
             <InfoItem>
                 <InfoIcon>
                     <FontAwesomeIcon icon={faAt} />

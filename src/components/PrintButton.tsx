@@ -9,7 +9,6 @@ const PrinterButton = styled.button`
   border: .2px solid black ;
   background-color: white;
   color: black;
-  font-size: .9rem;
   border-radius: 8px;
   position: fixed;
   top: 8px;

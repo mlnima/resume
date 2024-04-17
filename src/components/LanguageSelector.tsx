@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {Dispatch, SetStateAction} from 'react';
 import styled from 'styled-components';
+import {activeLangTypes} from "../tsTypes";
 
 const LangDropdown = styled.select`
-  font-size: .9rem;
   border-radius: 8px;
   padding: 0.5rem;
   position: fixed;
@@ -13,17 +13,17 @@ const LangDropdown = styled.select`
 `;
 
 const LangOption = styled.option`
-  font-size: .9rem;
+
 `;
 interface IProps{
-    setActiveLang:(value:string)=>void
-    activeLang:string
+    setActiveLang:Dispatch<SetStateAction<activeLangTypes>>
+    activeLang:activeLangTypes
 }
 const LanguageSelector: React.FC<IProps> = ({setActiveLang,activeLang}) => {
 
     const handleLangChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const newLang = event.target.value;
-        setActiveLang(newLang as string)
+        setActiveLang(newLang as activeLangTypes)
     };
 
     return (
