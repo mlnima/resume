@@ -1,0 +1,56 @@
+[
+  {
+    "title": {
+     "en": "Data Analytics",
+     "de": "Data Analytics"
+    },
+    "location": "IronHack - Berlin Germany",
+    "duration": "2022",
+    "fields": [
+      "Python",
+      "SQL",
+      "Machine-Learning",
+      "NLP",
+      "Scikit Learn",
+      "Business Intelligence",
+      "Tableau",
+      "Web Scraping"
+    ]
+  },
+  {
+    "title": {
+      "en":"Full Stack Web Development",
+      "de": "Full Stack Web-Entwicklung"
+    },
+    "location": "Digital Career Institute - Berlin Germany",
+    "duration": "2019",
+    "fields": [
+      "JavaScript",
+      "ReactJS",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "Git",
+      "Sass",
+      "Bash Script"
+    ]
+  },
+  {
+    "title":{
+      "en":"Computer Technical/Professional Diploma",
+      "de": "Computertechnisches/Berufsdiplom"
+    },
+    "location": "Avini - Tehran Iran",
+    "duration": "2008",
+    "fields": [
+      "Visual Basic",
+      "MS-DOS",
+      "Microsoft Access",
+      "Microsoft Excel",
+      "AutoCAD",
+      "Binary",
+      "Linux",
+      "Basic HTML"
+    ]
+  }
+]

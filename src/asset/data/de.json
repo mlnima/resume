@@ -1,54 +1,4 @@
 {
-  "summary":"Hochmotivierter und ergebnisorientierter Webentwickler mit einem breiten Spektrum an Fähigkeiten in Frontend- und Backend-Technologien. Kenntnisse in JavaScript, TypeScript und beliebten Bibliotheken wie React.js zum Erstellen interaktiver und dynamischer Benutzeroberflächen. Verfügt über fundierte Kenntnisse im Datenbankmanagement mit Erfahrung in SQL- und NoSQL-Datenbanken (MongoDB). Gut vertraut mit Versionskontrolle mithilfe von Git und vertraut mit modernen DevOps-Praktiken wie MonoRepo und TurboRepo. Darüber hinaus verfügt er über Erfahrung mit der WordPress-Entwicklung und besitzt ein starkes Fundament in Datenanalyse, Statistik, maschinellem Lernen und natürlicher Sprachverarbeitung (NLP). Bestrebt, dieses umfassende Skillset einzubringen, um zu einem schnelllebigen und innovativen Entwicklungsteam beizutragen.",
-  "experiences": [
-    {
-      "title": "Full Stack Webentwickler",
-      "companyName": "ReactShell",
-      "location": "Berlin - Deutschland",
-      "duration": "Nov. 2019 - Feb. 2022",
-      "description": "Spezialisiert auf die Entwicklung von CMS-Plattformen. Verwendung von Technologien wie TypeScript, ReactJS, NextJS, Express, MongoDB und Redux zum Erstellen skalierbarer, kundenzentrierter Lösungen"
-    }
-  ],
-  "educations": [
-    {
-      "title": "Data Analytics",
-      "location": "IronHack",
-      "duration": "2022",
-      "fields": [
-        "Python",
-        "SQL",
-        "Machine Learning",
-        "Natural Language Processing (NLP)",
-        "Scikit Learn",
-        "Business Intelligence",
-        "Tableau",
-        "Web Scraping"
-      ]
-    },
-    {
-      "title": "Full Stack Web-Entwicklung",
-      "location": "Digital Career Institute",
-      "duration": "2019",
-      "fields": [
-        "JavaScript",
-        "ReactJS",
-        "NodeJS",
-        "ExpressJS",
-        "MongoDB",
-        "Git",
-        "Sass",
-        "Bash Script"
-      ]
-    },
-    {
-      "title": "Computertechnisches/Berufsdiplom",
-      "location": "Avini",
-      "duration": "2008",
-      "fields": [
-
-      ]
-    }
-  ],
   "info": {
     "email": "mmlnima@gmail.com",
     "mobile": "+49 176 63888953",
@@ -77,6 +27,6 @@
   "contactInformationTitle": "Kontaktinformationen",
   "activitiesTitle": "Aktivitäten",
   "educationsTitle": "Ausbildungen",
-  "experiencesTitle": "Erfahrungen",
+
   "summaryTitle": "Zusammenfassung"
 }

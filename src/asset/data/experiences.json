@@ -1,0 +1,15 @@
+[
+  {
+    "title": {
+      "en": "Full Stack Web Developer",
+      "de": "Full Stack Webentwickler"
+    },
+    "companyName": "ReactShell",
+    "location": "Berlin - Germany",
+    "duration": "Nov. 2019 - Feb. 2022",
+    "description": {
+      "en": "Specializing in developing CMS platforms. Using technologies such as TypeScript, ReactJS, NextJS, Express, MongoDB, and Redux to build scalable, client-centered solutions",
+      "de": "Spezialisiert auf die Entwicklung von CMS-Plattformen. Verwendung von Technologien wie TypeScript, ReactJS, NextJS, Express, MongoDB und Redux zum Erstellen skalierbarer, kundenzentrierter Lösungen"
+    }
+  }
+]

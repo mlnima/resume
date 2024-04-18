@@ -1,29 +1,18 @@
 // src/components/Experiences.tsx
 import React from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faBriefcase} from "@fortawesome/free-solid-svg-icons";
+import experiences from '../asset/data/experiences.json';
+import dictionary from '../asset/data/dictionary.json';
 import {SectionSubTitle, SectionText, SectionTitle} from "./general/CommonStyledComponents";
-
-interface Experience {
-    title: string;
-    companyName: string;
-    location: string;
-    duration: string;
-    description: string;
-
-}
+import {activeLangTypes} from "../tsTypes";
 
 interface ExperiencesProps {
-    experiences: Experience[];
-    experiencesTitle:string
+    activeLang: activeLangTypes
 }
 
 const ExperiencesContainer = styled.div`
   margin: 1rem 0;
 `;
-
-
 
 const ExperienceItem = styled.div`
   margin-bottom: .5rem;
@@ -35,10 +24,6 @@ const ExperienceHeader = styled.div`
   color: var(--web-mode-tertiary-text-color);
 `;
 
-const CompanyName = styled.span`
-
-  font-weight: bold;
-`;
 const ExperienceTitle = styled.span`
 
 `;
@@ -50,28 +35,19 @@ const ExperienceDuration = styled.span`
   font-weight: bold;
 `;
 
-const ExperienceLocation = styled.div`
-    
-`;
-
-const ExperienceDescription = styled.div`
-  margin-top: 0.1rem;
-`;
-
-const Experiences: React.FC<ExperiencesProps> = ({ experiences,experiencesTitle }) => {
+const Experiences: React.FC<ExperiencesProps> = ({ activeLang }) => {
     return (
         <ExperiencesContainer>
-            <SectionTitle>{experiencesTitle}</SectionTitle>
+            <SectionTitle>{dictionary.experiences[activeLang]}</SectionTitle>
             {experiences.map((experience, index) => (
                 <ExperienceItem key={index}>
                     <ExperienceHeader>
                         <SectionSubTitle>{experience.companyName}</SectionSubTitle>
                         <ExperienceDuration>{experience.duration}</ExperienceDuration>
-                        <ExperienceTitle>{experience.title}</ExperienceTitle>
-
+                        <ExperienceTitle>{experience.title[activeLang]}</ExperienceTitle>
                     </ExperienceHeader>
-                    <ExperienceLocation>{experience.location}</ExperienceLocation>
-                    <SectionText>{experience.description}</SectionText>
+                    <div>{experience.location}</div>
+                    <SectionText>{experience.description[activeLang]}</SectionText>
                 </ExperienceItem>
             ))}
         </ExperiencesContainer>

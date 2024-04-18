@@ -114,7 +114,6 @@ const App: React.FC = () => {
         <AppContainer className="app-container">
 
             <LanguageSelector setActiveLang={setActiveLang} activeLang={activeLang}/>
-
             <PrintButton/>
             <Sidebar
                 activeLang={activeLang}
@@ -124,13 +123,13 @@ const App: React.FC = () => {
                 technicalSkillsTitle={activeData.technicalSkillsTitle}
             />
             <MainContent>
-                <div className="gap"/>
-                <div className={'filler'}/>
+                {/*<div className="gap"/>*/}
+                {/*<div className={'filler'}/>*/}
                 <Summary activeLang={activeLang}/>
                 {/*<Technologies technologies={activeData.technologies} technicalSkillsTitle={activeData.technicalSkillsTitle}/>*/}
-                <Experiences experiences={activeData.experiences} experiencesTitle={activeData.experiencesTitle}/>
-                <Educations educations={activeData.educations} educationsTitle={activeData.educationsTitle}/>
-                {/*<Activities activities={activeData.activities} activitiesTitle={activeData.activitiesTitle}/>*/}
+                <Experiences activeLang={activeLang}/>
+                <Educations activeLang={activeLang}/>
+                <Activities activeLang={activeLang}/>
             </MainContent>
 
         </AppContainer>

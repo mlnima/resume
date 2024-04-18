@@ -16,26 +16,31 @@ const TechnologiesContainer = styled.div`
   width: 100%;
 `;
 
-const TechnologyItem = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.15rem;
+const TechnologyItems = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+
 `;
 
-const TechnologyName = styled.span``;
+const TechnologyName = styled.span`
+
+`;
 
 const Technologies: React.FC<TechnologiesProps> = ({ technicalSkillsTitle,activeLang }) => {
-    console.log(`technologies=> `,technologies)
     return (
         <TechnologiesContainer>
             <SectionTitle>
                 {technicalSkillsTitle}
             </SectionTitle>
+            <TechnologyItems>
+
+
             {technologies.map((technology, index) => (
-                <TechnologyItem key={index}>
-                    <TechnologyName>{technology}{index !== technologies.length - 1 ? ', ' : ''}</TechnologyName>
-                </TechnologyItem>
+                <TechnologyName key={technology}>
+                    {technology}
+                </TechnologyName>
             ))}
+            </TechnologyItems>
         </TechnologiesContainer>
     );
 };

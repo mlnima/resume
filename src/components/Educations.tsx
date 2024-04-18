@@ -1,26 +1,19 @@
-// src/components/Educations.tsx
 import React from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faUserGraduate} from "@fortawesome/free-solid-svg-icons";
+import educations from '../asset/data/educations.json';
+import dictionary from '../asset/data/dictionary.json';
 import {SectionSubTitle, SectionTitle} from "./general/CommonStyledComponents";
-
-interface Education {
-    title: string;
-    location: string;
-    duration: string;
-    fields: string[];
-}
+import {activeLangTypes} from "../tsTypes";
 
 interface EducationsProps {
-    educations: Education[];
-    educationsTitle: string;
+    activeLang: activeLangTypes
 }
 
 const Style = styled.div`
- 
+ .educationItem{
+   margin: .5rem 0;
+ }
 `;
-
 
 
 const EducationHeader = styled.div`
@@ -29,41 +22,38 @@ const EducationHeader = styled.div`
   font-weight: bold;
 `;
 
-
-
 const EducationDuration = styled.span`
   color: var(--web-mode-tertiary-text-color);
 `;
 
 const EducationLocation = styled.div`
-
-  
+    font-weight: bold;
 `;
 
 const EducationFields = styled.div`
   margin-top: .2rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  gap: .1rem .25rem ;
+  //gap: .1rem .25rem ;
 `;
 
 const EducationField = styled.div`
 
-  &:not(:last-child)::after {
-    content: ",";
-  }
+  
+
 `;
 
-const Educations: React.FC<EducationsProps> = ({ educations,educationsTitle }) => {
+const Educations: React.FC<EducationsProps> = ({ activeLang }) => {
     return (
         <Style>
-            <SectionTitle>{educationsTitle} </SectionTitle>
+            <SectionTitle>{dictionary.educations[activeLang]} </SectionTitle>
             {educations.map((education, index) => (
-                <div key={education.title}>
+                <div className={'educationItem'} key={education.title[activeLang]}>
                     <EducationHeader>
-                        <SectionSubTitle>{education.title}</SectionSubTitle>
+                        <SectionSubTitle>{education.title[activeLang]}</SectionSubTitle>
                         <EducationDuration>{education.duration}</EducationDuration>
                     </EducationHeader>
                     <EducationLocation>{education.location}</EducationLocation>

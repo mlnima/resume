@@ -1,28 +1,19 @@
 // src/components/Info.tsx
 import React from 'react';
 import styled from 'styled-components';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-
-import {faChartLine} from "@fortawesome/free-solid-svg-icons";
+import activities from '../asset/data/activities.json';
+import dictionary from '../asset/data/dictionary.json';
+import {activeLangTypes} from "../tsTypes";
+import {SectionTitle,SectionText} from "./general/CommonStyledComponents";
 
 interface InfoProps {
-    activities: {
-        title: string,
-        url: string,
-
-    }[];
-    activitiesTitle :string
+    activeLang: activeLangTypes
 }
 
 const ActivitiesContainer = styled.div`
   margin: .25rem 0;
   display: flex;
   flex-direction: column;
-`;
-
-const InfoTitle = styled.h3`
-  margin: 0 0 0.25rem 0;
-  padding: 0;
 `;
 
 const ActivitiesItem = styled.div`
@@ -48,14 +39,14 @@ const ActivitiesUrl = styled.a`
 `;
 
 
-const Activities: React.FC<InfoProps> = ({activities,activitiesTitle}) => {
+const Activities: React.FC<InfoProps> = ({activeLang}) => {
     return (
         <ActivitiesContainer>
-            <InfoTitle>{activitiesTitle}</InfoTitle>
+            <SectionTitle>{dictionary.activities[activeLang]}</SectionTitle>
             {activities.map((activity) => {
                 return (
                     <ActivitiesItem>
-                        <ActivitiesName>{activity.title}</ActivitiesName>
+                        <SectionText>{activity.title[activeLang]}</SectionText>
                         <ActivitiesUrl href={activity.url}>{activity.url}</ActivitiesUrl>
                     </ActivitiesItem>
                 )

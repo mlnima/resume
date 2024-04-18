@@ -1,55 +1,4 @@
 {
-
-  "summary": "Highly motivated and results-oriented web developer with a diverse skillset encompassing both front-end and back-end technologies. Proficient in JavaScript, TypeScript, and popular libraries like React.js for building interactive and dynamic user interfaces. Possesses strong database management skills with experience in SQL and NoSQL databases (MongoDB). Well-versed in version control using Git and familiar with modern DevOps practices like MonoRepo and TurboRepo. Additionally, holds experience with WordPress development and possesses a strong foundation in data analysis, statistics, machine learning, and natural language processing (NLP). Eager to leverage this comprehensive skillset to contribute to a fast-paced and innovative development team.",
-  "experiences": [
-    {
-      "title": "Full Stack Web Developer",
-      "companyName": "ReactShell",
-      "location": "Berlin - Germany",
-      "duration": "Nov. 2019 - Feb. 2022",
-      "description": "Specializing in developing CMS platforms. Using technologies such as TypeScript, ReactJS, NextJS, Express, MongoDB, and Redux to build scalable, client-centered solutions"
-    }
-  ],
-  "educations": [
-    {
-      "title": "Data Analytics",
-      "location": "IronHack",
-      "duration": "2022",
-      "fields": [
-        "Python",
-        "SQL",
-        "Machine Learning",
-        "Natural Language Processing (NLP)",
-        "Scikit Learn",
-        "Business Intelligence",
-        "Tableau",
-        "Web Scraping"
-      ]
-    },
-    {
-      "title": "Full Stack Web Development",
-      "location": "Digital Career Institute",
-      "duration": "2019",
-      "fields": [
-        "JavaScript",
-        "ReactJS",
-        "NodeJS",
-        "ExpressJS",
-        "MongoDB",
-        "Git",
-        "Sass",
-        "Bash Script"
-      ]
-    },
-    {
-      "title": "Computer Technical/Professional Diploma",
-      "location": "Avini",
-      "duration": "2008",
-      "fields": [
-
-      ]
-    }
-  ],
   "info": {
     "email": "mmlnima@gmail.com",
     "mobile": "+49 176 63888953",
@@ -78,6 +27,6 @@
   "contactInformationTitle": "Contact Information",
   "activitiesTitle": "Activities",
   "educationsTitle": "Educations",
-  "experiencesTitle": "Experiences",
+
   "summaryTitle": "Summary"
 }
