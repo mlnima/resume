@@ -10,16 +10,16 @@ const ProfileImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 130px;
+  //height: 130px;
   overflow: hidden;
 `;
 
 const ProfileImg = styled.img`
-  border-radius: 50%;
+  border-radius: .375rem;
   margin: .5rem;
   width: 130px;
-  height: 130px;
-  object-fit: cover;
+  //height: 130px;
+  //object-fit: cover;
 
 `;
 
@@ -57,7 +57,7 @@ const ProfileImage: React.FC = () => {
     } else {
         return (
             <ProfileImageContainer>
-                <ProfileImg src={process.env.PUBLIC_URL + "/profile.jpg"} alt="Profile" onClick={()=>null}/>
+                <ProfileImg src={process.env.PUBLIC_URL + "/profile.jpg"} alt="Profile" onClick={()=>setIsMaximized(true)}/>
             </ProfileImageContainer>
         );
     }

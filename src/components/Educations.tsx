@@ -33,7 +33,7 @@ const EducationLocation = styled.div`
 const EducationFields = styled.div`
   margin-top: .2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;

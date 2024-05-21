@@ -55,18 +55,18 @@ const Info: React.FC<InfoProps> = ({ email, mobile,contactInformationTitle,activ
                 {/*<InfoText>{mobile}</InfoText>*/}
                 <InfoLink href={`tel:${mobile}`}>{mobile}</InfoLink>
             </InfoItem>
-            <InfoItem>
-                <FontAwesomeIcon icon={faGlobe} />
-                <InfoLink href={'https://www.02dev.com/'}>www.02dev.com</InfoLink>
-            </InfoItem>
+            {/*<InfoItem>*/}
+            {/*    <FontAwesomeIcon icon={faGlobe} />*/}
+            {/*    <InfoLink href={'https://www.02dev.com/'}>www.02dev.com</InfoLink>*/}
+            {/*</InfoItem>*/}
             <InfoItem>
                 <FontAwesomeIcon icon={faGithubAlt} />
                 <InfoLink href={'https://github.com/mlnima'}>github.com/mlnima</InfoLink>
             </InfoItem>
-            <InfoItem>
-                <span>🤗</span>
-                <InfoLink href={'https://huggingface.co/mlnima'}>huggingface.co/mlnima</InfoLink>
-            </InfoItem>
+            {/*<InfoItem>*/}
+            {/*    <span>🤗</span>*/}
+            {/*    <InfoLink href={'https://huggingface.co/mlnima'}>huggingface.co/mlnima</InfoLink>*/}
+            {/*</InfoItem>*/}
             {/*<InfoItem>*/}
             {/*    <FontAwesomeIcon icon={faLocationDot} />*/}
             {/*    <InfoText>{location}</InfoText>*/}

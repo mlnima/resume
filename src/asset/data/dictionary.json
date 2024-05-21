@@ -21,8 +21,8 @@
     "de": "Technologien"
   },
   "JobTitle": {
-    "en": "Full Stack Web Developer",
-    "de": "Full Stack Webentwickler"
+    "en": "Software Engineer",
+    "de": "Softwareentwickler"
   },
   "experiences": {
     "en": "Experiences",
@@ -31,5 +31,13 @@
   "educations": {
     "en": "Educations",
     "de": "Ausbildungen"
+  },
+  "German": {
+    "en": "German",
+    "de": "Deutsch"
+  },
+  "English": {
+    "en": "English",
+    "de": "Englisch"
   }
 }

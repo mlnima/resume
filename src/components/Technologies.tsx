@@ -17,8 +17,11 @@ const TechnologiesContainer = styled.div`
 `;
 
 const TechnologyItems = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  //display: grid;
+  //grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 `;
 

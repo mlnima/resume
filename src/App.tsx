@@ -4,13 +4,17 @@ import enData from './asset/data/en.json';
 import deData from './asset/data/de.json';
 import Experiences from './components/Experiences';
 import Educations from './components/Educations';
-import Sidebar from './components/Sidebar';
+// import Sidebar from './components/Sidebar';
 import LanguageSelector from "./components/LanguageSelector";
 import Activities from "./components/Activities";
 import Summary from "./components/Summary";
 import PrintButton from "./components/PrintButton";
 import Technologies from "./components/Technologies";
 import {activeLangTypes} from "./tsTypes";
+import ProfileImage from "./components/ProfileImage";
+import Header from "./components/Header";
+import Info from "./components/Info";
+import Languages from "./components/Languages";
 
 const AppContainer = styled.div`
   max-width: 100%;
@@ -51,10 +55,9 @@ const AppContainer = styled.div`
     //height: 297mm !important;
     width: 215.9mm !important;
     height: 279.4mm !important;
-    .gap{
+    .gap {
       display: flex;
-      min-height: 174px !important;
-      padding: 14px;
+      min-height: 170px !important;
     }
     #language-selector {
       display: none;
@@ -62,6 +65,18 @@ const AppContainer = styled.div`
   }
 `;
 
+const SidebarContainer = styled.aside`
+  grid-area: sidebar;
+  flex: 1;
+  background-color: var(--web-mode-tertiary-background-color);
+  padding: .5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  gap: 1.5rem;
+`
 const MainContent = styled.main`
   grid-area: mainContent;
   flex: 2;
@@ -70,21 +85,23 @@ const MainContent = styled.main`
   overflow: hidden;
   width: 100%;
   box-sizing: border-box;
-  
-  
-  .gap{
-    display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+
+  .gap {
+    //display: none;
   }
 
   .filler {
     display: none;
   }
 
-  @media only screen and (min-width: 768px){
-    .gap{
+  @media only screen and (min-width: 768px) {
+    .gap {
       display: flex;
-      min-height: 174px !important;
-      padding: 14px;
+      min-height: 145px !important;
     }
   }
 
@@ -115,21 +132,27 @@ const App: React.FC = () => {
 
             <LanguageSelector setActiveLang={setActiveLang} activeLang={activeLang}/>
             <PrintButton/>
-            <Sidebar
-                activeLang={activeLang}
-                info={activeData.info}
-                contactInformationTitle={activeData.contactInformationTitle}
-                languagesTitle={activeData.languagesTitle}
-                technicalSkillsTitle={activeData.technicalSkillsTitle}
-            />
+
+            <SidebarContainer>
+                <ProfileImage/>
+                <Header activeLang={activeLang}/>
+                <Info activeLang={activeLang}
+                      email={activeData.info.email}
+                      mobile={activeData.info.mobile}
+                      contactInformationTitle={activeData.contactInformationTitle}/>
+                <Technologies activeLang={activeLang} technicalSkillsTitle={activeData.technicalSkillsTitle}/>
+                <Languages activeLang={activeLang} languagesTitle={activeData.languagesTitle}/>
+
+            </SidebarContainer>
+
             <MainContent>
-                {/*<div className="gap"/>*/}
+                <div className="gap"/>
                 {/*<div className={'filler'}/>*/}
                 <Summary activeLang={activeLang}/>
                 {/*<Technologies technologies={activeData.technologies} technicalSkillsTitle={activeData.technicalSkillsTitle}/>*/}
-                <Experiences activeLang={activeLang}/>
+                {/*<Experiences activeLang={activeLang}/>*/}
                 <Educations activeLang={activeLang}/>
-                <Activities activeLang={activeLang}/>
+                {/*<Activities activeLang={activeLang}/>*/}
             </MainContent>
 
         </AppContainer>

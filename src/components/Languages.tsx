@@ -7,6 +7,7 @@ import languages from '../asset/data/languages.json'
 import {activeLangTypes} from "../tsTypes";
 import dictionary from '../asset/data/dictionary.json'
 import {SectionTitle} from "./general/CommonStyledComponents";
+
 interface Language {
     languageName: string;
     level: string;
@@ -37,13 +38,14 @@ const LanguageName = styled.span``;
 
 const LanguageLevel = styled.span``;
 
-const Languages: React.FC<LanguagesProps> = ({ languagesTitle }) => {
+const Languages: React.FC<LanguagesProps> = ({ languagesTitle,activeLang }) => {
     return (
         <LanguagesContainer>
             <SectionTitle>{languagesTitle}</SectionTitle>
             {languages.map((language, index) => (
                 <LanguageItem key={index}>
-                    <LanguageName>{language.languageName}</LanguageName>
+                 {/*//@ts-ignore*/}
+                    <LanguageName>{dictionary?.[language.languageName]?.[activeLang]}</LanguageName>
                     <LanguageLevel>{language.level}</LanguageLevel>
                 </LanguageItem>
             ))}
