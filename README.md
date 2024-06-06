@@ -14,7 +14,7 @@ A simple, mobile-friendly resume builder application built with React, TypeScrip
 - Easily customizable JSON data
 - Deployed on GitHub Pages
 
-## Technologies
+## Skills
 
 - React
 - TypeScript

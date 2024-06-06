@@ -5,7 +5,8 @@ import {activeLangTypes} from "../tsTypes";
 import {SectionText, SectionTitle} from "./general/CommonStyledComponents";
 
 const Style = styled.div`
-  margin: 1rem 0;
+  //margin: 1rem 0;
+
   h3 {
     margin: 0 0 0.25rem 0;
     padding: 0;

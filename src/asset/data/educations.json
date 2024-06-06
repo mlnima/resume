@@ -4,7 +4,8 @@
      "en": "Data Analytics",
      "de": "Data Analytics"
     },
-    "location": "IronHack - Berlin Germany",
+    "place": "IronHack",
+    "location": "Berlin",
     "duration": "2022",
     "fields": [
       "Python",
@@ -22,7 +23,8 @@
       "en":"Full Stack Web Development",
       "de": "Full Stack Web-Entwicklung"
     },
-    "location": "Digital Career Institute - Berlin Germany",
+    "place": "Digital Career Institute",
+    "location": "Berlin",
     "duration": "2019",
     "fields": [
       "JavaScript",
@@ -40,7 +42,8 @@
       "en":"Computer Technical/Professional Diploma",
       "de": "Computertechnisches/Berufsdiplom"
     },
-    "location": "Avini - Tehran Iran",
+    "place": "Avini",
+    "location": "Tehran Iran",
     "duration": "2008",
     "fields": [
       "Visual Basic",

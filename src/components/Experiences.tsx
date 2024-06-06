@@ -3,8 +3,10 @@ import React from 'react';
 import styled from 'styled-components';
 import experiences from '../asset/data/experiences.json';
 import dictionary from '../asset/data/dictionary.json';
-import {SectionSubTitle, SectionText, SectionTitle} from "./general/CommonStyledComponents";
+import {InfoIcon, SectionSubTitle, SectionText, SectionTitle} from "./general/CommonStyledComponents";
 import {activeLangTypes} from "../tsTypes";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCalendarDays, faLocationDot} from "@fortawesome/free-solid-svg-icons";
 
 interface ExperiencesProps {
     activeLang: activeLangTypes
@@ -35,6 +37,12 @@ const ExperienceDuration = styled.span`
   font-weight: bold;
 `;
 
+const LocationContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+`
+
 const Experiences: React.FC<ExperiencesProps> = ({ activeLang }) => {
     return (
         <ExperiencesContainer>
@@ -43,10 +51,21 @@ const Experiences: React.FC<ExperiencesProps> = ({ activeLang }) => {
                 <ExperienceItem key={index}>
                     <ExperienceHeader>
                         <SectionSubTitle>{experience.companyName}</SectionSubTitle>
-                        <ExperienceDuration>{experience.duration}</ExperienceDuration>
+                        <ExperienceDuration>
+
+                            <InfoIcon>
+                                <FontAwesomeIcon icon={faCalendarDays}/>
+                            </InfoIcon>
+                            {experience.duration}
+                        </ExperienceDuration>
                         <ExperienceTitle>{experience.title[activeLang]}</ExperienceTitle>
                     </ExperienceHeader>
-                    <div>{experience.location}</div>
+                    <LocationContainer>
+                        <InfoIcon>
+                            <FontAwesomeIcon icon={faLocationDot}/>
+                        </InfoIcon>
+                        {experience.location}
+                    </LocationContainer>
                     <SectionText>{experience.description[activeLang]}</SectionText>
                 </ExperienceItem>
             ))}

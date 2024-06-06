@@ -1,24 +1,42 @@
-[
-  "JavaScript",
-  "Typescript",
-  "ReactJS",
-  "Redux",
-  "NextJS",
-  "Git",
-  "NodeJS",
-  "SQL",
-  "MongoDB",
-  "HTML5",
-  "CSS",
-  "Sass",
-  "Nginx",
-  "MonoRepo",
-  "TurboRepo",
-  "WordPress",
-  "Python",
-  "Statistic",
-  "Machine-Learning",
-  "NLP",
-  "Data-Visualization",
-  "Statistical-Analysis"
-]
+{
+  "web development": [
+    "HTML5",
+    "CSS",
+    "JavaScript",
+    "Typescript",
+    "ReactJS",
+    "Redux",
+    "NextJS",
+    "Git",
+    "NodeJS",
+    "SQL",
+    "MongoDB",
+    "WordPress",
+    "Python",
+    "Git"
+  ],
+  "data analytics": [
+    "Statistic",
+    "Machine-Learning",
+    "Data-Visualization",
+    "Statistical-Analysis"
+  ],
+  "devops": [
+    "Nginx",
+    "Apache",
+    "MonoRepo",
+    "TurboRepo",
+    "cPanel",
+    "Plesk",
+    "Load balancing"
+  ],
+  "AI": [
+    "Stable Diffusion",
+    "Fine-tune SD/SD-XL models",
+    "Opensource LLM",
+    "Computer Vision",
+    "Opensource audio models",
+    "DeepFake",
+    "Voice-cloning"
+  ]
+}

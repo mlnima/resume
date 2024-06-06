@@ -12,11 +12,8 @@ const HeaderContainer = styled.div`
   grid-area: header;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
 `;
 
 
@@ -29,4 +26,4 @@ const Header: React.FC<HeaderProps> = ({  activeLang }) => {
     );
 };
 
-export default Header;
+// export default Header;

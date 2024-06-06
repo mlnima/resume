@@ -6,32 +6,32 @@ import Experiences from './components/Experiences';
 import Educations from './components/Educations';
 // import Sidebar from './components/Sidebar';
 import LanguageSelector from "./components/LanguageSelector";
-import Activities from "./components/Activities";
 import Summary from "./components/Summary";
 import PrintButton from "./components/PrintButton";
-import Technologies from "./components/Technologies";
+import Skills from "./components/Skills";
 import {activeLangTypes} from "./tsTypes";
-import ProfileImage from "./components/ProfileImage";
-import Header from "./components/Header";
 import Info from "./components/Info";
 import Languages from "./components/Languages";
 
+
 const AppContainer = styled.div`
   max-width: 100%;
-  height: auto;
+  height: 100%;
   margin: 0 auto;
-  padding: 0;
   font-family: 'Roboto', sans-serif;
+  font-size: .85rem;
+  padding: 2rem;
   box-sizing: border-box;
   box-shadow: 0 1px 4px rgba(255, 255, 255, 0.15);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: 'sidebar ' 'mainContent';
-  color: var(--web-mode-primary-text-color);
+  grid-template-areas: 'header' 'sidebar' 'mainContent';
+  //grid-row-gap: 1rem;
+  grid-column-gap: 3rem;
   background-color: var(--web-mode-primary-background-color);
 
   h1, h2, h3, h4, h5, h6 {
-    color: var(--web-mode-secondary-text-color);
+    color: var(--web-mode-primary-text-color);
   }
 
   a {
@@ -39,8 +39,8 @@ const AppContainer = styled.div`
   }
 
   @media (min-width: 768px) {
-    grid-template-columns: 250px 1fr;
-    grid-template-areas: 'sidebar mainContent' 'sidebar mainContent';
+    grid-template-columns:  1fr 300px;
+    grid-template-areas:'header header' 'mainContent sidebar' 'mainContent sidebar';
     flex-direction: row;
     align-items: flex-start;
     width: 210mm !important;
@@ -48,62 +48,40 @@ const AppContainer = styled.div`
   }
 
   @media print {
-    grid-template-columns: 250px 1fr;
-    grid-template-areas: 'sidebar mainContent' 'sidebar mainContent';
+    grid-template-columns: 1fr 300px ;
+    grid-template-areas: 'header header' 'mainContent sidebar' 'mainContent sidebar';
     flex-direction: row;
-    //width: 210mm !important;
-    //height: 297mm !important;
     width: 215.9mm !important;
     height: 279.4mm !important;
-    .gap {
-      display: flex;
-      min-height: 170px !important;
-    }
+
     #language-selector {
       display: none;
     }
   }
 `;
 
+const HeaderContainer = styled.header`
+  grid-area: header;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+`
+
 const SidebarContainer = styled.aside`
   grid-area: sidebar;
-  flex: 1;
-  background-color: var(--web-mode-tertiary-background-color);
-  padding: .5rem;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: 100%;
-  gap: 1.5rem;
+  gap: .5rem;
 `
 const MainContent = styled.main`
   grid-area: mainContent;
-  flex: 2;
-  padding: .5rem .5rem;
-  order: 1;
-  overflow: hidden;
   width: 100%;
-  box-sizing: border-box;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 1.5rem;
-
-  .gap {
-    //display: none;
-  }
-
-  .filler {
-    display: none;
-  }
-
-  @media only screen and (min-width: 768px) {
-    .gap {
-      display: flex;
-      min-height: 145px !important;
-    }
-  }
+  
+  gap: .5rem;
 
   @media print {
     display: block;  // Change the layout to block for printing
@@ -133,27 +111,27 @@ const App: React.FC = () => {
             <LanguageSelector setActiveLang={setActiveLang} activeLang={activeLang}/>
             <PrintButton/>
 
-            <SidebarContainer>
-                <ProfileImage/>
-                <Header activeLang={activeLang}/>
+            <HeaderContainer>
                 <Info activeLang={activeLang}
                       email={activeData.info.email}
                       mobile={activeData.info.mobile}
                       contactInformationTitle={activeData.contactInformationTitle}/>
-                <Technologies activeLang={activeLang} technicalSkillsTitle={activeData.technicalSkillsTitle}/>
-                <Languages activeLang={activeLang} languagesTitle={activeData.languagesTitle}/>
-
-            </SidebarContainer>
+            </HeaderContainer>
 
             <MainContent>
-                <div className="gap"/>
-                {/*<div className={'filler'}/>*/}
                 <Summary activeLang={activeLang}/>
-                {/*<Technologies technologies={activeData.technologies} technicalSkillsTitle={activeData.technicalSkillsTitle}/>*/}
-                {/*<Experiences activeLang={activeLang}/>*/}
-                <Educations activeLang={activeLang}/>
+                {/*<Skills technologies={activeData.technologies} technicalSkillsTitle={activeData.technicalSkillsTitle}/>*/}
+                <Experiences activeLang={activeLang}/>
+
                 {/*<Activities activeLang={activeLang}/>*/}
             </MainContent>
+
+            <SidebarContainer>
+                {/*<ProfileImage/>*/}
+                <Skills activeLang={activeLang} />
+                <Languages activeLang={activeLang} languagesTitle={activeData.languagesTitle}/>
+                <Educations activeLang={activeLang}/>
+            </SidebarContainer>
 
         </AppContainer>
     );
