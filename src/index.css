@@ -7,6 +7,9 @@
     --web-mode-tertiary-background-color: #EEE0CA;
     --primary-font-size:1rem;
     --secondary-font-size:1rem;
+
+    --paper-width: 210mm ;
+    --paper-height: 297mm;
 }
 
 body {

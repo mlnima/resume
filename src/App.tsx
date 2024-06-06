@@ -4,7 +4,6 @@ import enData from './asset/data/en.json';
 import deData from './asset/data/de.json';
 import Experiences from './components/Experiences';
 import Educations from './components/Educations';
-// import Sidebar from './components/Sidebar';
 import LanguageSelector from "./components/LanguageSelector";
 import Summary from "./components/Summary";
 import PrintButton from "./components/PrintButton";
@@ -12,6 +11,7 @@ import Skills from "./components/Skills";
 import {activeLangTypes} from "./tsTypes";
 import Info from "./components/Info";
 import Languages from "./components/Languages";
+import KeywordRenderer from "./components/KeywordRenderer";
 
 
 const AppContainer = styled.div`
@@ -25,7 +25,7 @@ const AppContainer = styled.div`
   box-shadow: 0 1px 4px rgba(255, 255, 255, 0.15);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: 'header' 'sidebar' 'mainContent';
+  grid-template-areas: 'header' 'sidebar' 'mainContent' 'keywords';
   //grid-row-gap: 1rem;
   grid-column-gap: 3rem;
   background-color: var(--web-mode-primary-background-color);
@@ -40,20 +40,24 @@ const AppContainer = styled.div`
 
   @media (min-width: 768px) {
     grid-template-columns:  1fr 300px;
-    grid-template-areas:'header header' 'mainContent sidebar' 'mainContent sidebar';
+    grid-template-areas:'header header' 'mainContent sidebar' 'mainContent sidebar' 'keywords keywords';
     flex-direction: row;
     align-items: flex-start;
-    width: 210mm !important;
-    height: 297mm !important;
+    width: var(--paper-width) !important;
+    height: var(--paper-height) !important;
   }
 
   @media print {
     grid-template-columns: 1fr 300px ;
-    grid-template-areas: 'header header' 'mainContent sidebar' 'mainContent sidebar';
+    grid-template-areas: 'header header' 'mainContent sidebar' 'mainContent sidebar' 'keywords keywords';
     flex-direction: row;
-    width: 215.9mm !important;
-    height: 279.4mm !important;
-
+    width: var(--paper-width) !important;
+    height: var(--paper-height) !important;
+    
+    body{
+      background-color: var(--web-mode-primary-background-color);
+    }
+    
     #language-selector {
       display: none;
     }
@@ -80,7 +84,6 @@ const MainContent = styled.main`
   height: 100%;
   display: flex;
   flex-direction: column;
-  
   gap: .5rem;
 
   @media print {
@@ -132,7 +135,7 @@ const App: React.FC = () => {
                 <Languages activeLang={activeLang} languagesTitle={activeData.languagesTitle}/>
                 <Educations activeLang={activeLang}/>
             </SidebarContainer>
-
+            <KeywordRenderer/>
         </AppContainer>
     );
 };
