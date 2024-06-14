@@ -7,13 +7,10 @@ import {faAt, faGlobe, faLocationDot, faMobileScreenButton} from "@fortawesome/f
 import {faGithubAlt} from "@fortawesome/free-brands-svg-icons"
 import {Name, SectionText,InfoLink,InfoIcon} from "./general/CommonStyledComponents";
 import dictionary from "../asset/data/dictionary.json";
+import info from "../asset/data/info.json";
 
 interface InfoProps {
-    email: string;
-    mobile: string;
-    contactInformationTitle: string
     activeLang: activeLangTypes
-
 }
 
 const TitleContainer = styled.div`
@@ -44,11 +41,11 @@ const InfoText = styled.a`
   color: var(--web-mode-primary-text-color);
 `;
 
-const Info: React.FC<InfoProps> = ({email, mobile, contactInformationTitle, activeLang}) => {
+const Info: React.FC<InfoProps> = ({ activeLang}) => {
     return (
         <>
             <TitleContainer>
-                <Name>{dictionary.Name}</Name>
+                <Name>{info.Name}</Name>
                 <SectionText>{dictionary.JobTitle[activeLang]}</SectionText>
             </TitleContainer>
             <InfoContainer>
@@ -58,23 +55,23 @@ const Info: React.FC<InfoProps> = ({email, mobile, contactInformationTitle, acti
                         <FontAwesomeIcon icon={faAt}/>
                     </InfoIcon>
                     {/*<InfoText>{email}</InfoText>*/}
-                    <InfoLink href={`mailto:${email}`}>{email}</InfoLink>
+                    <InfoLink href={`mailto:${info.email}`} target={'_blank'}>{info.email}</InfoLink>
                 </InfoItem>
                 <InfoItem>
                     <InfoIcon>
                         <FontAwesomeIcon icon={faMobileScreenButton}/>
                     </InfoIcon>
-                    <InfoLink href={`tel:${mobile}`}>{mobile}</InfoLink>
+                    <InfoLink href={`tel:${info.mobile}`} target={'_blank'}>{info.mobile}</InfoLink>
                 </InfoItem>
-                <InfoItem>
-                    <FontAwesomeIcon icon={faGlobe} />
-                    <InfoLink href={'https://www.02dev.com/'}>www.02dev.com</InfoLink>
-                </InfoItem>
+                {/*<InfoItem>*/}
+                {/*    <FontAwesomeIcon icon={faGlobe} />*/}
+                {/*    <InfoLink href={info.website.url}>{info.website.name}</InfoLink>*/}
+                {/*</InfoItem>*/}
                 <InfoItem>
                     <InfoIcon>
                         <FontAwesomeIcon icon={faGithubAlt}/>
                     </InfoIcon>
-                    <InfoLink href={'https://github.com/mlnima'}>github.com/mlnima</InfoLink>
+                    <InfoLink href={'https://github.com/mlnima'} target={'_blank'}>github.com/mlnima</InfoLink>
                 </InfoItem>
                 {/*<InfoItem>*/}
                 {/*    <InfoIcon>🤗</InfoIcon>*/}

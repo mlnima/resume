@@ -1,5 +1,4 @@
 {
-  "Name": "Nima Malayeri",
   "activities": {
     "en": "activities",
     "de": "Aktivitäten"
@@ -59,5 +58,13 @@
   "English": {
     "en": "English",
     "de": "Englisch"
+  },
+  "Persian": {
+    "en": "Persian",
+    "de": "Persisch"
+  },
+  "Native": {
+    "en": "Native",
+    "de": "Muttersprache"
   }
 }

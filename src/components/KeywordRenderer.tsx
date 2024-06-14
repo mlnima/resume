@@ -22,8 +22,8 @@ interface PropTypes {
 const KeywordRenderer: FC<PropTypes> = () => {
     return (
         <Style>
-            {keywords.map(keyword => {
-                return <p>{keyword}</p>
+            {keywords.map((keyword,index) => {
+                return <p key={keyword + index}>{keyword}</p>
             })}
         </Style>
     )

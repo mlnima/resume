@@ -16,8 +16,6 @@
 //         mobile: string;
 //     };
 //     contactInformationTitle:string,
-//     languagesTitle:string,
-//     technicalSkillsTitle:string,
 //     activeLang: activeLangTypes
 // }
 //
@@ -41,7 +39,6 @@
 //          info,
 //          contactInformationTitle,
 //          languagesTitle,
-//          technicalSkillsTitle,
 //          activeLang
 //     }) => {
 //     return (

@@ -44,7 +44,7 @@ const Skills: React.FC<TechnologiesProps> = ({activeLang}) => {
                 </SectionSubTitle>
                 <TechnologyItems>
                     {technologies['web development'].map((technology, index) => (
-                        <TechnologyName key={technology}>
+                        <TechnologyName key={technology + index}>
                             {technology}
                         </TechnologyName>
                     ))}
@@ -57,7 +57,7 @@ const Skills: React.FC<TechnologiesProps> = ({activeLang}) => {
                 </SectionSubTitle>
                 <TechnologyItems>
                     {technologies['data analytics'].map((technology, index) => (
-                        <TechnologyName key={technology}>
+                        <TechnologyName key={technology + index}>
                             {technology}
                         </TechnologyName>
                     ))}
@@ -71,7 +71,7 @@ const Skills: React.FC<TechnologiesProps> = ({activeLang}) => {
                 </SectionSubTitle>
                 <TechnologyItems>
                     {technologies['devops'].map((technology, index) => (
-                        <TechnologyName key={technology}>
+                        <TechnologyName key={technology + index}>
                             {technology}
                         </TechnologyName>
                     ))}
@@ -85,7 +85,7 @@ const Skills: React.FC<TechnologiesProps> = ({activeLang}) => {
                 </SectionSubTitle>
                 <TechnologyItems>
                     {technologies['AI'].map((technology, index) => (
-                        <TechnologyName key={technology}>
+                        <TechnologyName key={technology+ index}>
                             {technology}
                         </TechnologyName>
                     ))}

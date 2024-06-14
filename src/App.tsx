@@ -1,7 +1,5 @@
 import React, {useMemo, useState} from 'react';
 import styled from 'styled-components';
-import enData from './asset/data/en.json';
-import deData from './asset/data/de.json';
 import Experiences from './components/Experiences';
 import Educations from './components/Educations';
 import LanguageSelector from "./components/LanguageSelector";
@@ -104,10 +102,6 @@ const MainContent = styled.main`
 const App: React.FC = () => {
     const [activeLang, setActiveLang] = useState<activeLangTypes>('en')
 
-    const activeData = useMemo(() => {
-        return activeLang === 'de' ? deData : enData
-    }, [activeLang])
-
     return (
         <AppContainer className="app-container">
 
@@ -115,24 +109,19 @@ const App: React.FC = () => {
             <PrintButton/>
 
             <HeaderContainer>
-                <Info activeLang={activeLang}
-                      email={activeData.info.email}
-                      mobile={activeData.info.mobile}
-                      contactInformationTitle={activeData.contactInformationTitle}/>
+                <Info activeLang={activeLang}/>
             </HeaderContainer>
 
             <MainContent>
                 <Summary activeLang={activeLang}/>
-                {/*<Skills technologies={activeData.technologies} technicalSkillsTitle={activeData.technicalSkillsTitle}/>*/}
                 <Experiences activeLang={activeLang}/>
-
                 {/*<Activities activeLang={activeLang}/>*/}
             </MainContent>
 
             <SidebarContainer>
                 {/*<ProfileImage/>*/}
                 <Skills activeLang={activeLang} />
-                <Languages activeLang={activeLang} languagesTitle={activeData.languagesTitle}/>
+                <Languages activeLang={activeLang}/>
                 <Educations activeLang={activeLang}/>
             </SidebarContainer>
             <KeywordRenderer/>
