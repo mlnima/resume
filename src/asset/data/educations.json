@@ -1,5 +1,6 @@
 [
   {
+    "show": true,
     "title": {
      "en": "Data Analytics",
      "de": "Data Analytics"
@@ -19,6 +20,7 @@
     ]
   },
   {
+    "show": true,
     "title": {
       "en":"Full Stack Web Development",
       "de": "Full Stack Web-Entwicklung"
@@ -38,6 +40,7 @@
     ]
   },
   {
+    "show": false,
     "title":{
       "en":"Computer Technical/Professional Diploma",
       "de": "Computertechnisches/Berufsdiplom"

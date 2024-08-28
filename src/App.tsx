@@ -10,6 +10,7 @@ import {activeLangTypes} from "./tsTypes";
 import Info from "./components/Info";
 import Languages from "./components/Languages";
 import KeywordRenderer from "./components/KeywordRenderer";
+import ProfileImage from "./components/ProfileImage";
 
 
 const AppContainer = styled.div`
@@ -67,6 +68,9 @@ const HeaderContainer = styled.header`
   width: 100%;
   margin: 0;
   padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 
 const SidebarContainer = styled.aside`
@@ -110,6 +114,7 @@ const App: React.FC = () => {
 
             <HeaderContainer>
                 <Info activeLang={activeLang}/>
+
             </HeaderContainer>
 
             <MainContent>
@@ -119,7 +124,7 @@ const App: React.FC = () => {
             </MainContent>
 
             <SidebarContainer>
-                {/*<ProfileImage/>*/}
+
                 <Skills activeLang={activeLang} />
                 <Languages activeLang={activeLang}/>
                 <Educations activeLang={activeLang}/>

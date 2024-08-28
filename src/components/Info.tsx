@@ -5,56 +5,71 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {activeLangTypes} from "../tsTypes";
 import {faAt, faGlobe, faLocationDot, faMobileScreenButton} from "@fortawesome/free-solid-svg-icons";
 import {faGithubAlt} from "@fortawesome/free-brands-svg-icons"
-import {Name, SectionText,InfoLink,InfoIcon} from "./general/CommonStyledComponents";
+import {Name, SectionText, InfoLink, InfoIcon} from "./general/CommonStyledComponents";
 import dictionary from "../asset/data/dictionary.json";
 import info from "../asset/data/info.json";
+import ProfileImage from './ProfileImage'
 
 interface InfoProps {
     activeLang: activeLangTypes
 }
 
 const TitleContainer = styled.div`
-  grid-area: header;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  box-sizing: border-box;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    .titleContainerNameAndTitle{
+        display: flex;
+        flex-direction: column;
+    }
 `;
 
 const InfoContainer = styled.div`
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 `;
 
 const InfoItem = styled.div`
-  max-width: 45%;
-  display: grid;
-  grid-template-columns: 25px 200px;
-  margin-bottom: 0.2rem;
+    display: flex;
+    align-items: center;
+    max-width: 45%;
+    margin-bottom: 0.2rem;
 `;
 
-
+const InfoWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
 
 
 const InfoText = styled.a`
-  color: var(--web-mode-primary-text-color);
+    color: var(--web-mode-primary-text-color);
 `;
 
-const Info: React.FC<InfoProps> = ({ activeLang}) => {
+const Info: React.FC<InfoProps> = ({activeLang}) => {
     return (
-        <>
+        <InfoWrapper>
             <TitleContainer>
-                <Name>{info.Name}</Name>
-                <SectionText>{dictionary.JobTitle[activeLang]}</SectionText>
+                <ProfileImage/>
+                <div className={'titleContainerNameAndTitle'}>
+                    <Name>{info.Name}</Name>
+                    <SectionText>{dictionary.JobTitle[activeLang]}</SectionText>
+                </div>
+
+
             </TitleContainer>
+
             <InfoContainer>
 
                 <InfoItem>
                     <InfoIcon>
                         <FontAwesomeIcon icon={faAt}/>
                     </InfoIcon>
-                    {/*<InfoText>{email}</InfoText>*/}
                     <InfoLink href={`mailto:${info.email}`} target={'_blank'}>{info.email}</InfoLink>
                 </InfoItem>
                 <InfoItem>
@@ -79,12 +94,15 @@ const Info: React.FC<InfoProps> = ({ activeLang}) => {
                 {/*</InfoItem>*/}
                 <InfoItem>
                     <InfoIcon>
-                    <FontAwesomeIcon icon={faLocationDot}/>
+                        <FontAwesomeIcon icon={faLocationDot}/>
                     </InfoIcon>
                     <InfoText>Berlin</InfoText>
                 </InfoItem>
+
+
             </InfoContainer>
-        </>
+
+        </InfoWrapper>
 
     );
 };

@@ -9,17 +9,19 @@ const ProfileImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  //width: 100%;
   //height: 130px;
   overflow: hidden;
 `;
 
 const ProfileImg = styled.img`
-  border-radius: .375rem;
+
   margin: .5rem;
-  width: 130px;
+  width: 100px;
+  height: 100px;
+    border-radius: 50%;
   //height: 130px;
-  //object-fit: cover;
+  object-fit: contain;
 
 `;
 

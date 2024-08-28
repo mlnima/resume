@@ -31,10 +31,11 @@
     "Load balancing"
   ],
   "AI": [
-    "Stable Diffusion",
-    "Fine-tune SD/SD-XL models",
-    "Opensource LLM",
     "Computer Vision",
+    "Natural Language Processing",
+    "Stable Diffusion",
+    "ComfyUI",
+    "Opensource LLM",
     "Opensource audio models",
     "DeepFake",
     "Voice-cloning"

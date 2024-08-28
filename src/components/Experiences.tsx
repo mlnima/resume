@@ -47,7 +47,7 @@ const Experiences: React.FC<ExperiencesProps> = ({ activeLang }) => {
     return (
         <ExperiencesContainer>
             <SectionTitle>{dictionary.experiences[activeLang]}</SectionTitle>
-            {experiences.map((experience, index) => (
+            {experiences.filter(experience=>experience.show).map((experience, index) => (
                 <ExperienceItem key={index}>
                     <ExperienceHeader>
                         <SectionSubTitle>{experience.companyName}</SectionSubTitle>

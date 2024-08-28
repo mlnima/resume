@@ -1,10 +1,11 @@
 [
   {
+    "show": true,
     "title": {
       "en": "Content Moderator",
       "de": "Content Moderator"
     },
-    "companyName": "Meta",
+    "companyName": "Majorel / Meta",
     "location": "Berlin - Germany",
     "duration": "Oct. 2022 - Apr. 2023",
     "description": {
@@ -13,6 +14,7 @@
     }
   },
   {
+    "show": true,
     "title": {
       "en": "Full Stack Web Developer",
       "de": "Full Stack Webentwickler"
@@ -26,6 +28,7 @@
     }
   },
   {
+    "show": false,
     "title": {
       "en": "Moderator",
       "de": "Moderator"
@@ -39,6 +42,7 @@
     }
   },
   {
+    "show": true,
     "title": {
       "en": "Operations Manager, Satellite TV Channel",
       "de": "Betriebsleiter, Satelliten-TV-Kanal"
@@ -47,8 +51,8 @@
     "location": "Sofia - Bulgaria",
     "duration": "Oct. 2014 - Aug. 2016",
     "description": {
-      "en": "Led and managed a team, ensuring smooth daily operations and high levels of productivity.\nOversaw the setup and maintenance of VOIP systems, ensuring reliable and efficient communication services.",
-      "de": "Leitete und verwaltete ein Team und sorgte für einen reibungslosen Tagesbetrieb und ein hohes Maß an Produktivität. Überwachte die Einrichtung und Wartung von VoIP-Systemen und sorgte für zuverlässige und effiziente Kommunikationsdienste."
+      "en": "Ensuring smooth daily operations and high levels of productivity.\nOversaw the setup and maintenance of VOIP systems, ensuring reliable and efficient communication services.",
+      "de": "Sicherstellung eines reibungslosen täglichen Betriebs und hoher Produktivität.\nÜberwachung der Einrichtung und Wartung von VoIP-Systemen und Gewährleistung zuverlässiger und effizienter Kommunikationsdienste."
     }
   }
 ]

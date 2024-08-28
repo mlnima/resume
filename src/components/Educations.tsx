@@ -62,7 +62,8 @@ const Educations: React.FC<EducationsProps> = ({activeLang}) => {
     return (
         <Style>
             <SectionTitle>{dictionary.educations[activeLang]} </SectionTitle>
-            {educations.map((education, index) => (
+            {educations.filter(education=>education.show).map((education, index) => (
+
                 <div className={'educationItem'} key={education.title[activeLang]}>
                     <SectionSubTitle>
                         {education.title[activeLang]}
