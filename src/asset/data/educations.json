@@ -2,12 +2,24 @@
   {
     "show": true,
     "title": {
+     "en": "C Programming",
+     "de": "Programmierung"
+    },
+    "place": "42Berlin",
+    "location": "Berlin",
+    "duration": "Aug.2024 - Sep.2024",
+    "fields": [
+      "C"
+    ]
+  },  {
+    "show": true,
+    "title": {
      "en": "Data Analytics",
      "de": "Data Analytics"
     },
     "place": "IronHack",
     "location": "Berlin",
-    "duration": "2022",
+    "duration": "Apr.2022 - Aug.2022",
     "fields": [
       "Python",
       "SQL",
@@ -27,7 +39,7 @@
     },
     "place": "Digital Career Institute",
     "location": "Berlin",
-    "duration": "2019",
+    "duration": "May. 2018 - May. 2019",
     "fields": [
       "JavaScript",
       "ReactJS",
@@ -40,14 +52,14 @@
     ]
   },
   {
-    "show": false,
+    "show": true,
     "title":{
-      "en":"Computer Technical/Professional Diploma",
+      "en":"Computer Programming Technical/Professional Diploma",
       "de": "Computertechnisches/Berufsdiplom"
     },
     "place": "Avini",
     "location": "Tehran Iran",
-    "duration": "2008",
+    "duration": "October.2006 - Jun.2008",
     "fields": [
       "Visual Basic",
       "MS-DOS",

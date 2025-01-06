@@ -6,6 +6,7 @@ import styled from 'styled-components';
 export const Name = styled.h1`
      margin: 0;
      color: var(--web-mode-primary-text-color);
+     
 `;
 
 export const SectionTitle = styled.h2`

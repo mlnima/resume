@@ -16,21 +16,16 @@
     "Git"
   ],
   "data analytics": [
-    "Statistic",
-    "Machine-Learning",
-    "Data-Visualization",
-    "Statistical-Analysis"
+
   ],
-  "devops": [
+  "others": [
     "Nginx",
     "Apache",
     "MonoRepo",
     "TurboRepo",
     "cPanel",
     "Plesk",
-    "Load balancing"
-  ],
-  "AI": [
+    "Load balancing",
     "Computer Vision",
     "Natural Language Processing",
     "Stable Diffusion",
@@ -38,6 +33,9 @@
     "Opensource LLM",
     "Opensource audio models",
     "DeepFake",
-    "Voice-cloning"
+    "Voice-cloning",
+    "Statistic",
+    "Machine-Learning",
+    "Data-Visualization"
   ]
 }

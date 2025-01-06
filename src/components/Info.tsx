@@ -5,10 +5,10 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {activeLangTypes} from "../tsTypes";
 import {faAt, faGlobe, faLocationDot, faMobileScreenButton} from "@fortawesome/free-solid-svg-icons";
 import {faGithubAlt} from "@fortawesome/free-brands-svg-icons"
-import {Name, SectionText, InfoLink, InfoIcon} from "./general/CommonStyledComponents";
+import {Name, SectionText, InfoLink, InfoIcon, SectionTitle} from "./general/CommonStyledComponents";
 import dictionary from "../asset/data/dictionary.json";
 import info from "../asset/data/info.json";
-import ProfileImage from './ProfileImage'
+// import ProfileImage from './ProfileImage'
 
 interface InfoProps {
     activeLang: activeLangTypes
@@ -24,6 +24,11 @@ const TitleContainer = styled.div`
     .titleContainerNameAndTitle{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        h2{
+            border: none;
+            justify-content: center;
+        }
     }
 `;
 
@@ -55,10 +60,10 @@ const Info: React.FC<InfoProps> = ({activeLang}) => {
     return (
         <InfoWrapper>
             <TitleContainer>
-                <ProfileImage/>
+                {/*<ProfileImage/>*/}
                 <div className={'titleContainerNameAndTitle'}>
                     <Name>{info.Name}</Name>
-                    <SectionText>{dictionary.JobTitle[activeLang]}</SectionText>
+                    <SectionTitle>{dictionary.JobTitle[activeLang]}</SectionTitle>
                 </div>
 
 

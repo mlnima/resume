@@ -14,15 +14,15 @@ const TechnologiesContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: .5rem;
+  gap: .1rem;
 `;
 
 
 const TechnologyItems = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: .8rem;
-  padding: .5rem 0 .5rem 0;
+  gap: .4rem;
+  padding: .25rem 0 .5rem 0;
 `;
 
 
@@ -53,39 +53,11 @@ const Skills: React.FC<TechnologiesProps> = ({activeLang}) => {
 
             <SubSectionWrapper>
                 <SectionSubTitle>
-                    {dictionary["Data Analytics"][activeLang]}:
+                    {dictionary["OTHER TECHNOLOGIES"][activeLang]}:
                 </SectionSubTitle>
                 <TechnologyItems>
-                    {technologies['data analytics'].map((technology, index) => (
+                    {technologies['others'].map((technology, index) => (
                         <TechnologyName key={technology + index}>
-                            {technology}
-                        </TechnologyName>
-                    ))}
-                </TechnologyItems>
-            </SubSectionWrapper>
-
-
-            <SubSectionWrapper>
-                <SectionSubTitle>
-                    {dictionary["DevOps"][activeLang]}:
-                </SectionSubTitle>
-                <TechnologyItems>
-                    {technologies['devops'].map((technology, index) => (
-                        <TechnologyName key={technology + index}>
-                            {technology}
-                        </TechnologyName>
-                    ))}
-                </TechnologyItems>
-            </SubSectionWrapper>
-
-
-            <SubSectionWrapper>
-                <SectionSubTitle>
-                    {dictionary["AI"][activeLang]}:
-                </SectionSubTitle>
-                <TechnologyItems>
-                    {technologies['AI'].map((technology, index) => (
-                        <TechnologyName key={technology+ index}>
                             {technology}
                         </TechnologyName>
                     ))}
