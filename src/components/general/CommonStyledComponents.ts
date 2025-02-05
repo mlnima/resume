@@ -13,7 +13,8 @@ export const SectionTitle = styled.h2`
   display: flex;
   align-items: center;
 
-  margin: .8rem 0 .4rem 0;
+  //margin: .8rem 0 .4rem 0;
+  margin: .4rem 0 .4rem 0;
 `;
 
 export const SectionSubTitle = styled.h3`

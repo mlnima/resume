@@ -2,6 +2,20 @@
   {
     "show": true,
     "title": {
+      "en": "Freelance Web Developer",
+      "de": "Freiberuflicher Webentwickler"
+    },
+    "companyName": "Freelancer",
+    "location": "Berlin - Germany",
+    "duration": "Oct. 2018",
+    "description": {
+      "en": "",
+      "de": ""
+    }
+  },
+  {
+    "show": true,
+    "title": {
       "en": "Content Moderator",
       "de": "Content Moderator"
     },

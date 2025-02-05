@@ -2,18 +2,6 @@
   {
     "show": true,
     "title": {
-     "en": "C Programming",
-     "de": "Programmierung"
-    },
-    "place": "42Berlin",
-    "location": "Berlin",
-    "duration": "Aug.2024 - Sep.2024",
-    "fields": [
-      "C"
-    ]
-  },  {
-    "show": true,
-    "title": {
      "en": "Data Analytics",
      "de": "Data Analytics"
     },

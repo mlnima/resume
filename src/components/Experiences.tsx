@@ -39,7 +39,7 @@ const ExperienceTitle = styled.span`
 
 const ExperienceDuration = styled.span`
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   font-weight: bold;
 `;

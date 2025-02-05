@@ -15,6 +15,10 @@ const Style = styled.div`
     grid-area: educations;
     padding: .1rem 2rem;
     box-sizing: border-box;
+    
+    .educationItem{
+        margin: 1rem 0;
+    }
 `;
 
 
@@ -98,3 +102,18 @@ const Educations: React.FC<EducationsProps> = ({activeLang}) => {
 };
 
 export default Educations;
+
+
+// {
+//     "show": true,
+//     "title": {
+//     "en": "C Programming",
+//         "de": "Programmierung"
+// },
+//     "place": "42Berlin",
+//     "location": "Berlin",
+//     "duration": "Aug.2024 - Sep.2024",
+//     "fields": [
+//     "C"
+// ]
+// },
