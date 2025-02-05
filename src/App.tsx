@@ -39,6 +39,7 @@ const AppContainer = styled.div`
 
   @media (min-width: 768px) {
     grid-template-columns:  1fr 300px;
+    //grid-template-areas:'header header' 'mainContent sidebar' 'mainContent sidebar' 'keywords keywords';
     grid-template-areas:'header header' 'mainContent sidebar' 'mainContent sidebar' 'keywords keywords';
     flex-direction: row;
     align-items: flex-start;

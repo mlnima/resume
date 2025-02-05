@@ -7,9 +7,13 @@
     "en": "Summary",
     "de": "Zusammenfassung"
   },
-  "SummaryData": {
+  "SummaryData1": {
     "en": "Motivated web developer skilled in front-end and back-end technologies. Proficient in HTML5, CSS, JavaScript, TypeScript, ReactJS, Redux and NextJS for building dynamic web applications. Experienced with SQL, MongoDB, and Git for version control. Familiar with DevOps practices such as Nginx, Apache, MonoRepo, and TurboRepo. Knowledgeable in data analytics and AI, including machine learning, data visualization, and computer vision. Ready to join a dynamic development team.",
     "de": "Motivierter Webentwickler mit Fähigkeiten in Frontend- und Backend-Technologien. Beherrscht HTML5, CSS, JavaScript, TypeScript, ReactJS, Redux und NextJS für die Erstellung dynamischer Webanwendungen. Erfahrung in SQL, MongoDB und Git für Versionskontrolle. Vertraut mit DevOps-Praktiken wie Nginx, Apache, MonoRepo und TurboRepo. Kenntnisreich in Datenanalyse und KI, einschließlich maschinellem Lernen, Datenvisualisierung und Computer Vision. Bereit, einem dynamischen Entwicklungsteam beizutreten."
+  },
+  "SummaryData": {
+    "en": "Passionate and detail-oriented web developer experienced in building responsive, user-friendly websites and web applications. Proficient in HTML, CSS, JavaScript, and modern frameworks like React. Strong problem-solving skills and a commitment to delivering high-quality code.",
+    "de": "Leidenschaftlicher und detailorientierter Webentwickler mit Erfahrung im Erstellen responsiver, benutzerfreundlicher Websites und Webanwendungen. Kenntnisse in HTML, CSS, JavaScript und modernen Frameworks wie React. Starke Problemlösungsfähigkeiten und Engagement für die Bereitstellung von qualitativ hochwertigem Code."
   },
   "Languages": {
     "en": "Languages",
