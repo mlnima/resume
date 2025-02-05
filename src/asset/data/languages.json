@@ -1,10 +1,18 @@
 [
   {
+    "languageName": "German",
+    "level": "B2"
+  },
+  {
     "languageName": "English",
     "level": "C1"
   },
   {
-    "languageName": "German",
+    "languageName": "Persian",
+    "level": "Native"
+  },
+  {
+    "languageName": "Bulgarian",
     "level": "B1"
   }
 ]

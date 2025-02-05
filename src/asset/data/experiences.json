@@ -9,8 +9,8 @@
     "location": "Berlin - Germany",
     "duration": "Oct. 2022 - Apr. 2023",
     "description": {
-      "en": "Monitored and reviewed user-generated content on Instagram and Facebook to ensure compliance with community guidelines.\nUtilized internal tools and platforms to track and report inappropriate content.\nDemonstrated strong attention to detail, critical thinking, and problem-solving skills in a high-volume environment.",
-      "de": "Überwachte und überprüfte benutzergenerierte Inhalte auf Instagram und Facebook, um die Einhaltung der Community-Richtlinien sicherzustellen.\nNutzte interne Tools und Plattformen, um unangemessene Inhalte zu verfolgen und zu melden.\nZeigte ausgeprägte Detailgenauigkeit, kritisches Denken und Problemlösungsfähigkeiten in einer Umgebung mit hohem Volumen."
+      "en": "Monitored and reviewed user-generated content on Instagram and Facebook.",
+      "de": "Überwachte und überprüfte benutzergenerierte Inhalte auf Instagram und Facebook."
     }
   },
   {
@@ -23,8 +23,8 @@
     "location": "Berlin - Germany",
     "duration": "Nov. 2019 - Feb. 2022",
     "description": {
-      "en": "Specializing in developing CMS platforms. Using technologies such as TypeScript, ReactJS, NextJS, Express, MongoDB, and Redux to build scalable, client-centered solutions",
-      "de": "Spezialisiert auf die Entwicklung von CMS-Plattformen. Verwendung von Technologien wie TypeScript, ReactJS, NextJS, Express, MongoDB und Redux zum Erstellen skalierbarer, kundenzentrierter Lösungen"
+      "en": "Specializing in developing SPA CMS platforms.",
+      "de": "Spezialisiert auf die Entwicklung von SPA CMS-Plattformen."
     }
   },
   {
@@ -37,8 +37,8 @@
     "location": "Sofia - Bulgaria",
     "duration": "Aug. 2016 - Oct. 2017",
     "description": {
-      "en": "Managed community interactions and support, ensuring a positive experience for a large user base.\nDiagnosed and resolved technical issues, providing effective solutions and enhancing user satisfaction.",
-      "de": "Verwaltete Community-Interaktionen und Support und sorgte so für ein positives Erlebnis für eine große Benutzerbasis.\nDiagnose und Lösung technischer Probleme, Bereitstellung effektiver Lösungen und Steigerung der Benutzerzufriedenheit."
+      "en": "Technical support.",
+      "de": "Technische Unterstützung.."
     }
   },
   {
@@ -51,8 +51,8 @@
     "location": "Sofia - Bulgaria",
     "duration": "Oct. 2014 - Aug. 2016",
     "description": {
-      "en": "Ensuring smooth daily operations and high levels of productivity.\nOversaw the setup and maintenance of VOIP systems, ensuring reliable and efficient communication services.",
-      "de": "Sicherstellung eines reibungslosen täglichen Betriebs und hoher Produktivität.\nÜberwachung der Einrichtung und Wartung von VoIP-Systemen und Gewährleistung zuverlässiger und effizienter Kommunikationsdienste."
+      "en": "Moderate and maintenance of VOIP systems, ensuring reliable and efficient communication services.",
+      "de": "Moderation und Wartung von VOIP-Systemen, um zuverlässige und effiziente Kommunikationsdienste sicherzustellen."
     }
   }
 ]

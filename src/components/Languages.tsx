@@ -11,9 +11,15 @@ interface LanguagesProps {
 }
 
 const LanguagesContainer = styled.div`
-  width: 100%;
-  margin: 0;
-
+    grid-area: languages;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: .1rem 2rem;
+    box-sizing: border-box;
+    background-color: #2C2C2C;
+    color: #fff;
+    place-content: center;
 `;
 
 

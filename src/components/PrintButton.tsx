@@ -18,7 +18,6 @@ const PrinterButton = styled.button`
   height: 48px;
   @media print {
     display: none;  // Change the layout to block for printing
-
   }
 `;
 

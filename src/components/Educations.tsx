@@ -12,9 +12,9 @@ interface EducationsProps {
 }
 
 const Style = styled.div`
-  .educationItem {
-    margin: .5rem 0;
-  }
+    grid-area: educations;
+    padding: .1rem 2rem;
+    box-sizing: border-box;
 `;
 
 

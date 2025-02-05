@@ -3,6 +3,10 @@
     "en": "activities",
     "de": "Aktivitäten"
   },
+  "Contact": {
+    "en": "Contact",
+    "de": "Kontakt"
+  },
   "Summary": {
     "en": "Summary",
     "de": "Zusammenfassung"
@@ -59,6 +63,10 @@
     "en": "Educations",
     "de": "Ausbildungen"
   },
+  "Profile": {
+    "en": "Profile",
+    "de": "Profil"
+  },
   "German": {
     "en": "German",
     "de": "Deutsch"
@@ -70,6 +78,10 @@
   "Persian": {
     "en": "Persian",
     "de": "Persisch"
+  },
+  "Bulgarian": {
+    "en": "Bulgarian",
+    "de": "Bulgarisch"
   },
   "Native": {
     "en": "Native",

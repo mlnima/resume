@@ -1,5 +1,5 @@
 {
-  "web development": [
+  "skills": [
     "HTML5",
     "CSS",
     "JavaScript",
@@ -13,12 +13,7 @@
     "MongoDB",
     "WordPress",
     "Python",
-    "Git"
-  ],
-  "data analytics": [
-
-  ],
-  "others": [
+    "Git",
     "C",
     "Nginx",
     "Apache",

@@ -13,7 +13,14 @@ interface ExperiencesProps {
 }
 
 const ExperiencesContainer = styled.div`
-  margin: 1rem 0;
+    grid-area: experiences;
+    margin: 1rem 0;
+    padding: .1rem 2rem;
+    box-sizing: border-box;
+    background-color: #EFEFEF;
+    width: 100%;
+    height: 100%;
+    place-content: center;
 `;
 
 const ExperienceItem = styled.div`

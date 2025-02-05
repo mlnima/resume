@@ -7,10 +7,11 @@ import Summary from "./components/Summary";
 import PrintButton from "./components/PrintButton";
 import Skills from "./components/Skills";
 import {activeLangTypes} from "./tsTypes";
-import Info from "./components/Info";
+import Contact from "./components/contact";
 import Languages from "./components/Languages";
 import KeywordRenderer from "./components/KeywordRenderer";
 import ProfileImage from "./components/ProfileImage";
+import NameTitle from "./components/NameTitle";
 
 
 const AppContainer = styled.div`
@@ -19,28 +20,40 @@ const AppContainer = styled.div`
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   font-size: .85rem;
-  padding: 2rem;
+  //padding: 2rem;
   box-sizing: border-box;
   box-shadow: 0 1px 4px rgba(255, 255, 255, 0.15);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: 'header' 'sidebar' 'mainContent' 'keywords';
-  //grid-row-gap: 1rem;
-  grid-column-gap: 3rem;
+  grid-template-areas: 'profileImage' 
+                      'nameTitle'
+                      'summary'
+                      'educations'
+                      'experiences'
+                      'skills'
+                      'languages'
+                      'contact';
+  ////grid-row-gap: 1rem;
+  //grid-column-gap: 3rem;
   background-color: var(--web-mode-primary-background-color);
 
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--web-mode-primary-text-color);
-  }
+  //h1, h2, h3, h4, h5, h6 {
+  //  color: var(--web-mode-primary-text-color);
+  //}
 
   a {
     text-decoration: none;
   }
 
   @media (min-width: 768px) {
-    grid-template-columns:  1fr 300px;
+    grid-template-columns:  1fr 1fr;
+    //grid-template-rows:   1fr 1fr 1fr 1fr 1fr;
     //grid-template-areas:'header header' 'mainContent sidebar' 'mainContent sidebar' 'keywords keywords';
-    grid-template-areas:'header header' 'mainContent sidebar' 'mainContent sidebar' 'keywords keywords';
+    grid-template-areas: 'profileImage summary'
+                         'profileImage educations' 
+                         'nameTitle experiences' 
+                         'skills experiences'
+                         'languages contact';
     flex-direction: row;
     align-items: flex-start;
     width: var(--paper-width) !important;
@@ -48,16 +61,20 @@ const AppContainer = styled.div`
   }
 
   @media print {
-    grid-template-columns: 1fr 300px ;
-    grid-template-areas: 'header header' 'mainContent sidebar' 'mainContent sidebar' 'keywords keywords';
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: 'profileImage summary'
+                         'profileImage educations' 
+                         'nameTitle experiences' 
+                         'skills experiences'
+                         'languages contact';
     flex-direction: row;
     width: var(--paper-width) !important;
     height: var(--paper-height) !important;
     
-    body{
-      background-color: var(--web-mode-primary-background-color);
-    }
-    
+    //body{
+    //  background-color: var(--web-mode-primary-background-color);
+    //}
+    //
     #language-selector {
       display: none;
     }
@@ -113,24 +130,33 @@ const App: React.FC = () => {
             <LanguageSelector setActiveLang={setActiveLang} activeLang={activeLang}/>
             <PrintButton/>
 
-            <HeaderContainer>
-                <Info activeLang={activeLang}/>
 
-            </HeaderContainer>
+            <ProfileImage/>
+            <Summary activeLang={activeLang}/>
+            <Educations activeLang={activeLang}/>
+            <NameTitle activeLang={activeLang}/>
+            <Experiences activeLang={activeLang}/>
+            <Skills activeLang={activeLang} />
+            <Languages activeLang={activeLang}/>
+            <Contact activeLang={activeLang}/>
+            {/*<HeaderContainer>*/}
+            {/*    <Info activeLang={activeLang}/>*/}
 
-            <MainContent>
-                <Summary activeLang={activeLang}/>
-                <Experiences activeLang={activeLang}/>
-                {/*<Activities activeLang={activeLang}/>*/}
-            </MainContent>
+            {/*</HeaderContainer>*/}
 
-            <SidebarContainer>
+            {/*<MainContent>*/}
 
-                <Skills activeLang={activeLang} />
-                <Languages activeLang={activeLang}/>
-                <Educations activeLang={activeLang}/>
-            </SidebarContainer>
-            <KeywordRenderer/>
+            {/*    <Experiences activeLang={activeLang}/>*/}
+            {/*    /!*<Activities activeLang={activeLang}/>*!/*/}
+            {/*</MainContent>*/}
+
+            {/*<SidebarContainer>*/}
+
+            {/*    <Skills activeLang={activeLang} />*/}
+            {/*    <Languages activeLang={activeLang}/>*/}
+
+            {/*</SidebarContainer>*/}
+            {/*<KeywordRenderer/>*/}
         </AppContainer>
     );
 };

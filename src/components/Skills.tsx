@@ -9,27 +9,33 @@ interface TechnologiesProps {
     activeLang: activeLangTypes
 }
 
-const TechnologiesContainer = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: .1rem;
+const TechnologiesContainer = styled.div`grid-area: skills;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: .1rem;
+    background-color: #2C2C2C;
+    padding: .1rem 2rem;
+    box-sizing: border-box;
+    color: #fff;
+
 `;
 
 
 const TechnologyItems = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: .4rem;
-  padding: .25rem 0 .5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    padding: .25rem 0 .5rem 0;
+
 `;
 
 
 const TechnologyName = styled.span`
-  color: var(--web-mode-secondary-text-color);
-  border-bottom: 1px solid var(--web-mode-secondary-text-color);
-  font-weight: bold;
+    border-bottom: 1px solid var(--web-mode-secondary-text-color);
+    font-weight: bold;
 `;
 
 const Skills: React.FC<TechnologiesProps> = ({activeLang}) => {
@@ -39,11 +45,8 @@ const Skills: React.FC<TechnologiesProps> = ({activeLang}) => {
                 {dictionary["Skills"][activeLang]}
             </SectionTitle>
             <SubSectionWrapper>
-                <SectionSubTitle>
-                    {dictionary["Web Development"][activeLang]}:
-                </SectionSubTitle>
                 <TechnologyItems>
-                    {technologies['web development'].map((technology, index) => (
+                    {technologies.skills.map((technology, index) => (
                         <TechnologyName key={technology + index}>
                             {technology}
                         </TechnologyName>
@@ -51,18 +54,18 @@ const Skills: React.FC<TechnologiesProps> = ({activeLang}) => {
                 </TechnologyItems>
             </SubSectionWrapper>
 
-            <SubSectionWrapper>
-                <SectionSubTitle>
-                    {dictionary["OTHER TECHNOLOGIES"][activeLang]}:
-                </SectionSubTitle>
-                <TechnologyItems>
-                    {technologies['others'].map((technology, index) => (
-                        <TechnologyName key={technology + index}>
-                            {technology}
-                        </TechnologyName>
-                    ))}
-                </TechnologyItems>
-            </SubSectionWrapper>
+            {/*<SubSectionWrapper>*/}
+            {/*    <SectionSubTitle>*/}
+            {/*        {dictionary["OTHER TECHNOLOGIES"][activeLang]}:*/}
+            {/*    </SectionSubTitle>*/}
+            {/*    <TechnologyItems>*/}
+            {/*        {technologies['others'].map((technology, index) => (*/}
+            {/*            <TechnologyName key={technology + index}>*/}
+            {/*                {technology}*/}
+            {/*            </TechnologyName>*/}
+            {/*        ))}*/}
+            {/*    </TechnologyItems>*/}
+            {/*</SubSectionWrapper>*/}
 
         </TechnologiesContainer>
     );
