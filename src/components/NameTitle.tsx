@@ -17,7 +17,7 @@ const TitleContainer = styled.div`
     background-color: #222222;
     width: 100%;
     height: 100%;
-    padding: .1rem 2rem;
+    padding: 0 1rem;
     box-sizing: border-box;
     h1{
         color: #fff;
@@ -31,11 +31,11 @@ const TitleContainer = styled.div`
         justify-content: center;
     }
 
-    @media (min-width: 768px) {
-        h1{
-            width: 80%;
-        }
-    }
+    //@media (min-width: 768px) {
+    //    h1{
+    //        width: 80%;
+    //    }
+    //}
 `;
 
 const NameTitle: React.FC<InfoProps> = ({activeLang}) => {

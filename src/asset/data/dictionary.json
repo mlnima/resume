@@ -15,10 +15,15 @@
     "en": "Motivated web developer skilled in front-end and back-end technologies. Proficient in HTML5, CSS, JavaScript, TypeScript, ReactJS, Redux and NextJS for building dynamic web applications. Experienced with SQL, MongoDB, and Git for version control. Familiar with DevOps practices such as Nginx, Apache, MonoRepo, and TurboRepo. Knowledgeable in data analytics and AI, including machine learning, data visualization, and computer vision. Ready to join a dynamic development team.",
     "de": "Motivierter Webentwickler mit Fähigkeiten in Frontend- und Backend-Technologien. Beherrscht HTML5, CSS, JavaScript, TypeScript, ReactJS, Redux und NextJS für die Erstellung dynamischer Webanwendungen. Erfahrung in SQL, MongoDB und Git für Versionskontrolle. Vertraut mit DevOps-Praktiken wie Nginx, Apache, MonoRepo und TurboRepo. Kenntnisreich in Datenanalyse und KI, einschließlich maschinellem Lernen, Datenvisualisierung und Computer Vision. Bereit, einem dynamischen Entwicklungsteam beizutreten."
   },
-  "SummaryData": {
+  "SummaryData3": {
     "en": "Passionate and detail-oriented web developer experienced in building responsive, user-friendly websites and web applications. Proficient in HTML, CSS, JavaScript, and modern frameworks like React. Strong problem-solving skills and a commitment to delivering high-quality code.",
     "de": "Leidenschaftlicher und detailorientierter Webentwickler mit Erfahrung im Erstellen responsiver, benutzerfreundlicher Websites und Webanwendungen. Kenntnisse in HTML, CSS, JavaScript und modernen Frameworks wie React. Starke Problemlösungsfähigkeiten und Engagement für die Bereitstellung von qualitativ hochwertigem Code."
   },
+  "SummaryData": {
+    "en": "Full Stack Web Developer with 5+ years of experience in building high-performance, scalable web applications. Proficient in modern frontend and backend technologies, including React, Next.js, Node.js, and SQL/MongoDB. Passionate about optimizing performance, improving UX, and implementing efficient architectures. Strong problem-solving skills with a focus on delivering robust and maintainable code.",
+    "de": "Full-Stack-Webentwickler mit über 5 Jahren Erfahrung in der Entwicklung leistungsstarker, skalierbarer Webanwendungen. Erfahren in modernen Frontend- und Backend-Technologien wie React, Next.js, Node.js und SQL/MongoDB. Leidenschaftlich in der Optimierung der Performance, Verbesserung der Benutzererfahrung und Implementierung effizienter Architekturen. Starke Problemlösungsfähigkeiten mit Fokus auf robuste und wartbare Codequalität."
+  },
+
   "Languages": {
     "en": "Languages",
     "de": "Sprachen"

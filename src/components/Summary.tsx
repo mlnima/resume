@@ -8,7 +8,7 @@ const Style = styled.div`
     grid-area: summary;
     width: 100%;
     height: 100%;
-    padding: .1rem 2rem;
+    padding:  1rem 1rem;
     box-sizing: border-box;
 
     h3 {

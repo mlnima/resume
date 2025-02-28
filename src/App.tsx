@@ -19,10 +19,10 @@ const AppContainer = styled.div`
   height: 100%;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
-  font-size: .85rem;
-  //padding: 2rem;
+  font-size: .80rem;
   box-sizing: border-box;
   box-shadow: 0 1px 4px rgba(255, 255, 255, 0.15);
+  background-color: var(--web-mode-primary-background-color);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: 'profileImage' 
@@ -33,31 +33,26 @@ const AppContainer = styled.div`
                       'skills'
                       'languages'
                       'contact';
-  ////grid-row-gap: 1rem;
-  //grid-column-gap: 3rem;
-  background-color: var(--web-mode-primary-background-color);
-
-  //h1, h2, h3, h4, h5, h6 {
-  //  color: var(--web-mode-primary-text-color);
-  //}
-
+  
+    
   a {
     text-decoration: none;
   }
 
   @media (min-width: 768px) {
     grid-template-columns:  1fr 1fr;
-    //grid-template-rows:   1fr 1fr 1fr 1fr 1fr;
-    //grid-template-areas:'header header' 'mainContent sidebar' 'mainContent sidebar' 'keywords keywords';
     grid-template-areas: 'profileImage summary'
+                         'profileImage educations' 
                          'profileImage educations' 
                          'nameTitle experiences' 
                          'skills experiences'
+                         'skills experiences'
+                         'skills experiences'
+                         'skills experiences'
                          'languages contact';
-    flex-direction: row;
-    align-items: flex-start;
     width: var(--paper-width) !important;
     height: var(--paper-height) !important;
+    max-height: var(--paper-height) !important;
   }
 
   @media print {
@@ -66,15 +61,15 @@ const AppContainer = styled.div`
                          'profileImage educations' 
                          'nameTitle experiences' 
                          'skills experiences'
+                        'skills experiences'
+                         'skills experiences'
+                         'skills experiences'
                          'languages contact';
     flex-direction: row;
     width: var(--paper-width) !important;
     height: var(--paper-height) !important;
-    
-    //body{
-    //  background-color: var(--web-mode-primary-background-color);
-    //}
-    //
+    max-height: var(--paper-height) !important;
+      
     #language-selector {
       display: none;
     }

@@ -14,8 +14,8 @@ interface ExperiencesProps {
 
 const ExperiencesContainer = styled.div`
     grid-area: experiences;
-    margin: 1rem 0;
-    padding: .1rem 2rem;
+    margin: .1rem 0;
+    padding: 0 1rem;
     box-sizing: border-box;
     background-color: #EFEFEF;
     width: 100%;
@@ -24,7 +24,7 @@ const ExperiencesContainer = styled.div`
 `;
 
 const ExperienceItem = styled.div`
-  margin-bottom: .5rem;
+  margin-bottom: .1rem;
 `;
 
 const ExperienceHeader = styled.div`

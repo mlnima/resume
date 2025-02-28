@@ -13,12 +13,10 @@ interface EducationsProps {
 
 const Style = styled.div`
     grid-area: educations;
-    padding: .1rem 2rem;
+    padding: .1rem 1rem;
     box-sizing: border-box;
     
-    .educationItem{
-        margin: 1rem 0;
-    }
+
 `;
 
 
@@ -26,6 +24,14 @@ const EducationDetail = styled.div`
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+`;
+const EducationItem = styled.div`
+    margin: 0.1rem 0;
+`;
+const EducationDescription = styled.div`
+  display: flex;
+  justify-content: space-between;
+  //font-weight: bold;
 `;
 
 const EducationDuration = styled.span`
@@ -35,10 +41,6 @@ const EducationDuration = styled.span`
   align-items: center;
 `;
 
-const EducationPlace = styled.div`
-  font-weight: bold;
-`;
-
 const EducationLocation = styled.div`
   font-weight: bold;
   display: flex;
@@ -46,21 +48,8 @@ const EducationLocation = styled.div`
   align-items: center;
 `;
 
-const EducationFields = styled.div`
-  margin-top: .2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  //gap: .1rem .25rem ;
-`;
-
-const EducationField = styled.div`
 
 
-
-`;
 
 const Educations: React.FC<EducationsProps> = ({activeLang}) => {
     return (
@@ -68,7 +57,7 @@ const Educations: React.FC<EducationsProps> = ({activeLang}) => {
             <SectionTitle>{dictionary.educations[activeLang]} </SectionTitle>
             {educations.filter(education=>education.show).map((education, index) => (
 
-                <div className={'educationItem'} key={education.title[activeLang]}>
+                <EducationItem key={education.title[activeLang]}>
                     <SectionSubTitle>
                         {education.title[activeLang]}
                     </SectionSubTitle>
@@ -89,13 +78,16 @@ const Educations: React.FC<EducationsProps> = ({activeLang}) => {
                             <SectionText>  {education.location} </SectionText>
                         </EducationLocation>
                     </EducationDetail>
+                    <EducationDescription>
+                        {education.description}
+                    </EducationDescription>
 
                     {/*<EducationFields>*/}
                     {/*    {education.fields.map((field, fieldIndex) => (*/}
                     {/*        <EducationField key={fieldIndex}> {field}</EducationField>*/}
                     {/*    ))}*/}
                     {/*</EducationFields>*/}
-                </div>
+                </EducationItem>
             ))}
         </Style>
     );

@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-
-
-
 export const Name = styled.h1`
      margin: 0;
      color: var(--web-mode-primary-text-color);
@@ -12,15 +9,15 @@ export const Name = styled.h1`
 export const SectionTitle = styled.h2`
   display: flex;
   align-items: center;
-
-  //margin: .8rem 0 .4rem 0;
-  margin: .4rem 0 .4rem 0;
+  margin: .2rem 0 .2rem 0;
+  
 `;
 
 export const SectionSubTitle = styled.h3`
-  margin: .2rem 0;
+  margin: .1rem 0;
   display: flex;
   align-items: center;
+    font-size: .8rem;
 `;
 
 export const SectionText = styled.p`

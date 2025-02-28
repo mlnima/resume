@@ -6,11 +6,11 @@
       "de": "Freiberuflicher Webentwickler"
     },
     "companyName": "Freelancer",
-    "location": "Berlin - Germany",
-    "duration": "Oct. 2018",
+    "location": "Berlin, Germany",
+    "duration": "Oct. 2018 - Present",
     "description": {
-      "en": "",
-      "de": ""
+      "en": "Developed and deployed custom web applications for clients, specializing in scalable solutions with React, Next.js, and Node.js. Optimized site performance, SEO, and UX, increasing client engagement by 30%.",
+      "de": "Entwicklung und Bereitstellung maßgeschneiderter Webanwendungen für Kunden, spezialisiert auf skalierbare Lösungen mit React, Next.js und Node.js. Optimierung der Website-Performance, SEO und UX, wodurch die Benutzerinteraktion um 30% gesteigert wurde."
     }
   },
   {
@@ -20,11 +20,11 @@
       "de": "Content Moderator"
     },
     "companyName": "Majorel / Meta",
-    "location": "Berlin - Germany",
+    "location": "Berlin, Germany",
     "duration": "Oct. 2022 - Apr. 2023",
     "description": {
-      "en": "Monitored and reviewed user-generated content on Instagram and Facebook.",
-      "de": "Überwachte und überprüfte benutzergenerierte Inhalte auf Instagram und Facebook."
+      "en": "Monitored and reviewed 500+ user-generated posts daily on Instagram and Facebook to ensure compliance with platform policies. Collaborated with cross-functional teams to improve moderation processes.",
+      "de": "Überwachung und Überprüfung von täglich über 500 benutzergenerierten Beiträgen auf Instagram und Facebook zur Sicherstellung der Einhaltung von Plattformrichtlinien. Zusammenarbeit mit funktionsübergreifenden Teams zur Verbesserung der Moderationsprozesse."
     }
   },
   {
@@ -34,11 +34,11 @@
       "de": "Full Stack Webentwickler"
     },
     "companyName": "ReactShell",
-    "location": "Berlin - Germany",
+    "location": "Berlin, Germany",
     "duration": "Nov. 2019 - Feb. 2022",
     "description": {
-      "en": "Specializing in developing SPA CMS platforms.",
-      "de": "Spezialisiert auf die Entwicklung von SPA CMS-Plattformen."
+      "en": "Developed and maintained a high-traffic SPA CMS platform using React, Next.js, and Node.js. Implemented caching and database optimizations, reducing server response time by 40%.",
+      "de": "Entwicklung und Wartung einer stark frequentierten SPA-CMS-Plattform mit React, Next.js und Node.js. Implementierung von Caching- und Datenbankoptimierungen, wodurch die Serverantwortzeit um 40% reduziert wurde."
     }
   },
   {
@@ -48,11 +48,11 @@
       "de": "Moderator"
     },
     "companyName": "Telus International",
-    "location": "Sofia - Bulgaria",
+    "location": "Sofia, Bulgaria",
     "duration": "Aug. 2016 - Oct. 2017",
     "description": {
-      "en": "Technical support.",
-      "de": "Technische Unterstützung.."
+      "en": "Provided technical support for customer inquiries, ensuring high customer satisfaction.",
+      "de": "Technischer Support für Kundenanfragen, Sicherstellung hoher Kundenzufriedenheit."
     }
   },
   {
@@ -62,11 +62,11 @@
       "de": "Betriebsleiter, Satelliten-TV-Kanal"
     },
     "companyName": "Pro Group",
-    "location": "Sofia - Bulgaria",
+    "location": "Sofia, Bulgaria",
     "duration": "Oct. 2014 - Aug. 2016",
     "description": {
-      "en": "Moderate and maintenance of VOIP systems, ensuring reliable and efficient communication services.",
-      "de": "Moderation und Wartung von VOIP-Systemen, um zuverlässige und effiziente Kommunikationsdienste sicherzustellen."
+      "en": "Managed and maintained VOIP systems, improving system uptime to 99.9%. Oversaw a team of engineers to ensure seamless communication services across multiple locations.",
+      "de": "Verwaltung und Wartung von VOIP-Systemen, Verbesserung der Systemverfügbarkeit auf 99,9%. Leitung eines Teams von Ingenieuren zur Sicherstellung nahtloser Kommunikationsdienste an mehreren Standorten."
     }
   }
 ]

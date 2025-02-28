@@ -1,37 +1,46 @@
 {
-  "skills": [
-    "HTML5",
-    "CSS",
-    "JavaScript",
-    "Typescript",
-    "ReactJS",
-    "Redux",
-    "NextJS",
-    "Git",
-    "NodeJS",
-    "SQL",
-    "MongoDB",
-    "WordPress",
-    "Python",
-    "Git",
-    "C",
-    "Nginx",
-    "Apache",
-    "MonoRepo",
-    "TurboRepo",
-    "cPanel",
-    "Plesk",
-    "Load balancing",
-    "Computer Vision",
-    "Natural Language Processing",
-    "Stable Diffusion",
-    "ComfyUI",
-    "Opensource LLM",
-    "Opensource audio models",
-    "DeepFake",
-    "Voice-cloning",
-    "Statistic",
-    "Machine-Learning",
-    "Data-Visualization"
-  ]
+  "skills": {
+    "Frontend": [
+      "HTML5",
+      "CSS",
+      "JavaScript",
+      "Typescript",
+      "ReactJS",
+      "Redux",
+      "NextJS"
+    ],
+    "Backend": [
+      "NodeJS",
+      "SQL",
+      "MongoDB",
+      "Python",
+      "C"
+    ],
+    "DevOps & Infrastructure": [
+      "Git",
+      "Nginx",
+      "Apache",
+      "MonoRepo",
+      "TurboRepo",
+      "cPanel",
+      "Plesk",
+      "Load balancing"
+    ],
+    "AI & Machine Learning": [
+      "Computer Vision",
+      "Natural Language Processing",
+      "Stable Diffusion",
+      "ComfyUI",
+      "Opensource LLM",
+      "Opensource audio models",
+      "DeepFake",
+      "Voice-cloning",
+      "Machine-Learning",
+      "Statistic",
+      "Data-Visualization"
+    ],
+    "CMS & Platforms": [
+      "WordPress"
+    ]
+  }
 }

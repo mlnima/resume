@@ -15,11 +15,16 @@ const LanguagesContainer = styled.div`
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: .1rem 2rem;
+    padding: .1rem 1rem;
     box-sizing: border-box;
     background-color: #2C2C2C;
     color: #fff;
     place-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: .1rem;
+ 
 `;
 
 

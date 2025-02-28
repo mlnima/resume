@@ -8,6 +8,8 @@
     "place": "IronHack",
     "location": "Berlin",
     "duration": "Apr.2022 - Aug.2022",
+    "description": "Specialized in data visualization, Python, and machine learning models.Built a predictive analytics tool using Pandas and Scikit-learn",
+
     "fields": [
       "Python",
       "SQL",
@@ -28,6 +30,8 @@
     "place": "Digital Career Institute",
     "location": "Berlin",
     "duration": "May. 2018 - May. 2019",
+    "description": "Learned JavaScript, React, and Node.js, leading to the development of a multi-user Web App system.",
+
     "fields": [
       "JavaScript",
       "ReactJS",
@@ -48,6 +52,8 @@
     "place": "Avini",
     "location": "Tehran",
     "duration": "October.2006 - Jun.2008",
+    "description": " ",
+
     "fields": [
       "Visual Basic",
       "MS-DOS",

@@ -36,15 +36,13 @@ const InfoContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    //flex-wrap: wrap;
-    gap: 1rem;
+    gap: .5rem;
 `;
 
 const InfoItem = styled.div`
     display: flex;
     align-items: center;
     max-width: 45%;
-    //margin-bottom: 0.1rem;
     a,span{
         color: #fff;
     }
