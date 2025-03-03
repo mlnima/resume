@@ -44,11 +44,14 @@ const AppContainer = styled.div`
     grid-template-areas: 'profileImage summary'
                          'profileImage educations' 
                          'profileImage educations' 
+                         'profileImage experiences' 
                          'nameTitle experiences' 
                          'skills experiences'
                          'skills experiences'
                          'skills experiences'
-                         'skills experiences'
+                         'skills contact'
+                         'skills contact'
+                         'skills contact'
                          'languages contact';
     width: var(--paper-width) !important;
     height: var(--paper-height) !important;
@@ -59,11 +62,15 @@ const AppContainer = styled.div`
     grid-template-columns: 1fr 1fr ;
     grid-template-areas: 'profileImage summary'
                          'profileImage educations' 
+                         'profileImage educations' 
+                         'profileImage experiences' 
                          'nameTitle experiences' 
                          'skills experiences'
-                        'skills experiences'
                          'skills experiences'
                          'skills experiences'
+                         'skills contact'
+                         'skills contact'
+                         'skills contact'
                          'languages contact';
     flex-direction: row;
     width: var(--paper-width) !important;

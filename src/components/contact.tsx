@@ -19,7 +19,7 @@ const TitleContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+
     box-sizing: border-box;
     .titleContainerNameAndTitle{
         display: flex;
@@ -30,6 +30,7 @@ const TitleContainer = styled.div`
             justify-content: center;
         }
     }
+    
 `;
 
 const InfoContainer = styled.div`
@@ -59,6 +60,7 @@ const InfoWrapper = styled.div`
     background-color: #FD5A1C;
     width: 100%;
     height: 100%;
+    padding: .1rem 1rem 1rem 1rem;
     h2{
         color: #fff;
     }
